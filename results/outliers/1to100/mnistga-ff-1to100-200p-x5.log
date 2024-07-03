@@ -1,0 +1,70 @@
+CPU: [AMD Ryzen 9 5900X 12-Core Processor]
+12 threads with OpenMP
+Training data: (2000,784) 6.0 MB
+Validation data: (5000,784) 15.0 MB
+Testing data: (10000,784) 29.9 MB
+Network: mnistga-ffnn
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Dense(softmax), shape:[10], parameters:7850, memory:61.3 KB
+
+Number of bits in each bitstring: 20
+Evolving 200 members for 15 generations...
+Generation   1, time: 15.92s, fitness max: 0.413257, min: 0.047599, mean: 0.141206
+Generation   2, time: 13.10s, fitness max: 0.556213, min: 0.058242, mean: 0.161297
+Generation   3, time: 13.84s, fitness max: 0.556213, min: 0.063238, mean: 0.184735
+Generation   4, time: 14.65s, fitness max: 0.556213, min: 0.075013, mean: 0.225673
+Generation   5, time: 13.82s, fitness max: 0.573307, min: 0.082064, mean: 0.256579
+Generation   6, time: 15.88s, fitness max: 0.592461, min: 0.081457, mean: 0.292338
+Generation   7, time: 15.50s, fitness max: 0.705089, min: 0.105293, mean: 0.326521
+Generation   8, time: 15.10s, fitness max: 0.705089, min: 0.119918, mean: 0.369297
+Generation   9, time: 14.42s, fitness max: 0.705089, min: 0.115762, mean: 0.392382
+Generation  10, time: 12.54s, fitness max: 0.705089, min: 0.151259, mean: 0.428435
+Generation  11, time: 14.95s, fitness max: 0.705089, min: 0.209160, mean: 0.460556
+Generation  12, time:  9.13s, fitness max: 0.705089, min: 0.248588, mean: 0.478891
+Generation  13, time:  7.67s, fitness max: 0.705089, min: 0.231509, mean: 0.513034
+Generation  14, time: 10.90s, fitness max: 0.705089, min: 0.188045, mean: 0.522392
+Generation  15, time:  5.54s, fitness max: 0.705089, min: 0.253719, mean: 0.545517
+Evolution finished, top-10 members:
+member   1, fitness=0.705089
+member   2, fitness=0.705089
+member   3, fitness=0.705089
+member   4, fitness=0.705089
+member   5, fitness=0.705089
+member   6, fitness=0.705089
+member   7, fitness=0.705089
+member   8, fitness=0.705089
+member   9, fitness=0.705089
+member  10, fitness=0.705089
+Trained in  0.13s.
+Validation set predicted with 0.8768 accuracy.
+Accuracy  = 0.8467
+Precision = 0.846378
+Recall    = 0.845415
+F1        = 0.845896
+Confusion matrix:
+ 892    0   13   11    0   44   15    2    2    1
+   0 1085    6    6    0    9    4    0   25    0
+  12   31  849   14   20    2   20   27   52    5
+   5   11   30  834    3   82    5   15   21    4
+   3   20    7    0  818    5   10   13   13   93
+  13   14    4   33   12  761   19   13   15    8
+  22   10   21    3   20   31  846    2    2    1
+   1   40   30    7   13    1    3  887   12   34
+  12   22   23   56    6   61   15   16  726   37
+  12   18   21   16   68   18    4   69   14  769
+CNN trained in  1.62s.
+Accuracy  = 0.9001
+Precision = 0.900924
+Recall    = 0.899341
+F1        = 0.900132
+Confusion matrix:
+ 962    1    5    0    0    1    7    2    1    1
+   0 1114    1    4    0    1    3    1   10    1
+  14    7  920   14    7    0   20   35   13    2
+   0    0   21  932    0   44    0    7    3    3
+   6   12    1    0  891    0   11   11    9   41
+   6    5    1   41    0  823    3    7    6    0
+  30    4   12    1   13   13  881    1    2    1
+   2   15   38   15    1    0    0  916    4   37
+  16   21   21   54   11   11   14   39  767   20
+  12    8    1    9   38   11    7  103   25  795

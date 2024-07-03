@@ -1,0 +1,156 @@
+CPU: [AMD Ryzen 9 5900X 12-Core Processor]
+12 threads with OpenMP
+Training data: (2000,784) 6.0 MB
+Validation data: (5000,784) 15.0 MB
+Testing data: (10000,784) 29.9 MB
+Network: mnistga-ff
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Dense(softmax), shape:[10], parameters:7850, memory:61.3 KB
+
+Number of values in each chain: 200
+Searching with 1000 particles for 100 iterations...
+Iteration   1, time: 1m 14s, best minima: 0.386400, worst: 0.781400, mean: 0.563388
+Iteration   2, time: 1m 12s, best minima: 0.314200, worst: 0.595800, mean: 0.431430
+Iteration   3, time: 69.79s, best minima: 0.258600, worst: 0.467400, mean: 0.361734
+Iteration   4, time: 68.98s, best minima: 0.253800, worst: 0.430000, mean: 0.336220
+Iteration   5, time: 69.75s, best minima: 0.238600, worst: 0.403800, mean: 0.314354
+Iteration   6, time: 69.29s, best minima: 0.215600, worst: 0.377800, mean: 0.297685
+Iteration   7, time: 69.81s, best minima: 0.208800, worst: 0.377800, mean: 0.281790
+Iteration   8, time: 69.55s, best minima: 0.208600, worst: 0.362000, mean: 0.270824
+Iteration   9, time: 1m 10s, best minima: 0.194600, worst: 0.333400, mean: 0.255688
+Iteration  10, time: 66.04s, best minima: 0.193200, worst: 0.315000, mean: 0.243695
+Iteration  11, time: 69.98s, best minima: 0.188400, worst: 0.301400, mean: 0.236793
+Iteration  12, time: 68.33s, best minima: 0.186000, worst: 0.292600, mean: 0.227231
+Iteration  13, time: 1m 12s, best minima: 0.181200, worst: 0.290000, mean: 0.217829
+Iteration  14, time: 1m 17s, best minima: 0.175000, worst: 0.276800, mean: 0.209731
+Iteration  15, time: 1m 17s, best minima: 0.172200, worst: 0.276800, mean: 0.203551
+Iteration  16, time: 1m 16s, best minima: 0.169400, worst: 0.255800, mean: 0.197846
+Iteration  17, time: 1m 18s, best minima: 0.168400, worst: 0.245400, mean: 0.194882
+Iteration  18, time: 1m 18s, best minima: 0.168000, worst: 0.243400, mean: 0.192126
+Iteration  19, time: 1m 14s, best minima: 0.166600, worst: 0.240600, mean: 0.189483
+Iteration  20, time: 1m 19s, best minima: 0.164000, worst: 0.233000, mean: 0.186252
+Iteration  21, time: 1m 11s, best minima: 0.164000, worst: 0.219600, mean: 0.184086
+Iteration  22, time: 1m 16s, best minima: 0.164000, worst: 0.218200, mean: 0.182318
+Iteration  23, time: 1m 20s, best minima: 0.159400, worst: 0.213600, mean: 0.180088
+Iteration  24, time: 69.05s, best minima: 0.154200, worst: 0.213600, mean: 0.176773
+Iteration  25, time: 1m 18s, best minima: 0.153800, worst: 0.212400, mean: 0.174973
+Iteration  26, time: 1m 15s, best minima: 0.150400, worst: 0.212400, mean: 0.172831
+Iteration  27, time: 64.73s, best minima: 0.150400, worst: 0.212400, mean: 0.170163
+Iteration  28, time: 67.66s, best minima: 0.150400, worst: 0.212400, mean: 0.167720
+Iteration  29, time: 1m 11s, best minima: 0.150400, worst: 0.212400, mean: 0.165479
+Iteration  30, time: 67.70s, best minima: 0.149800, worst: 0.189400, mean: 0.163177
+Iteration  31, time: 1m 12s, best minima: 0.146400, worst: 0.188200, mean: 0.160622
+Iteration  32, time: 1m 14s, best minima: 0.146000, worst: 0.184800, mean: 0.159198
+Iteration  33, time: 1m 11s, best minima: 0.146000, worst: 0.181800, mean: 0.157590
+Iteration  34, time: 67.19s, best minima: 0.146000, worst: 0.179000, mean: 0.156468
+Iteration  35, time: 64.94s, best minima: 0.146000, worst: 0.178400, mean: 0.155094
+Iteration  36, time: 67.85s, best minima: 0.146000, worst: 0.178400, mean: 0.153761
+Iteration  37, time: 62.55s, best minima: 0.146000, worst: 0.170200, mean: 0.152850
+Iteration  38, time: 67.40s, best minima: 0.146000, worst: 0.169800, mean: 0.152184
+Iteration  39, time: 63.43s, best minima: 0.146000, worst: 0.169800, mean: 0.151505
+Iteration  40, time: 62.70s, best minima: 0.146000, worst: 0.166400, mean: 0.150881
+Iteration  41, time: 64.98s, best minima: 0.146000, worst: 0.166000, mean: 0.150444
+Iteration  42, time: 63.82s, best minima: 0.146000, worst: 0.166000, mean: 0.150033
+Iteration  43, time: 66.11s, best minima: 0.141800, worst: 0.166000, mean: 0.149682
+Iteration  44, time: 1m 11s, best minima: 0.141200, worst: 0.164000, mean: 0.148700
+Iteration  45, time: 69.57s, best minima: 0.140400, worst: 0.164000, mean: 0.147759
+Iteration  46, time: 1m 11s, best minima: 0.140400, worst: 0.161400, mean: 0.147339
+Iteration  47, time: 1m 12s, best minima: 0.140000, worst: 0.161400, mean: 0.146875
+Iteration  48, time: 65.53s, best minima: 0.140000, worst: 0.161400, mean: 0.146539
+Iteration  49, time: 68.59s, best minima: 0.140000, worst: 0.161400, mean: 0.146050
+Iteration  50, time: 64.31s, best minima: 0.140000, worst: 0.161400, mean: 0.145547
+Iteration  51, time: 64.45s, best minima: 0.140000, worst: 0.161400, mean: 0.145060
+Iteration  52, time: 66.81s, best minima: 0.140000, worst: 0.161400, mean: 0.144608
+Iteration  53, time: 66.13s, best minima: 0.140000, worst: 0.159800, mean: 0.144152
+Iteration  54, time: 65.58s, best minima: 0.140000, worst: 0.159800, mean: 0.143738
+Iteration  55, time: 67.21s, best minima: 0.140000, worst: 0.159800, mean: 0.143423
+Iteration  56, time: 65.91s, best minima: 0.140000, worst: 0.158800, mean: 0.143111
+Iteration  57, time: 64.44s, best minima: 0.140000, worst: 0.158800, mean: 0.142778
+Iteration  58, time: 67.94s, best minima: 0.140000, worst: 0.158200, mean: 0.142504
+Iteration  59, time: 65.17s, best minima: 0.139800, worst: 0.156400, mean: 0.142267
+Iteration  60, time: 68.24s, best minima: 0.139400, worst: 0.156400, mean: 0.142038
+Iteration  61, time: 63.27s, best minima: 0.139400, worst: 0.155600, mean: 0.141836
+Iteration  62, time: 63.79s, best minima: 0.139400, worst: 0.155600, mean: 0.141669
+Iteration  63, time: 65.33s, best minima: 0.139400, worst: 0.155600, mean: 0.141482
+Iteration  64, time: 66.47s, best minima: 0.139400, worst: 0.155200, mean: 0.141332
+Iteration  65, time: 66.36s, best minima: 0.139400, worst: 0.155200, mean: 0.141176
+Iteration  66, time: 64.64s, best minima: 0.139400, worst: 0.155200, mean: 0.141034
+Iteration  67, time: 66.97s, best minima: 0.139400, worst: 0.155200, mean: 0.140913
+Iteration  68, time: 66.94s, best minima: 0.139400, worst: 0.155200, mean: 0.140791
+Iteration  69, time: 65.63s, best minima: 0.139400, worst: 0.155200, mean: 0.140671
+Iteration  70, time: 66.81s, best minima: 0.139400, worst: 0.154200, mean: 0.140547
+Iteration  71, time: 65.47s, best minima: 0.139400, worst: 0.154200, mean: 0.140445
+Iteration  72, time: 67.03s, best minima: 0.139400, worst: 0.153600, mean: 0.140350
+Iteration  73, time: 66.50s, best minima: 0.139400, worst: 0.153600, mean: 0.140281
+Iteration  74, time: 68.89s, best minima: 0.139400, worst: 0.150400, mean: 0.140218
+Iteration  75, time: 67.52s, best minima: 0.139400, worst: 0.150400, mean: 0.140141
+Iteration  76, time: 67.06s, best minima: 0.139400, worst: 0.150400, mean: 0.140081
+Iteration  77, time: 65.13s, best minima: 0.139400, worst: 0.150400, mean: 0.140022
+Iteration  78, time: 66.69s, best minima: 0.139400, worst: 0.150400, mean: 0.139975
+Iteration  79, time: 66.76s, best minima: 0.139400, worst: 0.150400, mean: 0.139935
+Iteration  80, time: 68.08s, best minima: 0.139400, worst: 0.150400, mean: 0.139896
+Iteration  81, time: 1m 10s, best minima: 0.139400, worst: 0.150400, mean: 0.139868
+Iteration  82, time: 1m 15s, best minima: 0.139400, worst: 0.150400, mean: 0.139846
+Iteration  83, time: 1m 14s, best minima: 0.139400, worst: 0.150400, mean: 0.139821
+Iteration  84, time: 66.67s, best minima: 0.139400, worst: 0.150400, mean: 0.139798
+Iteration  85, time: 66.71s, best minima: 0.139400, worst: 0.150400, mean: 0.139765
+Iteration  86, time: 66.46s, best minima: 0.139400, worst: 0.150400, mean: 0.139709
+Iteration  87, time: 69.88s, best minima: 0.139400, worst: 0.150400, mean: 0.139691
+Iteration  88, time: 1m 14s, best minima: 0.139400, worst: 0.150400, mean: 0.139667
+Iteration  89, time: 1m 17s, best minima: 0.139400, worst: 0.150400, mean: 0.139649
+Iteration  90, time: 1m 17s, best minima: 0.139400, worst: 0.150400, mean: 0.139632
+Iteration  91, time: 1m 18s, best minima: 0.139400, worst: 0.150400, mean: 0.139625
+Iteration  92, time: 1m 12s, best minima: 0.139400, worst: 0.150400, mean: 0.139611
+Iteration  93, time: 1m 19s, best minima: 0.139400, worst: 0.150400, mean: 0.139596
+Iteration  94, time: 1m 21s, best minima: 0.139400, worst: 0.148800, mean: 0.139586
+Iteration  95, time: 66.67s, best minima: 0.139400, worst: 0.148800, mean: 0.139576
+Iteration  96, time: 1m 15s, best minima: 0.139400, worst: 0.148800, mean: 0.139570
+Iteration  97, time: 1m 18s, best minima: 0.139400, worst: 0.148200, mean: 0.139553
+Iteration  98, time: 1m 16s, best minima: 0.139400, worst: 0.148200, mean: 0.139549
+Iteration  99, time: 1m 12s, best minima: 0.139400, worst: 0.148200, mean: 0.139538
+Iteration 100, time: 1m 13s, best minima: 0.139400, worst: 0.148200, mean: 0.139517
+PSO finished, top-10 particles:
+particle   1, minima=0.1394
+particle   2, minima=0.1394
+particle   3, minima=0.1394
+particle   4, minima=0.1394
+particle   5, minima=0.1394
+particle   6, minima=0.1394
+particle   7, minima=0.1394
+particle   8, minima=0.1394
+particle   9, minima=0.1394
+particle  10, minima=0.1394
+Trained in  0.19s.
+Validation set predicted with 0.8372 accuracy.
+Test set
+Accuracy  = 0.8156
+Precision = 0.821535
+Recall    = 0.813304
+F1        = 0.817399
+Confusion matrix:
+ 900    0   20   17    0   20   15    4    4    0
+   0 1088    4    7    0    3    5    0   28    0
+  11   20  792   35   22    1   52   12   84    3
+   5    8  111  784    1   52    7   22   18    2
+   3   55    4    0  799    2   12   11   47   49
+  11   31    7   81    6  629   21   41   56    9
+  17   17   21    4   23   18  851    1    6    0
+   2   34   43   36    3    0    0  856   25   29
+  11   21   26   50    7   24   16   15  803    1
+  10   15   15   25   57    3    2   82  146  654
+CNN trained in  4.48s.
+Accuracy  = 0.8562
+Precision = 0.866069
+Recall    = 0.857336
+F1        = 0.861681
+Confusion matrix:
+ 946    0    3    0    0   15    6    4    6    0
+   0  955    4    3    1    1    6    1  163    1
+   7    0  928   24    9    0   31   11   22    0
+   0    0  131  798    0   53    1   19    8    0
+   3   28    3    2  897    0   12    7   18   12
+   3    1    6   28    1  776    5   64    8    0
+  18    2    6    5   14    3  905    2    2    1
+   3    1   60   27    0    0    0  864   13   60
+   6    0   33   60    9   14    7   25  817    3
+   6    0    3   17   21    2    1   59  224  676

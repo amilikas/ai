@@ -1,0 +1,86 @@
+Network: c10-bpga-cnn
+Input, shape:[32,32,3], parameters: 0, memory:12.0 KB
+Conv2D(ReLU), shape:[28,28,32] (k:5,s:1,pad:no), parameters:2400, memory:116.8 KB
+Maxpool2D shape:[14,14,32] (k:2,s:2), parameters:0, memory:24.5 KB
+Dropout, ratio:0.25, shape:[14,14,32], parameters:0, memory:24.5 KB
+Conv2D(ReLU), shape:[12,12,64] (k:3,s:1,pad:no), parameters:18432, memory:180.0 KB
+Maxpool2D shape:[6,6,64] (k:2,s:2), parameters:0, memory:9.0 KB
+Dropout, ratio:0.25, shape:[6,6,64], parameters:0, memory:9.0 KB
+Conv2D(ReLU), shape:[4,4,128] (k:3,s:1,pad:no), parameters:73728, memory:584.0 KB
+Maxpool2D shape:[2,2,128] (k:2,s:2), parameters:0, memory:2.0 KB
+Dense(ReLU), shape:[128], parameters:65664, memory:513.0 KB
+Dense(softmax), shape:[10], parameters:1290, memory:10.1 KB
+
+Mutation probability: 0.2
+Learning rate: 0.0005
+
+SEED=48
+epochs: 5, accuracy (training, validation, test): 0.695975, 0.6605, 0.6624
+epochs: 10, accuracy (training, validation, test): 0.7792, 0.7126, 0.7108
+epochs: 15, accuracy (training, validation, test): 0.833, 0.7361, 0.7332
+epochs: 20, accuracy (training, validation, test): 0.8655, 0.7446, 0.7389
+epochs: 25, accuracy (training, validation, test): 0.88865, 0.7497, 0.743
+epochs: 30, accuracy (training, validation, test): 0.908175, 0.7561, 0.7465
+epochs: 35, accuracy (training, validation, test): 0.9244, 0.7568, 0.7482
+epochs: 40, accuracy (training, validation, test): 0.91835, 0.7429, 0.7375
+epochs: 45, accuracy (training, validation, test): 0.942925, 0.7478, 0.7458
+epochs: 50, accuracy (training, validation, test): 0.95245, 0.7529, 0.7492
+epochs: 55, accuracy (training, validation, test): 0.95885, 0.7562, 0.7531
+epochs: 60, accuracy (training, validation, test): 0.9535, 0.7534, 0.7458
+epochs: 65, accuracy (training, validation, test): 0.96505, 0.7551, 0.7503
+epochs: 70, accuracy (training, validation, test): 0.973075, 0.7595, 0.7518
+epochs: 75, accuracy (training, validation, test): 0.974325, 0.7564, 0.7501
+epochs: 80, accuracy (training, validation, test): 0.97975, 0.7572, 0.7526
+epochs: 85, accuracy (training, validation, test): 0.9804, 0.7623, 0.7546
+epochs: 90, accuracy (training, validation, test): 0.9793, 0.7596, 0.7556
+epochs: 95, accuracy (training, validation, test): 0.98575, 0.76, 0.7553
+epochs: 100, accuracy (training, validation, test): 0.9837, 0.7579, 0.75
+epochs: 105, accuracy (training, validation, test): 0.98555, 0.7631, 0.7545
+epochs: 110, accuracy (training, validation, test): 0.98515, 0.7578, 0.7474
+epochs: 115, accuracy (training, validation, test): 0.989825, 0.7601, 0.7514
+epochs: 120, accuracy (training, validation, test): 0.98105, 0.7494, 0.7456
+epochs: 125, accuracy (training, validation, test): 0.9883, 0.7581, 0.7566
+epochs: 130, accuracy (training, validation, test): 0.990225, 0.7565, 0.7529
+epochs: 135, accuracy (training, validation, test): 0.99015, 0.7553, 0.7529
+epochs: 140, accuracy (training, validation, test): 0.98785, 0.7519, 0.7512
+epochs: 145, accuracy (training, validation, test): 0.98685, 0.7528, 0.746
+epochs: 150, accuracy (training, validation, test): 0.9904, 0.7531, 0.75
+epochs: 155, accuracy (training, validation, test): 0.993375, 0.7538, 0.7542
+epochs: 160, accuracy (training, validation, test): 0.99435, 0.7565, 0.7535
+epochs: 165, accuracy (training, validation, test): 0.993275, 0.754, 0.7521
+epochs: 170, accuracy (training, validation, test): 0.99315, 0.7558, 0.7547
+epochs: 175, accuracy (training, validation, test): 0.991, 0.7539, 0.7475
+epochs: 180, accuracy (training, validation, test): 0.994025, 0.7592, 0.7534
+epochs: 185, accuracy (training, validation, test): 0.99295, 0.7535, 0.7496
+epochs: 190, accuracy (training, validation, test): 0.9925, 0.7521, 0.7516
+epochs: 195, accuracy (training, validation, test): 0.994225, 0.7543, 0.7558
+epochs: 200, accuracy (training, validation, test): 0.99545, 0.7588, 0.7522
+epochs: 205, accuracy (training, validation, test): 0.995275, 0.7632, 0.7563
+epochs: 210, accuracy (training, validation, test): 0.99265, 0.7554, 0.7553
+epochs: 215, accuracy (training, validation, test): 0.994575, 0.756, 0.7498
+epochs: 220, accuracy (training, validation, test): 0.995225, 0.7531, 0.7524
+epochs: 225, accuracy (training, validation, test): 0.996675, 0.762, 0.7572
+epochs: 230, accuracy (training, validation, test): 0.9936, 0.7483, 0.7505
+epochs: 235, accuracy (training, validation, test): 0.993275, 0.7512, 0.7508
+epochs: 240, accuracy (training, validation, test): 0.995275, 0.755, 0.7487
+epochs: 245, accuracy (training, validation, test): 0.99305, 0.7501, 0.7513
+epochs: 250, accuracy (training, validation, test): 0.994, 0.7501, 0.7505
+epochs: 255, accuracy (training, validation, test): 0.9965, 0.7528, 0.7539
+epochs: 260, accuracy (training, validation, test): 0.996975, 0.7575, 0.7551
+epochs: 265, accuracy (training, validation, test): 0.99475, 0.7492, 0.747
+epochs: 270, accuracy (training, validation, test): 0.99165, 0.7516, 0.7469
+epochs: 275, accuracy (training, validation, test): 0.9951, 0.7561, 0.7506
+epochs: 280, accuracy (training, validation, test): 0.995525, 0.7562, 0.7563
+epochs: 285, accuracy (training, validation, test): 0.996, 0.7562, 0.7531
+epochs: 290, accuracy (training, validation, test): 0.99565, 0.7541, 0.752
+epochs: 295, accuracy (training, validation, test): 0.997075, 0.7566, 0.7533
+epochs: 300, accuracy (training, validation, test): 0.994975, 0.7495, 0.7503
+epochs: 305, accuracy (training, validation, test): 0.997075, 0.759, 0.7526
+epochs: 310, accuracy (training, validation, test): 0.995575, 0.757, 0.7538
+epochs: 315, accuracy (training, validation, test): 0.9964, 0.7554, 0.7556
+epochs: 320, accuracy (training, validation, test): 0.9961, 0.7589, 0.7489
+epochs: 325, accuracy (training, validation, test): 0.9972, 0.7568, 0.751
+epochs: 330, accuracy (training, validation, test): 0.99635, 0.7579, 0.7529
+epochs: 335, accuracy (training, validation, test): 0.9928, 0.7496, 0.7443
+epochs: 340, accuracy (training, validation, test): 0.9971, 0.7558, 0.7526
+epochs: 345, accuracy (training, validation, test): 0.996225, 0.7556, 0.7503

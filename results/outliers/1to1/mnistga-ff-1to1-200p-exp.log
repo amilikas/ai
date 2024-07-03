@@ -1,0 +1,205 @@
+CPU: [AMD Ryzen 9 5900X 12-Core Processor]
+12 threads with OpenMP
+Training data: (2000,784) 6.0 MB
+Validation data: (5000,784) 15.0 MB
+Testing data: (10000,784) 29.9 MB
+Network: mnistga-ff-1to1-200p
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Dense(softmax), shape:[10], parameters:7850, memory:61.3 KB
+
+Number of bits in each bitstring: 2000
+Evolving 200 members for 150 generations...
+Generation   1, time: 18.64s, fitness max: 0.066964, min: 0.018478, mean: 0.036526
+Generation   2, time: 17.62s, fitness max: 0.066964, min: 0.019247, mean: 0.038133
+Generation   3, time: 17.40s, fitness max: 0.066964, min: 0.018544, mean: 0.038610
+Generation   4, time: 17.00s, fitness max: 0.066964, min: 0.022523, mean: 0.039679
+Generation   5, time: 16.58s, fitness max: 0.066964, min: 0.019833, mean: 0.042826
+Generation   6, time: 17.15s, fitness max: 0.075050, min: 0.018678, mean: 0.043855
+Generation   7, time: 18.75s, fitness max: 0.075050, min: 0.020000, mean: 0.045017
+Generation   8, time: 17.90s, fitness max: 0.077336, min: 0.022496, mean: 0.046049
+Generation   9, time: 18.80s, fitness max: 0.077336, min: 0.025062, mean: 0.047227
+Generation  10, time: 19.55s, fitness max: 0.077336, min: 0.024823, mean: 0.049450
+Generation  11, time: 18.09s, fitness max: 0.080267, min: 0.026389, mean: 0.050690
+Generation  12, time: 18.22s, fitness max: 0.093593, min: 0.022905, mean: 0.051422
+Generation  13, time: 16.50s, fitness max: 0.093593, min: 0.027160, mean: 0.053228
+Generation  14, time: 19.07s, fitness max: 0.093593, min: 0.029754, mean: 0.055235
+Generation  15, time: 17.32s, fitness max: 0.093593, min: 0.030041, mean: 0.056226
+Generation  16, time: 17.72s, fitness max: 0.093593, min: 0.030550, mean: 0.056736
+Generation  17, time: 19.52s, fitness max: 0.093593, min: 0.028736, mean: 0.057965
+Generation  18, time: 18.70s, fitness max: 0.094837, min: 0.030005, mean: 0.060244
+Generation  19, time: 17.48s, fitness max: 0.096328, min: 0.031254, mean: 0.063010
+Generation  20, time: 17.94s, fitness max: 0.102162, min: 0.028736, mean: 0.063350
+Generation  21, time: 19.70s, fitness max: 0.102162, min: 0.026708, mean: 0.065494
+Generation  22, time: 18.47s, fitness max: 0.106800, min: 0.033912, mean: 0.066369
+Generation  23, time: 17.53s, fitness max: 0.106800, min: 0.039637, mean: 0.067770
+Generation  24, time: 19.55s, fitness max: 0.118126, min: 0.036009, mean: 0.069056
+Generation  25, time: 19.16s, fitness max: 0.121724, min: 0.033347, mean: 0.070539
+Generation  26, time: 18.28s, fitness max: 0.121724, min: 0.033993, mean: 0.073259
+Generation  27, time: 20.50s, fitness max: 0.121724, min: 0.041486, mean: 0.073505
+Generation  28, time: 17.96s, fitness max: 0.121724, min: 0.036400, mean: 0.073592
+Generation  29, time: 18.00s, fitness max: 0.121724, min: 0.044690, mean: 0.075307
+Generation  30, time: 17.92s, fitness max: 0.124382, min: 0.036312, mean: 0.077731
+Generation  31, time: 19.16s, fitness max: 0.124382, min: 0.042189, mean: 0.078740
+Generation  32, time: 17.35s, fitness max: 0.124382, min: 0.040697, mean: 0.081005
+Generation  33, time: 18.81s, fitness max: 0.124382, min: 0.043630, mean: 0.081583
+Generation  34, time: 21.77s, fitness max: 0.127403, min: 0.044370, mean: 0.081025
+Generation  35, time: 18.87s, fitness max: 0.127403, min: 0.038976, mean: 0.083398
+Generation  36, time: 19.07s, fitness max: 0.127403, min: 0.040599, mean: 0.083073
+Generation  37, time: 21.18s, fitness max: 0.127403, min: 0.043058, mean: 0.085146
+Generation  38, time: 19.49s, fitness max: 0.146256, min: 0.042138, mean: 0.086731
+Generation  39, time: 19.68s, fitness max: 0.146256, min: 0.045666, mean: 0.088777
+Generation  40, time: 20.47s, fitness max: 0.146256, min: 0.048665, mean: 0.092339
+Generation  41, time: 18.98s, fitness max: 0.146256, min: 0.049489, mean: 0.090218
+Generation  42, time: 19.81s, fitness max: 0.146256, min: 0.048316, mean: 0.093072
+Generation  43, time: 15.91s, fitness max: 0.146256, min: 0.038604, mean: 0.093167
+Generation  44, time: 15.84s, fitness max: 0.146607, min: 0.052424, mean: 0.094257
+Generation  45, time: 15.59s, fitness max: 0.146607, min: 0.038511, mean: 0.096986
+Generation  46, time: 15.66s, fitness max: 0.147666, min: 0.044744, mean: 0.098717
+Generation  47, time: 17.61s, fitness max: 0.154556, min: 0.050449, mean: 0.098041
+Generation  48, time: 16.03s, fitness max: 0.154556, min: 0.047854, mean: 0.099767
+Generation  49, time: 16.41s, fitness max: 0.154556, min: 0.051860, mean: 0.103777
+Generation  50, time: 15.50s, fitness max: 0.154556, min: 0.049016, mean: 0.103728
+Generation  51, time: 18.09s, fitness max: 0.155113, min: 0.048258, mean: 0.107418
+Generation  52, time: 16.66s, fitness max: 0.156986, min: 0.055465, mean: 0.109302
+Generation  53, time: 15.07s, fitness max: 0.156986, min: 0.061865, mean: 0.110017
+Generation  54, time: 18.31s, fitness max: 0.162936, min: 0.058683, mean: 0.109418
+Generation  55, time: 15.62s, fitness max: 0.162936, min: 0.051923, mean: 0.110576
+Generation  56, time: 16.11s, fitness max: 0.162936, min: 0.063749, mean: 0.110501
+Generation  57, time: 16.26s, fitness max: 0.162936, min: 0.060543, mean: 0.112853
+Generation  58, time: 18.88s, fitness max: 0.162936, min: 0.072136, mean: 0.114979
+Generation  59, time: 15.60s, fitness max: 0.162936, min: 0.062014, mean: 0.116113
+Generation  60, time: 17.41s, fitness max: 0.169517, min: 0.072396, mean: 0.117058
+Generation  61, time: 15.47s, fitness max: 0.175100, min: 0.074691, mean: 0.119564
+Generation  62, time: 14.91s, fitness max: 0.175100, min: 0.063596, mean: 0.122322
+Generation  63, time: 14.94s, fitness max: 0.175100, min: 0.073800, mean: 0.120672
+Generation  64, time: 14.43s, fitness max: 0.175100, min: 0.057154, mean: 0.121224
+Generation  65, time: 14.53s, fitness max: 0.175100, min: 0.064985, mean: 0.121764
+Generation  66, time: 16.80s, fitness max: 0.189077, min: 0.064441, mean: 0.121443
+Generation  67, time: 14.83s, fitness max: 0.189077, min: 0.073358, mean: 0.124868
+Generation  68, time: 17.80s, fitness max: 0.189077, min: 0.051365, mean: 0.127646
+Generation  69, time: 19.55s, fitness max: 0.189077, min: 0.068673, mean: 0.127447
+Generation  70, time: 18.62s, fitness max: 0.189077, min: 0.067935, mean: 0.127368
+Generation  71, time: 18.49s, fitness max: 0.189077, min: 0.077988, mean: 0.128128
+Generation  72, time: 16.23s, fitness max: 0.189077, min: 0.068838, mean: 0.128356
+Generation  73, time: 17.64s, fitness max: 0.189077, min: 0.071105, mean: 0.130152
+Generation  74, time: 16.91s, fitness max: 0.190443, min: 0.076139, mean: 0.132606
+Generation  75, time: 15.56s, fitness max: 0.190443, min: 0.063368, mean: 0.131371
+Generation  76, time: 21.66s, fitness max: 0.190443, min: 0.083609, mean: 0.134898
+Generation  77, time: 18.48s, fitness max: 0.190443, min: 0.085230, mean: 0.136265
+Generation  78, time: 20.62s, fitness max: 0.190443, min: 0.072745, mean: 0.138151
+Generation  79, time: 18.90s, fitness max: 0.190443, min: 0.070764, mean: 0.139099
+Generation  80, time: 19.94s, fitness max: 0.190443, min: 0.085538, mean: 0.138273
+Generation  81, time: 19.57s, fitness max: 0.193902, min: 0.079214, mean: 0.137730
+Generation  82, time: 23.05s, fitness max: 0.193902, min: 0.093481, mean: 0.142537
+Generation  83, time: 21.76s, fitness max: 0.201010, min: 0.077708, mean: 0.143385
+Generation  84, time: 19.03s, fitness max: 0.201010, min: 0.086778, mean: 0.144290
+Generation  85, time: 23.54s, fitness max: 0.205153, min: 0.089959, mean: 0.148874
+Generation  86, time: 21.09s, fitness max: 0.209884, min: 0.072309, mean: 0.146027
+Generation  87, time: 23.12s, fitness max: 0.209884, min: 0.095751, mean: 0.148261
+Generation  88, time: 17.36s, fitness max: 0.209884, min: 0.072919, mean: 0.151223
+Generation  89, time: 19.93s, fitness max: 0.209884, min: 0.081333, mean: 0.149808
+Generation  90, time: 17.63s, fitness max: 0.209884, min: 0.089959, mean: 0.150395
+Generation  91, time: 20.24s, fitness max: 0.209884, min: 0.096097, mean: 0.153245
+Generation  92, time: 19.94s, fitness max: 0.209884, min: 0.095293, mean: 0.150084
+Generation  93, time: 20.06s, fitness max: 0.209884, min: 0.091373, mean: 0.152215
+Generation  94, time: 20.41s, fitness max: 0.209884, min: 0.085640, mean: 0.151561
+Generation  95, time: 19.64s, fitness max: 0.230478, min: 0.086882, mean: 0.155933
+Generation  96, time: 24.18s, fitness max: 0.230478, min: 0.087615, mean: 0.157177
+Generation  97, time: 27.67s, fitness max: 0.230478, min: 0.072309, mean: 0.156354
+Generation  98, time: 22.22s, fitness max: 0.230478, min: 0.088886, mean: 0.159039
+Generation  99, time: 26.70s, fitness max: 0.230478, min: 0.095637, mean: 0.158592
+Generation 100, time: 25.39s, fitness max: 0.230478, min: 0.103271, mean: 0.166416
+Generation 101, time: 22.23s, fitness max: 0.230478, min: 0.095751, mean: 0.162615
+Generation 102, time: 24.33s, fitness max: 0.230478, min: 0.072570, mean: 0.164688
+Generation 103, time: 23.28s, fitness max: 0.237497, min: 0.068508, mean: 0.160768
+Generation 104, time: 23.56s, fitness max: 0.237497, min: 0.092366, mean: 0.163747
+Generation 105, time: 21.86s, fitness max: 0.237497, min: 0.090284, mean: 0.167212
+Generation 106, time: 22.17s, fitness max: 0.237497, min: 0.066324, mean: 0.165306
+Generation 107, time: 21.90s, fitness max: 0.237497, min: 0.097842, mean: 0.168855
+Generation 108, time: 22.02s, fitness max: 0.237497, min: 0.100339, mean: 0.166596
+Generation 109, time: 22.22s, fitness max: 0.237497, min: 0.089100, mean: 0.167999
+Generation 110, time: 21.82s, fitness max: 0.237497, min: 0.100339, mean: 0.168146
+Generation 111, time: 21.34s, fitness max: 0.237497, min: 0.098786, mean: 0.167777
+Generation 112, time: 24.40s, fitness max: 0.237497, min: 0.101429, mean: 0.169177
+Generation 113, time: 23.01s, fitness max: 0.237497, min: 0.084012, mean: 0.170171
+Generation 114, time: 28.85s, fitness max: 0.237497, min: 0.090284, mean: 0.171875
+Generation 115, time: 21.31s, fitness max: 0.242683, min: 0.102162, mean: 0.173752
+Generation 116, time: 22.97s, fitness max: 0.242683, min: 0.110449, mean: 0.175371
+Generation 117, time: 21.74s, fitness max: 0.242683, min: 0.106034, mean: 0.174683
+Generation 118, time: 23.24s, fitness max: 0.242683, min: 0.099500, mean: 0.175818
+Generation 119, time: 18.02s, fitness max: 0.242683, min: 0.095751, mean: 0.176933
+Generation 120, time: 19.53s, fitness max: 0.244730, min: 0.088993, mean: 0.179139
+Generation 121, time: 24.12s, fitness max: 0.244730, min: 0.095407, mean: 0.178568
+Generation 122, time: 21.95s, fitness max: 0.244730, min: 0.100219, mean: 0.178618
+Generation 123, time: 19.11s, fitness max: 0.244730, min: 0.094609, mean: 0.180440
+Generation 124, time: 23.36s, fitness max: 0.246794, min: 0.084822, mean: 0.180428
+Generation 125, time: 22.91s, fitness max: 0.246794, min: 0.102407, mean: 0.184004
+Generation 126, time: 19.48s, fitness max: 0.246794, min: 0.098313, mean: 0.181917
+Generation 127, time: 19.92s, fitness max: 0.246794, min: 0.097725, mean: 0.183789
+Generation 128, time: 20.25s, fitness max: 0.246794, min: 0.102900, mean: 0.180855
+Generation 129, time: 18.99s, fitness max: 0.246794, min: 0.095522, mean: 0.183757
+Generation 130, time: 22.65s, fitness max: 0.250975, min: 0.110582, mean: 0.186764
+Generation 131, time: 21.57s, fitness max: 0.257689, min: 0.109394, mean: 0.187650
+Generation 132, time: 19.96s, fitness max: 0.257689, min: 0.103023, mean: 0.190119
+Generation 133, time: 23.46s, fitness max: 0.257689, min: 0.126337, mean: 0.190736
+Generation 134, time: 24.16s, fitness max: 0.257689, min: 0.099859, mean: 0.192064
+Generation 135, time: 20.04s, fitness max: 0.257689, min: 0.113132, mean: 0.191528
+Generation 136, time: 19.66s, fitness max: 0.257689, min: 0.105399, mean: 0.188798
+Generation 137, time: 25.16s, fitness max: 0.257689, min: 0.094269, mean: 0.188645
+Generation 138, time: 21.25s, fitness max: 0.262685, min: 0.119266, mean: 0.193575
+Generation 139, time: 29.69s, fitness max: 0.262685, min: 0.100099, mean: 0.191728
+Generation 140, time: 30.13s, fitness max: 0.262685, min: 0.118837, mean: 0.190572
+Generation 141, time: 30.38s, fitness max: 0.262685, min: 0.113268, mean: 0.192937
+Generation 142, time: 30.34s, fitness max: 0.262685, min: 0.102039, mean: 0.194574
+Generation 143, time: 33.33s, fitness max: 0.262685, min: 0.108479, mean: 0.194472
+Generation 144, time: 31.99s, fitness max: 0.262685, min: 0.121724, mean: 0.194999
+Generation 145, time: 36.35s, fitness max: 0.262685, min: 0.126945, mean: 0.199470
+Generation 146, time: 28.04s, fitness max: 0.266815, min: 0.110184, mean: 0.198810
+Generation 147, time: 27.93s, fitness max: 0.266815, min: 0.118268, mean: 0.198618
+Generation 148, time: 26.11s, fitness max: 0.266815, min: 0.109394, mean: 0.200425
+Generation 149, time: 24.53s, fitness max: 0.266815, min: 0.128478, mean: 0.201769
+Generation 150, time: 20.40s, fitness max: 0.266815, min: 0.109788, mean: 0.199412
+Evolution finished, top-10 members:
+member   1, fitness=0.266815
+member   2, fitness=0.264901
+member   3, fitness=0.262685
+member   4, fitness=0.262685
+member   5, fitness=0.261427
+member   6, fitness=0.257999
+member   7, fitness=0.255534
+member   8, fitness=0.251277
+member   9, fitness=0.247387
+member  10, fitness=0.245907
+Trained in  0.11s.
+Validation set predicted with 0.751 accuracy.
+Accuracy  = 0.7261
+Precision = 0.737472
+Recall    = 0.721686
+F1        = 0.729494
+Confusion matrix:
+ 703    0   16   36  128   14   46   27    2    8
+   0 1039    8    8    0    1    4    3   71    1
+   0   22  772   25   21    1  124   21   39    7
+   0    6  193  661    3   49   11   61   20    6
+   0  186    9    0  580    0    4   26   28  149
+   4   50   11   49   48  513   32  149   23   13
+   3   19    8    2   40   18  817    3    4   44
+   0   27   42   31   11    0    2  872   34    9
+   2   22   42  144   28   20   33   33  629   21
+   3   18   16   25   63    0    7  114   88  675
+CNN trained in  1.74s.
+Accuracy  = 0.7098
+Precision = 0.734556
+Recall    = 0.704457
+F1        = 0.719192
+Confusion matrix:
+ 726    0    1    4  181    2   18   46    2    0
+   0 1080    2   12    0    1    6    6   28    0
+   2    4  823   16    5    0  161   19    0    2
+   0    2  194  677    0   31    3  101    0    2
+   1  478    5    0  380    0   19   12   11   76
+   2    3    3   19    3  596   13  251    0    2
+  14   14   15    0   17   21  820   14    1   42
+   2   12   56   17    0    0    3  927    1   10
+   6   16   17  332    8   49   62  107  341   36
+   3   25   12   13    4    2   16  153   53  728

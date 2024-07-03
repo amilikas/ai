@@ -1,0 +1,21 @@
+CPU: [AMD Ryzen 9 5900X 12-Core Processor]
+12 threads with OpenMP
+Training data: (2000,784) 6.0 MB
+Validation data: (5000,784) 15.0 MB
+Testing data: (10000,784) 29.9 MB
+Network: mnistga-ff
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Dense(softmax), shape:[10], parameters:7850, memory:61.3 KB
+
+CNN trained in  4.71s.
+Validation set predicted with 0.5206 accuracy.
+Test set predicted with 0.5387 accuracy.
+CNN trained in  4.63s.
+Validation set predicted with 0.5206 accuracy.
+Test set predicted with 0.5387 accuracy.
+CNN trained in  2.45s.
+Validation set predicted with 0.9342 accuracy.
+Test set predicted with 0.9239 accuracy.
+CNN trained in  2.50s.
+Validation set predicted with 0.9342 accuracy.
+Test set predicted with 0.9239 accuracy.

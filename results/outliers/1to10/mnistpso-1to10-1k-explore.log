@@ -1,0 +1,106 @@
+CPU: [AMD Ryzen 9 5900X 12-Core Processor]
+12 threads with OpenMP
+Training data: (2000,784) 6.0 MB
+Validation data: (5000,784) 15.0 MB
+Testing data: (10000,784) 29.9 MB
+Network: mnistpso-ff
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Dense(softmax), shape:[10], parameters:7850, memory:61.3 KB
+
+Number of values in each chain: 200
+Searching with 1000 particles for 50 iterations...
+Iteration   1, time: 1m 19s, best minima: 0.386400, worst: 0.781400, mean: 0.563388
+Iteration   2, time: 1m 15s, best minima: 0.319200, worst: 0.569600, mean: 0.422338
+Iteration   3, time: 1m 15s, best minima: 0.265400, worst: 0.482000, mean: 0.378522
+Iteration   4, time: 1m 14s, best minima: 0.265400, worst: 0.461200, mean: 0.362916
+Iteration   5, time: 1m 15s, best minima: 0.265400, worst: 0.461200, mean: 0.347464
+Iteration   6, time: 1m 14s, best minima: 0.249200, worst: 0.411800, mean: 0.335219
+Iteration   7, time: 1m 18s, best minima: 0.230200, worst: 0.410800, mean: 0.316044
+Iteration   8, time: 1m 12s, best minima: 0.227400, worst: 0.397800, mean: 0.300264
+Iteration   9, time: 1m 27s, best minima: 0.227400, worst: 0.362600, mean: 0.291077
+Iteration  10, time: 1m 23s, best minima: 0.207800, worst: 0.359000, mean: 0.281612
+Iteration  11, time: 1m 21s, best minima: 0.207800, worst: 0.358000, mean: 0.273680
+Iteration  12, time: 1m 23s, best minima: 0.207200, worst: 0.335400, mean: 0.265707
+Iteration  13, time: 1m 19s, best minima: 0.195400, worst: 0.322400, mean: 0.256929
+Iteration  14, time: 1m 22s, best minima: 0.191400, worst: 0.322400, mean: 0.248949
+Iteration  15, time: 1m 18s, best minima: 0.186400, worst: 0.322400, mean: 0.244565
+Iteration  16, time: 1m 18s, best minima: 0.184000, worst: 0.320200, mean: 0.236630
+Iteration  17, time: 1m 21s, best minima: 0.176800, worst: 0.320200, mean: 0.232541
+Iteration  18, time: 1m 21s, best minima: 0.164000, worst: 0.293400, mean: 0.219327
+Iteration  19, time: 1m 19s, best minima: 0.156000, worst: 0.290600, mean: 0.213327
+Iteration  20, time: 1m 12s, best minima: 0.156000, worst: 0.287600, mean: 0.206845
+Iteration  21, time: 1m 11s, best minima: 0.156000, worst: 0.287600, mean: 0.201338
+Iteration  22, time: 1m 11s, best minima: 0.156000, worst: 0.270800, mean: 0.194357
+Iteration  23, time: 1m 13s, best minima: 0.155800, worst: 0.251800, mean: 0.188993
+Iteration  24, time: 1m 19s, best minima: 0.155800, worst: 0.249200, mean: 0.185180
+Iteration  25, time: 1m 19s, best minima: 0.155600, worst: 0.249200, mean: 0.181999
+Iteration  26, time: 1m 22s, best minima: 0.155600, worst: 0.249200, mean: 0.179909
+Iteration  27, time: 1m 15s, best minima: 0.153200, worst: 0.249200, mean: 0.177458
+Iteration  28, time: 1m 16s, best minima: 0.151800, worst: 0.245400, mean: 0.175707
+Iteration  29, time: 1m 13s, best minima: 0.151800, worst: 0.233400, mean: 0.174948
+Iteration  30, time: 1m 14s, best minima: 0.148200, worst: 0.224800, mean: 0.173194
+Iteration  31, time: 1m 12s, best minima: 0.148000, worst: 0.224800, mean: 0.171993
+Iteration  32, time: 1m 13s, best minima: 0.148000, worst: 0.224800, mean: 0.171184
+Iteration  33, time: 1m 11s, best minima: 0.148000, worst: 0.224800, mean: 0.170328
+Iteration  34, time: 1m 16s, best minima: 0.146400, worst: 0.219200, mean: 0.168843
+Iteration  35, time: 1m 11s, best minima: 0.146400, worst: 0.210400, mean: 0.167850
+Iteration  36, time: 1m 10s, best minima: 0.144000, worst: 0.210400, mean: 0.166811
+Iteration  37, time: 65.67s, best minima: 0.144000, worst: 0.210400, mean: 0.165592
+Iteration  38, time: 1m 10s, best minima: 0.144000, worst: 0.210400, mean: 0.164607
+Iteration  39, time: 1m 12s, best minima: 0.144000, worst: 0.201000, mean: 0.163135
+Iteration  40, time: 1m 17s, best minima: 0.140200, worst: 0.192000, mean: 0.161644
+Iteration  41, time: 1m 23s, best minima: 0.140200, worst: 0.189800, mean: 0.161239
+Iteration  42, time: 1m 21s, best minima: 0.140200, worst: 0.189800, mean: 0.160403
+Iteration  43, time: 1m 19s, best minima: 0.140200, worst: 0.189800, mean: 0.159171
+Iteration  44, time: 69.90s, best minima: 0.139600, worst: 0.189800, mean: 0.158185
+Iteration  45, time: 67.67s, best minima: 0.139600, worst: 0.189800, mean: 0.157520
+Iteration  46, time: 67.63s, best minima: 0.136400, worst: 0.186600, mean: 0.156704
+Iteration  47, time: 1m 15s, best minima: 0.136400, worst: 0.186600, mean: 0.155973
+Iteration  48, time: 1m 10s, best minima: 0.136400, worst: 0.182800, mean: 0.155478
+Iteration  49, time: 68.97s, best minima: 0.136400, worst: 0.182800, mean: 0.154597
+Iteration  50, time: 1m 14s, best minima: 0.136400, worst: 0.178200, mean: 0.153748
+PSO finished, top-10 particles:
+particle   1, minima=0.1364
+particle   2, minima=0.1366
+particle   3, minima=0.1378
+particle   4, minima=0.1384
+particle   5, minima=0.139
+particle   6, minima=0.1396
+particle   7, minima=0.1398
+particle   8, minima=0.1402
+particle   9, minima=0.1402
+particle  10, minima=0.1402
+Trained in  0.17s.
+Validation set predicted with 0.8456 accuracy.
+Test set
+Accuracy  = 0.8232
+Precision = 0.823174
+Recall    = 0.821336
+F1        = 0.822254
+Confusion matrix:
+ 878    0   17   12   19   21   24    4    5    0
+   0 1078    1   14    0   17    6    2   17    0
+   8    6  810   20   29    2   61   28   58   10
+   4    7   52  764    2  130   10   21   13    7
+   3   22    1    3  750    7   14   12   27  143
+   6    8    2   57   46  711   24   17   11   10
+  13    6    9    5   17   26  877    2    2    1
+   1   15   21   38    7    0    1  897   13   35
+   7   14   13  147   15   49   25   13  662   29
+   8    5   10   33   55   19    3   59   12  805
+CNN trained in  3.71s.
+Accuracy  = 0.8876
+Precision = 0.8873
+Recall    = 0.888005
+F1        = 0.887653
+Confusion matrix:
+ 941    0    1    5   24    2    3    2    2    0
+   0 1066    3    3    0    1    6    7   48    1
+  11    0  858   20    6    0   72   35   28    2
+   1    0   67  826    0   94    1   14    4    3
+   2    9    0    0  917    1    4   17    6   26
+   3    1    1   10    1  858    5   10    3    0
+  20    2    0    1   12    9  911    1    1    1
+   1    2   15   16    1    0    1  941    6   45
+   7    4   27  119   10   23   11   37  711   25
+   9    2    0   13   21    8    1   82   26  847

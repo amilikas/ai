@@ -1,0 +1,103 @@
+Network: mnist-bpga-mlp
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Dense(ReLU), shape:[64], parameters:50240, memory:392.5 KB
+Dense(softmax), shape:[10], parameters:650, memory:5.1 KB
+
+Mutation probability: 0.2
+Learning rate: 0.3
+
+Total values needed to encode all trainable parameters: 50890
+
+
+Seed: 48
+----------
+
+Crossover: Full+Some+Uniform, learning rate: 0.3, mutation epochs: 15
+evolving 20 members for 40 generations...
+Generation   1, time:  0.31s, fitness max: 0.125100, min: 0.042700, mean: 0.089905
+Generation   2, time: 2m 08s, fitness max: 0.950700, min: 0.060900, mean: 0.307105
+Generation   3, time: 1m 32s, fitness max: 0.961900, min: 0.061600, mean: 0.669975
+Generation   4, time: 1m 32s, fitness max: 0.964200, min: 0.206000, mean: 0.717085
+Generation   5, time: 1m 32s, fitness max: 0.966400, min: 0.271900, mean: 0.751640
+Generation   6, time: 46.48s, fitness max: 0.968400, min: 0.366800, mean: 0.747710
+Generation   7, time: 1m 55s, fitness max: 0.970200, min: 0.581800, mean: 0.869875
+Generation   8, time: 2m 16s, fitness max: 0.970200, min: 0.650400, mean: 0.916785
+Generation   9, time: 1m 31s, fitness max: 0.972700, min: 0.666500, mean: 0.917595
+Generation  10, time: 23.10s, fitness max: 0.972700, min: 0.729500, mean: 0.914400
+Generation  11, time: 45.95s, fitness max: 0.972700, min: 0.708600, mean: 0.922670
+Generation  12, time: 69.69s, fitness max: 0.972700, min: 0.851200, mean: 0.940985
+Generation  13, time: 1m 10s, fitness max: 0.972700, min: 0.922600, mean: 0.955150
+Generation  14, time: 69.24s, fitness max: 0.972700, min: 0.886800, mean: 0.957290
+Generation  15, time: 25.32s, fitness max: 0.972700, min: 0.945500, mean: 0.962015
+Generation  16, time: 69.15s, fitness max: 0.972700, min: 0.955300, mean: 0.963685
+Generation  17, time: 1m 32s, fitness max: 0.974800, min: 0.927000, mean: 0.964270
+Generation  18, time: 46.08s, fitness max: 0.974800, min: 0.955900, mean: 0.965405
+Generation  19, time: 69.20s, fitness max: 0.974800, min: 0.917300, mean: 0.960820
+Generation  20, time: 45.42s, fitness max: 0.974800, min: 0.929200, mean: 0.960100
+Generation  21, time: 46.21s, fitness max: 0.974800, min: 0.932400, mean: 0.960525
+Generation  22, time: 1m 56s, fitness max: 0.974800, min: 0.941400, mean: 0.963860
+Generation  23, time: 1m 10s, fitness max: 0.974800, min: 0.924300, mean: 0.963550
+Generation  24, time: 69.63s, fitness max: 0.976100, min: 0.953300, mean: 0.968120
+Generation  25, time: 3m 03s, fitness max: 0.976100, min: 0.960900, mean: 0.970760
+Generation  26, time: 45.09s, fitness max: 0.977300, min: 0.966200, mean: 0.971635
+Generation  27, time: 1m 32s, fitness max: 0.977300, min: 0.966700, mean: 0.972175
+Generation  28, time: 1m 31s, fitness max: 0.977300, min: 0.963100, mean: 0.972090
+Generation  29, time: 1m 31s, fitness max: 0.977900, min: 0.963400, mean: 0.972455
+Generation  30, time: 47.21s, fitness max: 0.977900, min: 0.970600, mean: 0.973465
+Generation  31, time: 2m 18s, fitness max: 0.977900, min: 0.969700, mean: 0.973810
+Generation  32, time: 46.53s, fitness max: 0.977900, min: 0.970700, mean: 0.974700
+Generation  33, time: 69.05s, fitness max: 0.977900, min: 0.971400, mean: 0.974930
+Generation  34, time: 1m 32s, fitness max: 0.977900, min: 0.971000, mean: 0.975055
+Generation  35, time: 1m 54s, fitness max: 0.978000, min: 0.972000, mean: 0.975830
+Generation  36, time: 1m 31s, fitness max: 0.978000, min: 0.971100, mean: 0.976085
+Generation  37, time: 23.34s, fitness max: 0.978200, min: 0.973500, mean: 0.976295
+Generation  38, time: 69.31s, fitness max: 0.978200, min: 0.974100, mean: 0.976480
+Generation  39, time: 1m 59s, fitness max: 0.978200, min: 0.975600, mean: 0.977000
+Generation  40, time: 1m 34s, fitness max: 0.978500, min: 0.975700, mean: 0.977445
+evolution finished, top-5 members:
+member   1, fitness=0.978500
+member   2, fitness=0.978300
+member   3, fitness=0.978200
+member   4, fitness=0.978000
+member   5, fitness=0.977900
+member  20, fitness=0.975700
+Training set predicted with 1 accuracy.
+Validation set predicted with 0.9785 accuracy.
+Test set predicted with 0.9751 accuracy.
+sums_valid[0] = 0
+sums_test[0] = 0
+sums_valid[1] = 0
+sums_test[1] = 0
+sums_valid[2] = 0
+sums_test[2] = 0
+sums_valid[3] = 0
+sums_test[3] = 0
+sums_valid[4] = 0
+sums_test[4] = 0
+sums_valid[5] = 0
+sums_test[5] = 0
+sums_valid[6] = 0
+sums_test[6] = 0
+
+RESULTS:
+AvgFull:
+ mean valid accuracy: 0
+ mean test accuracy:  0
+AvgSome:
+ mean valid accuracy: 0
+ mean test accuracy:  0
+Uniform:
+ mean valid accuracy: 0
+ mean test accuracy:  0
+Full+Some:
+ mean valid accuracy: 0
+ mean test accuracy:  0
+Full+Uniform:
+ mean valid accuracy: 0
+ mean test accuracy:  0
+Some+Uniform:
+ mean valid accuracy: 0
+ mean test accuracy:  0
+Full+Some+Uniform:
+ mean valid accuracy: 0
+ mean test accuracy:  0
