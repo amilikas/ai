@@ -1,0 +1,96 @@
+Network: mnist-bpga-cnn
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Conv2D(ReLU), shape:[24,24,6] (k:5,s:1,pad:no), parameters:150, memory:14.7 KB
+Maxpool2D shape:[12,12,6] (k:2,s:2), parameters:0, memory:3.4 KB
+Conv2D(ReLU), shape:[12,12,16] (k:5,s:1,pad:same), parameters:2400, memory:27.8 KB
+Maxpool2D shape:[6,6,16] (k:2,s:2), parameters:0, memory:2.2 KB
+Conv2D(ReLU), shape:[5,5,120] (k:4,s:1,pad:same), parameters:30720, memory:251.7 KB
+Dense(ReLU), shape:[84], parameters:252084, memory:1.9 MB
+Dense(softmax), shape:[10], parameters:850, memory:6.6 KB
+
+Mutation probability: 0.2
+Learning rate: 0.01
+
+SEED=48
+1 epochs,  accuracy: validation=0.9594, test=0.962
+2 epochs,  accuracy: validation=0.9735, test=0.974
+3 epochs,  accuracy: validation=0.9781, test=0.9793
+4 epochs,  accuracy: validation=0.9801, test=0.9817
+5 epochs,  accuracy: validation=0.9816, test=0.984
+6 epochs,  accuracy: validation=0.9833, test=0.9839
+7 epochs,  accuracy: validation=0.9845, test=0.985
+8 epochs,  accuracy: validation=0.9850, test=0.9855
+9 epochs,  accuracy: validation=0.9841, test=0.9852
+10 epochs, accuracy: validation=0.9844, test=0.985
+11 epochs, accuracy: validation=0.9846, test=0.9858
+12 epochs, accuracy: validation=0.9841, test=0.9864
+13 epochs, accuracy: validation=0.9853, test=0.9865
+14 epochs, accuracy: validation=0.9863, test=0.9869
+15 epochs, accuracy: validation=0.9863, test=0.9868
+16 epochs, accuracy: validation=0.9883, test=0.9875
+17 epochs, accuracy: validation=0.9880, test=0.9868
+18 epochs, accuracy: validation=0.9881, test=0.9876
+19 epochs, accuracy: validation=0.9872, test=0.987
+20 epochs, accuracy: validation=0.9882, test=0.9882
+21 epochs, accuracy: validation=0.9864, test=0.9876
+22 epochs, accuracy: validation=0.9868, test=0.9861
+23 epochs, accuracy: validation=0.9873, test=0.9889
+24 epochs, accuracy: validation=0.9874, test=0.9888
+25 epochs, accuracy: validation=0.9867, test=0.9868
+26 epochs, accuracy: validation=0.9875, test=0.9882
+27 epochs, accuracy: validation=0.9867, test=0.987
+28 epochs, accuracy: validation=0.9855, test=0.9855
+29 epochs, accuracy: validation=0.9850, test=0.9858
+30 epochs, accuracy: validation=0.9879, test=0.9881
+31 epochs, accuracy: validation=0.9873, test=0.9882
+32 epochs, accuracy: validation=0.9865, test=0.9874
+33 epochs, accuracy: validation=0.9886, test=0.9883
+34 epochs, accuracy: validation=0.9879, test=0.9873
+35 epochs, accuracy: validation=0.9869, test=0.986
+36 epochs, accuracy: validation=0.9868, test=0.9859
+37 epochs, accuracy: validation=0.9875, test=0.9876
+38 epochs, accuracy: validation=0.9871, test=0.9879
+39 epochs, accuracy: validation=0.9876, test=0.9883
+40 epochs, accuracy: validation=0.9888, test=0.9884
+41 epochs, accuracy: validation=0.9877, test=0.9879
+42 epochs, accuracy: validation=0.9883, test=0.9885
+43 epochs, accuracy: validation=0.989, test=0.9888
+44 epochs, accuracy: validation=0.9882, test=0.9888
+45 epochs, accuracy: validation=0.9887, test=0.9886
+46 epochs, accuracy: validation=0.9886, test=0.9897
+47 epochs, accuracy: validation=0.9880, test=0.9885
+48 epochs, accuracy: validation=0.9886, test=0.9898
+49 epochs, accuracy: validation=0.9890, test=0.9896
+50 epochs, accuracy: validation=0.9887, test=0.9895
+51 epochs, accuracy: validation=0.9892, test=0.9897
+52 epochs, accuracy: validation=0.9893, test=0.9894
+53 epochs, accuracy: validation=0.9894, test=0.9896
+54 epochs, accuracy: validation=0.9893, test=0.9896
+55 epochs, accuracy: validation=0.9895, test=0.9895
+56 epochs, accuracy: validation=0.9895, test=0.9895
+57 epochs, accuracy: validation=0.9894, test=0.9895
+58 epochs, accuracy: validation=0.9894, test=0.9894
+59 epochs, accuracy: validation=0.9894, test=0.9895
+60 epochs, accuracy: validation=0.9895, test=0.9895
+61 epochs, accuracy: validation=0.9894, test=0.9895
+62 epochs, accuracy: validation=0.9894, test=0.9896
+63 epochs, accuracy: validation=0.9893, test=0.9896
+64 epochs, accuracy: validation=0.9893, test=0.9896
+65 epochs, accuracy: validation=0.9893, test=0.9896
+66 epochs, accuracy: validation=0.9892, test=0.9896
+67 epochs, accuracy: validation=0.9890, test=0.9896
+68 epochs, accuracy: validation=0.9889, test=0.9896
+69 epochs, accuracy: validation=0.9889, test=0.9895
+70 epochs, accuracy: validation=0.9890, test=0.9896
+71 epochs, accuracy: validation=0.9889, test=0.9896
+72 epochs, accuracy: validation=0.9889, test=0.9896
+73 epochs, accuracy: validation=0.9889, test=0.9896
+74 epochs, accuracy: validation=0.9891, test=0.9895
+75 epochs, accuracy: validation=0.9891, test=0.9895
+76 epochs, accuracy: validation=0.9891, test=0.9894
+77 epochs, accuracy: validation=0.9891, test=0.9894
+78 epochs, accuracy: validation=0.9891, test=0.9894
+79 epochs, accuracy: validation=0.9893, test=0.9895
+80 epochs, accuracy: validation=0.9893, test=0.9895
+Total values needed to encode all trainable parameters: 286204
+

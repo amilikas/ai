@@ -1,0 +1,10 @@
+Network: mnist-gapso-ff
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Dense(softmax), shape:[10], parameters:7850, memory:61.3 KB
+
+Mutation probability: 0.2
+
+SEED=48
+epochs: 0, accuracy validation set=0.3948, test set=0.3727
+Total values needed to encode all trainable parameters: 7850
+
