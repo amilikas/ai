@@ -1,0 +1,44 @@
+Using CPU, 10 threads with OpenMP
+Training data: [10000,784] 29.9 MB
+Validation data: [5000,784] 15.0 MB
+Testing data: [10000,784] 29.9 MB
+Network: mnistffnn
+Input layer, shape:[28,28]
+Dense(Logistic) shape:[32], parameters:25120, memory:98.2 KB
+Dense(Logistic) shape:[32], parameters:1056, memory:4.2 KB
+Softmax shape:[10], parameters:330, memory:1.3 KB
+
+Training...
+epoch: 1, time: 0.2 secs (speed 0.0), loss (SoftmaxCE): 22615.3965, validation accuracy: 0.1018
+epoch: 2, time: 0.2 secs (speed 0.0), loss (SoftmaxCE): 22301.2988, validation accuracy: 0.1050
+epoch: 3, time: 0.2 secs (speed 0.0), loss (SoftmaxCE): 22142.6133, validation accuracy: 0.1078
+epoch: 4, time: 0.2 secs (speed 0.0), loss (SoftmaxCE): 21864.8535, validation accuracy: 0.1242
+epoch: 5, time: 0.2 secs (speed 49292.9), loss (SoftmaxCE): 21369.2383, validation accuracy: 0.2214
+epoch: 6, time: 0.2 secs (speed 49292.9), loss (SoftmaxCE): 20540.5020, validation accuracy: 0.2546
+epoch: 7, time: 0.2 secs (speed 49292.9), loss (SoftmaxCE): 19489.7715, validation accuracy: 0.2370
+epoch: 8, time: 0.2 secs (speed 49292.9), loss (SoftmaxCE): 18469.8047, validation accuracy: 0.2776
+epoch: 9, time: 0.2 secs (speed 49292.9), loss (SoftmaxCE): 17565.3906, validation accuracy: 0.2952
+epoch: 10, time: 0.2 secs (speed 19629.6), loss (SoftmaxCE): 16771.5156, validation accuracy: 0.2982
+epoch: 11, time: 0.2 secs (speed 19629.6), loss (SoftmaxCE): 16032.2627, validation accuracy: 0.3028
+epoch: 12, time: 0.2 secs (speed 19629.6), loss (SoftmaxCE): 15389.9277, validation accuracy: 0.3200
+epoch: 13, time: 0.2 secs (speed 19629.6), loss (SoftmaxCE): 14892.1045, validation accuracy: 0.3480
+epoch: 14, time: 0.2 secs (speed 49007.6), loss (SoftmaxCE): 14486.5928, validation accuracy: 0.4034
+epoch: 15, time: 0.2 secs (speed 49007.6), loss (SoftmaxCE): 14181.5742, validation accuracy: 0.4118
+Trained in 3.3 secs.
+Training set predicted in 0.0 secs with 0.4175 accuracy.
+Test set predicted in 0.0 secs with 0.3682 accuracy.
+Accuracy  = 0.3682
+Precision = -nan
+Recall    = 0.369966
+F1        = -nan
+Confusion matrix:
+  73  545   34    5    0   75   66    4  207    0
+  13  376   20    6    0   19  452   63   21    4
+   2  104  365    3    0   13  511   22    7    1
+ 121    4    1  744    0   70    0    0   14    4
+  23   19  401   12    0  144  225   39   16   13
+ 149  130    7   11    0  215    0    1  469    0
+   2   29   20    5    0    3  630  318    2    1
+  16   22    2  416    0   10   46  491   25    4
+   0 1030    1    3    0    0    4    4   93    0
+   0    0   28    5    0  237    9    6    0  695

@@ -1,0 +1,361 @@
+Network: mnist-gatrain-cnn
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Conv2D(ReLU), shape:[24,24,6] (k:5,s:1,pad:no), parameters:150, memory:14.7 KB
+Maxpool2D shape:[12,12,6] (k:2,s:2), parameters:0, memory:3.4 KB
+Conv2D(ReLU), shape:[8,8,16] (k:5,s:1,pad:no), parameters:2400, memory:22.8 KB
+Maxpool2D shape:[4,4,16] (k:2,s:2), parameters:0, memory:1.0 KB
+Conv2D(ReLU), shape:[1,120] (k:4,s:1,pad:no), parameters:30720, memory:240.5 KB
+Dense(ReLU), shape:[84], parameters:10164, memory:79.4 KB
+Dense(softmax), shape:[10], parameters:850, memory:6.6 KB
+
+SEED=48
+epochs: 5, validation set accuracy=0.9774
+epochs: 10, validation set accuracy=0.9838
+epochs: 15, validation set accuracy=0.9865
+epochs: 20, validation set accuracy=0.9867
+epochs: 25, validation set accuracy=0.9876
+epochs: 30, validation set accuracy=0.988
+epochs: 35, validation set accuracy=0.9878
+epochs: 40, validation set accuracy=0.9874
+epochs: 45, validation set accuracy=0.9877
+epochs: 50, validation set accuracy=0.9881
+epochs: 55, validation set accuracy=0.988
+epochs: 60, validation set accuracy=0.9887
+epochs: 65, validation set accuracy=0.9889
+epochs: 70, validation set accuracy=0.9896
+epochs: 75, validation set accuracy=0.9895
+epochs: 80, validation set accuracy=0.9896
+epochs: 85, validation set accuracy=0.9895
+epochs: 90, validation set accuracy=0.9895
+epochs: 95, validation set accuracy=0.9895
+epochs: 100, validation set accuracy=0.9895
+
+SEED=49
+epochs: 5, validation set accuracy=0.9793
+epochs: 10, validation set accuracy=0.985
+epochs: 15, validation set accuracy=0.9871
+epochs: 20, validation set accuracy=0.9876
+epochs: 25, validation set accuracy=0.9874
+epochs: 30, validation set accuracy=0.9877
+epochs: 35, validation set accuracy=0.9874
+epochs: 40, validation set accuracy=0.9879
+epochs: 45, validation set accuracy=0.9879
+epochs: 50, validation set accuracy=0.9885
+epochs: 55, validation set accuracy=0.9883
+epochs: 60, validation set accuracy=0.9884
+epochs: 65, validation set accuracy=0.9884
+epochs: 70, validation set accuracy=0.9888
+epochs: 75, validation set accuracy=0.989
+epochs: 80, validation set accuracy=0.9889
+epochs: 85, validation set accuracy=0.989
+epochs: 90, validation set accuracy=0.989
+epochs: 95, validation set accuracy=0.9891
+epochs: 100, validation set accuracy=0.989
+
+SEED=50
+epochs: 5, validation set accuracy=0.9781
+epochs: 10, validation set accuracy=0.983
+epochs: 15, validation set accuracy=0.9849
+epochs: 20, validation set accuracy=0.9859
+epochs: 25, validation set accuracy=0.9864
+epochs: 30, validation set accuracy=0.986
+epochs: 35, validation set accuracy=0.987
+epochs: 40, validation set accuracy=0.9874
+epochs: 45, validation set accuracy=0.9877
+epochs: 50, validation set accuracy=0.9875
+epochs: 55, validation set accuracy=0.9878
+epochs: 60, validation set accuracy=0.988
+epochs: 65, validation set accuracy=0.9883
+epochs: 70, validation set accuracy=0.9884
+epochs: 75, validation set accuracy=0.9886
+epochs: 80, validation set accuracy=0.9885
+epochs: 85, validation set accuracy=0.9886
+epochs: 90, validation set accuracy=0.9885
+epochs: 95, validation set accuracy=0.9883
+epochs: 100, validation set accuracy=0.9885
+
+SEED=51
+epochs: 5, validation set accuracy=0.9793
+epochs: 10, validation set accuracy=0.9831
+epochs: 15, validation set accuracy=0.9844
+epochs: 20, validation set accuracy=0.986
+epochs: 25, validation set accuracy=0.9862
+epochs: 30, validation set accuracy=0.9858
+epochs: 35, validation set accuracy=0.986
+epochs: 40, validation set accuracy=0.9869
+epochs: 45, validation set accuracy=0.987
+epochs: 50, validation set accuracy=0.9871
+epochs: 55, validation set accuracy=0.9869
+epochs: 60, validation set accuracy=0.9869
+epochs: 65, validation set accuracy=0.9873
+epochs: 70, validation set accuracy=0.9871
+epochs: 75, validation set accuracy=0.9871
+epochs: 80, validation set accuracy=0.9872
+epochs: 85, validation set accuracy=0.987
+epochs: 90, validation set accuracy=0.9869
+epochs: 95, validation set accuracy=0.9871
+epochs: 100, validation set accuracy=0.9871
+
+SEED=52
+epochs: 5, validation set accuracy=0.9765
+epochs: 10, validation set accuracy=0.9822
+epochs: 15, validation set accuracy=0.9831
+epochs: 20, validation set accuracy=0.983
+epochs: 25, validation set accuracy=0.9842
+epochs: 30, validation set accuracy=0.9836
+epochs: 35, validation set accuracy=0.9838
+epochs: 40, validation set accuracy=0.9853
+epochs: 45, validation set accuracy=0.9858
+epochs: 50, validation set accuracy=0.9879
+epochs: 55, validation set accuracy=0.9874
+epochs: 60, validation set accuracy=0.9875
+epochs: 65, validation set accuracy=0.9879
+epochs: 70, validation set accuracy=0.9879
+epochs: 75, validation set accuracy=0.9878
+epochs: 80, validation set accuracy=0.9878
+epochs: 85, validation set accuracy=0.9878
+epochs: 90, validation set accuracy=0.9879
+epochs: 95, validation set accuracy=0.9878
+epochs: 100, validation set accuracy=0.9878
+
+SEED=48
+epochs: 5, test set accuracy=0.9807
+epochs: 10, test set accuracy=0.9859
+epochs: 15, test set accuracy=0.9875
+epochs: 20, test set accuracy=0.9881
+epochs: 25, test set accuracy=0.9898
+epochs: 30, test set accuracy=0.9893
+epochs: 35, test set accuracy=0.9899
+epochs: 40, test set accuracy=0.9894
+epochs: 45, test set accuracy=0.9892
+epochs: 50, test set accuracy=0.9893
+epochs: 55, test set accuracy=0.9892
+epochs: 60, test set accuracy=0.9897
+epochs: 65, test set accuracy=0.99
+epochs: 70, test set accuracy=0.9901
+epochs: 75, test set accuracy=0.9902
+epochs: 80, test set accuracy=0.9902
+epochs: 85, test set accuracy=0.9901
+epochs: 90, test set accuracy=0.99
+epochs: 95, test set accuracy=0.99
+epochs: 100, test set accuracy=0.99
+
+SEED=49
+epochs: 5, test set accuracy=0.9795
+epochs: 10, test set accuracy=0.9851
+epochs: 15, test set accuracy=0.9872
+epochs: 20, test set accuracy=0.988
+epochs: 25, test set accuracy=0.9885
+epochs: 30, test set accuracy=0.9885
+epochs: 35, test set accuracy=0.9881
+epochs: 40, test set accuracy=0.9876
+epochs: 45, test set accuracy=0.9882
+epochs: 50, test set accuracy=0.9882
+epochs: 55, test set accuracy=0.9886
+epochs: 60, test set accuracy=0.9887
+epochs: 65, test set accuracy=0.9886
+epochs: 70, test set accuracy=0.9886
+epochs: 75, test set accuracy=0.9887
+epochs: 80, test set accuracy=0.9889
+epochs: 85, test set accuracy=0.9889
+epochs: 90, test set accuracy=0.989
+epochs: 95, test set accuracy=0.9888
+epochs: 100, test set accuracy=0.9889
+
+SEED=50
+epochs: 5, test set accuracy=0.9814
+epochs: 10, test set accuracy=0.9861
+epochs: 15, test set accuracy=0.9868
+epochs: 20, test set accuracy=0.9889
+epochs: 25, test set accuracy=0.9892
+epochs: 30, test set accuracy=0.9892
+epochs: 35, test set accuracy=0.9892
+epochs: 40, test set accuracy=0.9888
+epochs: 45, test set accuracy=0.9887
+epochs: 50, test set accuracy=0.9886
+epochs: 55, test set accuracy=0.989
+epochs: 60, test set accuracy=0.9887
+epochs: 65, test set accuracy=0.9886
+epochs: 70, test set accuracy=0.9885
+epochs: 75, test set accuracy=0.9885
+epochs: 80, test set accuracy=0.9884
+epochs: 85, test set accuracy=0.9884
+epochs: 90, test set accuracy=0.9884
+epochs: 95, test set accuracy=0.9884
+epochs: 100, test set accuracy=0.9883
+
+SEED=51
+epochs: 5, test set accuracy=0.9782
+epochs: 10, test set accuracy=0.9825
+epochs: 15, test set accuracy=0.9847
+epochs: 20, test set accuracy=0.9864
+epochs: 25, test set accuracy=0.9874
+epochs: 30, test set accuracy=0.9877
+epochs: 35, test set accuracy=0.9874
+epochs: 40, test set accuracy=0.9877
+epochs: 45, test set accuracy=0.9871
+epochs: 50, test set accuracy=0.9877
+epochs: 55, test set accuracy=0.9874
+epochs: 60, test set accuracy=0.9875
+epochs: 65, test set accuracy=0.9884
+epochs: 70, test set accuracy=0.9887
+epochs: 75, test set accuracy=0.9887
+epochs: 80, test set accuracy=0.9888
+epochs: 85, test set accuracy=0.9888
+epochs: 90, test set accuracy=0.9888
+epochs: 95, test set accuracy=0.9887
+epochs: 100, test set accuracy=0.9888
+
+SEED=52
+epochs: 5, test set accuracy=0.9793
+epochs: 10, test set accuracy=0.983
+epochs: 15, test set accuracy=0.9843
+epochs: 20, test set accuracy=0.9843
+epochs: 25, test set accuracy=0.9845
+epochs: 30, test set accuracy=0.9848
+epochs: 35, test set accuracy=0.9844
+epochs: 40, test set accuracy=0.9844
+epochs: 45, test set accuracy=0.9854
+epochs: 50, test set accuracy=0.9875
+epochs: 55, test set accuracy=0.9872
+epochs: 60, test set accuracy=0.9873
+epochs: 65, test set accuracy=0.9872
+epochs: 70, test set accuracy=0.9878
+epochs: 75, test set accuracy=0.9879
+epochs: 80, test set accuracy=0.988
+epochs: 85, test set accuracy=0.988
+epochs: 90, test set accuracy=0.9881
+epochs: 95, test set accuracy=0.9878
+epochs: 100, test set accuracy=0.9879
+
+Total values needed to encode all trainable parameters: 44284
+Evolving 20 members for 100 generations...
+Generation   1, time: 4.80s,  fitness max: 0.152600, min: 0.064200, mean: 0.103045
+Generation   2, time: 5m 05s, fitness max: 0.984800, min: 0.073600, mean: 0.283275
+Generation   3, time: 3m 50s, fitness max: 0.986300, min: 0.077200, mean: 0.359115
+Generation   4, time: 3m 51s, fitness max: 0.986500, min: 0.080600, mean: 0.305005
+Generation   5, time: 11m 23s,fitness max: 0.987700, min: 0.091500, mean: 0.609675
+Generation   6, time: 3m 51s, fitness max: 0.988900, min: 0.109200, mean: 0.539340
+Generation   7, time: 3m 50s, fitness max: 0.988900, min: 0.130700, mean: 0.467580
+Generation   8, time: 7m 37s, fitness max: 0.989200, min: 0.177700, mean: 0.576400
+Generation   9, time: 3m 51s, fitness max: 0.989200, min: 0.122200, mean: 0.590320
+Generation  10, time: 5m 06s, fitness max: 0.989200, min: 0.114500, mean: 0.658950
+Generation  11, time: 7m 37s, fitness max: 0.989200, min: 0.207000, mean: 0.738640
+Generation  12, time: 10m 06s,fitness max: 0.989500, min: 0.180900, mean: 0.778645
+Generation  13, time: 5m 05s, fitness max: 0.989500, min: 0.282400, mean: 0.855855
+Generation  14, time: 1m 20s, fitness max: 0.989500, min: 0.521700, mean: 0.848740
+Generation  15, time: 6m 22s, fitness max: 0.989500, min: 0.496700, mean: 0.883625
+Generation  16, time: 8m 52s, fitness max: 0.989600, min: 0.324600, mean: 0.886450
+Generation  17, time: 2m 35s, fitness max: 0.990000, min: 0.559200, mean: 0.863025
+Generation  18, time: 7m 36s, fitness max: 0.990100, min: 0.462900, mean: 0.885810
+Generation  19, time: 5m 05s, fitness max: 0.990100, min: 0.518300, mean: 0.904440
+Generation  20, time: 10m 07s,fitness max: 0.990100, min: 0.269000, mean: 0.879550
+Generation  21, time: 6m 21s, fitness max: 0.990100, min: 0.624800, mean: 0.907780
+Generation  22, time: 5m 06s, fitness max: 0.990100, min: 0.388300, mean: 0.881120
+Generation  23, time: 3m 50s, fitness max: 0.990400, min: 0.596600, mean: 0.946795
+Generation  24, time: 2m 35s, fitness max: 0.990400, min: 0.716300, mean: 0.943455
+Generation  25, time: 6m 21s, fitness max: 0.990400, min: 0.849500, mean: 0.958520
+Generation  26, time: 3m 50s, fitness max: 0.990400, min: 0.755700, mean: 0.941600
+Generation  27, time: 3m 50s, fitness max: 0.990400, min: 0.587400, mean: 0.918145
+Generation  28, time: 3m 50s, fitness max: 0.990400, min: 0.527200, mean: 0.921765
+Generation  29, time: 5m 06s, fitness max: 0.990400, min: 0.358800, mean: 0.847700
+Generation  30, time: 5m 05s, fitness max: 0.990500, min: 0.535300, mean: 0.881330
+Generation  31, time: 1m 19s, fitness max: 0.990500, min: 0.445800, mean: 0.856205
+Generation  32, time: 7m 37s, fitness max: 0.990600, min: 0.406700, mean: 0.855025
+Generation  33, time: 3m 51s, fitness max: 0.990600, min: 0.426400, mean: 0.803665
+Generation  34, time: 7m 37s, fitness max: 0.990600, min: 0.152600, mean: 0.847320
+Generation  35, time: 6m 21s, fitness max: 0.990600, min: 0.750200, mean: 0.947455
+Generation  36, time: 2m 35s, fitness max: 0.990600, min: 0.512100, mean: 0.861825
+Generation  37, time: 8m 53s, fitness max: 0.991200, min: 0.588100, mean: 0.925460
+Generation  38, time: 8m 54s, fitness max: 0.991200, min: 0.683300, mean: 0.954360
+Generation  39, time: 7m 37s, fitness max: 0.991200, min: 0.939000, mean: 0.971085
+Generation  40, time: 3m 50s, fitness max: 0.991200, min: 0.576000, mean: 0.936455
+Generation  41, time: 5m 07s, fitness max: 0.991200, min: 0.723100, mean: 0.938185
+Generation  42, time: 2m 35s, fitness max: 0.991200, min: 0.312700, mean: 0.877270
+Generation  43, time: 2m 35s, fitness max: 0.991200, min: 0.597900, mean: 0.933960
+Generation  44, time: 7m 37s, fitness max: 0.991200, min: 0.635300, mean: 0.917515
+Generation  45, time: 5m 07s, fitness max: 0.991200, min: 0.472900, mean: 0.936575
+Generation  46, time: 6m 20s, fitness max: 0.991200, min: 0.739100, mean: 0.952350
+Generation  47, time: 7m 37s, fitness max: 0.991400, min: 0.602700, mean: 0.935405
+Generation  48, time: 1m 19s, fitness max: 0.991400, min: 0.821900, mean: 0.966360
+Generation  49, time: 3m 50s, fitness max: 0.991500, min: 0.869100, mean: 0.970725
+Generation  50, time: 5m 05s, fitness max: 0.991500, min: 0.627200, mean: 0.934620
+Generation  51, time: 3m 50s, fitness max: 0.991500, min: 0.594400, mean: 0.920840
+Generation  52, time: 3m 49s, fitness max: 0.991500, min: 0.838700, mean: 0.955140
+Generation  53, time: 6m 21s, fitness max: 0.991500, min: 0.952000, mean: 0.976865
+Generation  54, time: 5m 06s, fitness max: 0.991500, min: 0.635800, mean: 0.937820
+Generation  55, time: 5m 06s, fitness max: 0.991500, min: 0.469300, mean: 0.943705
+Generation  56, time: 6m 22s, fitness max: 0.991500, min: 0.906600, mean: 0.971720
+Generation  57, time: 6m 22s, fitness max: 0.991500, min: 0.680300, mean: 0.964495
+Generation  58, time: 4.79s,  fitness max: 0.991500, min: 0.553500, mean: 0.930505
+Generation  59, time: 5m 06s, fitness max: 0.991500, min: 0.649700, mean: 0.917730
+Generation  60, time: 10m 08s,fitness max: 0.991500, min: 0.713400, mean: 0.958600
+Generation  61, time: 6m 22s, fitness max: 0.991500, min: 0.701100, mean: 0.923730
+Generation  62, time: 5m 06s, fitness max: 0.991500, min: 0.593700, mean: 0.876560
+Generation  63, time: 7m 36s, fitness max: 0.991500, min: 0.767100, mean: 0.941115
+Generation  64, time: 5m 06s, fitness max: 0.991500, min: 0.799200, mean: 0.933950
+Generation  65, time: 2m 35s, fitness max: 0.991500, min: 0.452000, mean: 0.844415
+Generation  66, time: 5m 05s, fitness max: 0.991500, min: 0.308300, mean: 0.852285
+Generation  67, time: 6m 21s, fitness max: 0.991500, min: 0.419700, mean: 0.892105
+Generation  68, time: 7m 37s, fitness max: 0.991500, min: 0.351600, mean: 0.842900
+Generation  69, time: 7m 37s, fitness max: 0.991500, min: 0.588600, mean: 0.919500
+Generation  70, time: 2m 35s, fitness max: 0.991500, min: 0.782000, mean: 0.930890
+Generation  71, time: 6m 21s, fitness max: 0.991500, min: 0.594400, mean: 0.911835
+Generation  72, time: 7m 37s, fitness max: 0.991500, min: 0.528500, mean: 0.909135
+Generation  73, time: 3m 50s, fitness max: 0.991500, min: 0.607200, mean: 0.882755
+Generation  74, time: 7m 37s, fitness max: 0.991500, min: 0.785900, mean: 0.926775
+Generation  75, time: 5m 06s, fitness max: 0.991500, min: 0.487100, mean: 0.907855
+Generation  76, time: 5m 06s, fitness max: 0.991500, min: 0.496400, mean: 0.866410
+Generation  77, time: 2m 35s, fitness max: 0.991500, min: 0.445800, mean: 0.894345
+Generation  78, time: 4.83s,  fitness max: 0.991500, min: 0.532700, mean: 0.855165
+Generation  79, time: 3m 50s, fitness max: 0.991500, min: 0.283800, mean: 0.789560
+Generation  80, time: 6m 21s, fitness max: 0.991500, min: 0.781700, mean: 0.944645
+Generation  81, time: 3m 50s, fitness max: 0.991500, min: 0.684000, mean: 0.927970
+Generation  82, time: 3m 50s, fitness max: 0.991500, min: 0.734800, mean: 0.950245
+Generation  83, time: 8m 51s, fitness max: 0.991500, min: 0.601100, mean: 0.938990
+Generation  84, time: 2m 35s, fitness max: 0.991500, min: 0.753900, mean: 0.939400
+Generation  85, time: 3m 50s, fitness max: 0.991500, min: 0.633600, mean: 0.906320
+Generation  86, time: 1m 20s, fitness max: 0.991500, min: 0.447600, mean: 0.914795
+Generation  87, time: 6m 23s, fitness max: 0.991500, min: 0.664100, mean: 0.932480
+Generation  88, time: 7m 38s, fitness max: 0.991500, min: 0.754200, mean: 0.949955
+Generation  89, time: 5m 10s, fitness max: 0.991500, min: 0.697900, mean: 0.950120
+Generation  90, time: 5m 10s, fitness max: 0.991500, min: 0.389100, mean: 0.949725
+Generation  91, time: 8m 30s, fitness max: 0.991700, min: 0.918700, mean: 0.976040
+Generation  92, time: 8m 08s, fitness max: 0.991700, min: 0.524700, mean: 0.950520
+Generation  93, time: 5m 17s, fitness max: 0.991700, min: 0.646300, mean: 0.958405
+Generation  94, time: 6m 38s, fitness max: 0.991700, min: 0.782700, mean: 0.965745
+Generation  95, time: 1m 22s, fitness max: 0.991700, min: 0.684400, mean: 0.940070
+Generation  96, time: 4.87s,  fitness max: 0.991700, min: 0.594500, mean: 0.913425
+Generation  97, time: 3m 58s, fitness max: 0.991700, min: 0.688900, mean: 0.896085
+Generation  98, time: 8m 02s, fitness max: 0.991700, min: 0.838800, mean: 0.938085
+Generation  99, time: 5m 24s, fitness max: 0.991700, min: 0.467700, mean: 0.936340
+Generation 100, time: 6m 50s, fitness max: 0.991700, min: 0.741800, mean: 0.944475
+Evolution finished, top-10 members:
+member   1, fitness=0.991700
+member   2, fitness=0.991300
+member   3, fitness=0.990900
+member   4, fitness=0.990800
+member   5, fitness=0.990700
+member   6, fitness=0.990600
+member   7, fitness=0.982400
+member   8, fitness=0.979200
+member   9, fitness=0.964400
+member  10, fitness=0.963100
+member  20, fitness=0.741800
+Training set predicted with 1 accuracy.
+Test set predictions:
+Accuracy  = 0.9913
+Precision = 0.991211
+Recall    = 0.991287
+F1        = 0.991249
+Confusion matrix:
+ 977    0    0    0    0    0    1    1    1    0
+   0 1127    1    2    0    1    1    3    0    0
+   1    0 1024    0    1    0    1    4    1    0
+   1    0    0  999    0    4    0    1    4    1
+   0    0    1    0  975    0    1    0    0    5
+   0    0    0    4    0  883    2    0    1    2
+   3    2    0    0    1    3  948    0    1    0
+   1    2    4    1    0    0    0 1016    1    3
+   2    0    1    0    0    1    0    1  968    1
+   0    0    0    1    6    2    0    3    1  996

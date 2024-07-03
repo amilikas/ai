@@ -1,0 +1,51 @@
+Using CPU, 10 threads with OpenMP
+Training data: [10000,784] 29.9 MB
+Validation data: [5000,784] 15.0 MB
+Testing data: [10000,784] 29.9 MB
+=========== Training CNN(BP) ============
+Network: 
+Input layer, shape:[28,28]
+Conv2D(ReLU) shape:[24,24,6] (k:5,s:1,pad:no), parameters:150, memory:14.1 KB
+Maxpool2D shape:[12,12,6] (k:2,s:2), parameters:0, memory:3.4 KB
+Dropout, ratio:0.25, shape:[12,12,6], parameters:0, memory:3.4 KB
+Conv2D(ReLU) shape:[8,8,16] (k:5,s:1,pad:no), parameters:2400, memory:13.4 KB
+Maxpool2D shape:[4,4,16] (k:2,s:2), parameters:0, memory:1.0 KB
+Dropout, ratio:0.25, shape:[4,4,16], parameters:0, memory:1.0 KB
+Conv2D(ReLU) shape:[1,120] (k:4,s:1,pad:no), parameters:30720, memory:120.5 KB
+Dense(ReLU) shape:[84], parameters:10164, memory:40.0 KB
+Softmax shape:[10], parameters:850, memory:3.4 KB
+
+Training...
+epoch: 1, time: 1.2 secs (speed 8401.6), loss (SoftmaxCE): 20170.2285, validation accuracy: 0.3452
+epoch: 2, time: 1.1 secs (speed 9240.8), loss (SoftmaxCE): 14010.5596, validation accuracy: 0.4386
+epoch: 3, time: 1.1 secs (speed 9308.7), loss (SoftmaxCE): 11716.3955, validation accuracy: 0.5790
+epoch: 4, time: 1.1 secs (speed 9297.5), loss (SoftmaxCE): 10650.4209, validation accuracy: 0.5090
+epoch: 5, time: 1.1 secs (speed 9193.1), loss (SoftmaxCE): 9965.9307, validation accuracy: 0.5278
+epoch: 6, time: 1.1 secs (speed 9336.5), loss (SoftmaxCE): 9528.1338, validation accuracy: 0.4928
+epoch: 7, time: 1.1 secs (speed 9066.7), loss (SoftmaxCE): 9265.3896, validation accuracy: 0.5124
+epoch: 8, time: 1.1 secs (speed 9321.4), loss (SoftmaxCE): 8929.9531, validation accuracy: 0.2716
+epoch: 9, time: 1.1 secs (speed 9398.8), loss (SoftmaxCE): 8802.8184, validation accuracy: 0.3732
+epoch: 10, time: 1.1 secs (speed 9303.3), loss (SoftmaxCE): 8691.5127, validation accuracy: 0.4182
+epoch: 11, time: 1.1 secs (speed 9360.3), loss (SoftmaxCE): 8551.0039, validation accuracy: 0.4644
+epoch: 12, time: 1.1 secs (speed 9305.9), loss (SoftmaxCE): 8419.7178, validation accuracy: 0.2714
+epoch: 13, time: 1.1 secs (speed 9310.3), loss (SoftmaxCE): 8365.3320, validation accuracy: 0.5834
+epoch: 14, time: 1.1 secs (speed 9162.0), loss (SoftmaxCE): 8279.4346, validation accuracy: 0.4100
+epoch: 15, time: 1.1 secs (speed 9348.0), loss (SoftmaxCE): 8152.1494, validation accuracy: 0.4886
+Trained in 17.2 secs.
+Training set predicted in 0.1 secs with 0.5607 accuracy.
+Test set predicted in 0.1 secs with 0.5177 accuracy.
+Accuracy  = 0.5177
+Precision = 0.559286
+Recall    = 0.522381
+F1        = 0.540204
+Confusion matrix:
+ 662  320    5    0    5    0    8    1    4    4
+   1  789    1    4    3    1  168    1    1    5
+  11   13   82   15    0    0  890   14    1    2
+ 288    1    0  652    6    2    0    0    3    6
+   1    1  246    4  630    0    7    0    0    3
+   7    5    0    7    0  132    1    0  830    0
+   0    4    4    2    4    0  435  561    0    0
+   0    7    0  891    0    2   10  113    4    5
+   0  407    0    2    1    0    1    7  717    0
+   0    1    0    1    0   11    2    0    0  965

@@ -1,0 +1,44 @@
+Using CPU, single thread
+Training data: [5002,784] 15.0 MB
+Validation data: [5000,784] 15.0 MB
+Testing data: [10000,784] 29.9 MB
+Network: mnistffnn
+Input layer, shape:[28,28]
+Dense(Logistic) shape:[32], parameters:25120, memory:98.2 KB
+Dense(Logistic) shape:[32], parameters:1056, memory:4.2 KB
+Softmax shape:[10], parameters:330, memory:1.3 KB
+
+Training...
+epoch: 1, time: 0.3 secs (speed 0.0), loss (SoftmaxCE): 11613.3691, validation accuracy: 0.1784
+epoch: 2, time: 0.3 secs (speed 0.0), loss (SoftmaxCE): 11448.0176, validation accuracy: 0.1070
+epoch: 3, time: 0.3 secs (speed 0.0), loss (SoftmaxCE): 11392.0508, validation accuracy: 0.2060
+epoch: 4, time: 0.3 secs (speed 0.0), loss (SoftmaxCE): 11312.4844, validation accuracy: 0.2010
+epoch: 5, time: 0.3 secs (speed 0.0), loss (SoftmaxCE): 11199.5508, validation accuracy: 0.3912
+epoch: 6, time: 0.3 secs (speed 0.0), loss (SoftmaxCE): 11028.4189, validation accuracy: 0.3656
+epoch: 7, time: 0.3 secs (speed 0.0), loss (SoftmaxCE): 10791.3926, validation accuracy: 0.4370
+epoch: 8, time: 0.3 secs (speed 0.0), loss (SoftmaxCE): 10452.0439, validation accuracy: 0.4014
+epoch: 9, time: 0.3 secs (speed 0.0), loss (SoftmaxCE): 10031.6924, validation accuracy: 0.4442
+epoch: 10, time: 0.3 secs (speed 0.0), loss (SoftmaxCE): 9534.7754, validation accuracy: 0.5054
+epoch: 11, time: 0.3 secs (speed 0.0), loss (SoftmaxCE): 8990.5322, validation accuracy: 0.5438
+epoch: 12, time: 0.3 secs (speed 0.0), loss (SoftmaxCE): 8414.8740, validation accuracy: 0.5824
+epoch: 13, time: 0.3 secs (speed 0.0), loss (SoftmaxCE): 7826.4731, validation accuracy: 0.6116
+epoch: 14, time: 0.3 secs (speed 0.0), loss (SoftmaxCE): 7257.1021, validation accuracy: 0.6178
+epoch: 15, time: 0.3 secs (speed 0.0), loss (SoftmaxCE): 6739.1084, validation accuracy: 0.6622
+Trained in 4.0 secs.
+Training set predicted in 0.1 secs with 0.634546 accuracy.
+Test set predicted in 0.2 secs with 0.6271 accuracy.
+Accuracy  = 0.6271
+Precision = 0.644044
+Recall    = 0.617473
+F1        = 0.630479
+Confusion matrix:
+  41    2  275   16    1  618   16    0   22   18
+  42  328   32   21    3   24  276   28  118  102
+  10    4  819    4    2   87    6    7   87    2
+   4    7    7  776    0   11    6   33   15   99
+  50   56   31   39   69   21  396   14   49  167
+  19    2  131   48    1  767    0    1   12    1
+   5    4   22    3    1    0  902   14   24   35
+   1   10   24  181    1   11   95  507   82  120
+   0    2    2    2    0    0    5    3 1121    0
+   1    1    0   23    0    0   11    2    1  941

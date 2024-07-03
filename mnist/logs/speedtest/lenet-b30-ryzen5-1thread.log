@@ -1,0 +1,39 @@
+CPU: [AMD Ryzen 5 1600X Six-Core Processor]
+single thread
+Training data: (60000,784) 179.4 MB
+Validation data: (5000,784) 15.0 MB
+Testing data: (10000,784) 29.9 MB
+Network: lenet
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Conv2D(ReLU), shape:[24,24,6] (k:5,s:1,pad:no), parameters:150, memory:14.7 KB
+Maxpool2D shape:[12,12,6] (k:2,s:2), parameters:0, memory:3.4 KB
+Conv2D(ReLU), shape:[8,8,16] (k:5,s:1,pad:no), parameters:2400, memory:22.8 KB
+Maxpool2D shape:[4,4,16] (k:2,s:2), parameters:0, memory:1.0 KB
+Conv2D(ReLU), shape:[1,120] (k:4,s:1,pad:no), parameters:30720, memory:240.5 KB
+Dense(ReLU), shape:[84], parameters:10164, memory:79.4 KB
+Dense(Softmax), shape:[10], parameters:850, memory:6.6 KB
+
+Training...
+epoch: 1, time: 28.43 secs (speed 2171.2), loss (CCE): 33345.6133, validation accuracy: 0.9654
+epoch: 2, time: 28.66 secs (speed 2153.5), loss (CCE): 7131.1226, validation accuracy: 0.9758
+epoch: 3, time: 28.69 secs (speed 2152.0), loss (CCE): 5228.8965, validation accuracy: 0.9788
+epoch: 4, time: 28.66 secs (speed 2153.3), loss (CCE): 4231.1323, validation accuracy: 0.9856
+epoch: 5, time: 28.62 secs (speed 2156.7), loss (CCE): 3620.6296, validation accuracy: 0.9894
+Trained in 2 mins and 23 secs.
+Training set predicted in 9.62 secs with 0.9861 accuracy.
+Test set predicted in 1.61 secs with 0.9833 accuracy.
+Accuracy  = 0.9833
+Precision = 0.983286
+Recall    = 0.983102
+F1        = 0.983194
+Confusion matrix:
+ 977    2    6    0    5    6    4    1    3    5
+   4  952    4    3    1    1    1    4    1    3
+   5    1 1006    0    0    0    2   10    3    1
+   0    1    0  934    7    3    0    1    2   10
+   2    1    1    1  876    0    8    1    0    2
+   7    3    1    0    0  965    1    2    0    3
+   1    2    4    0    5    0  995    2    0    1
+   0    4    3    0    0    1    0 1021    2    1
+   0    1    1    0    1    0    1    1 1130    0
+   0    1    1    0    0    0    0    0    1  977

@@ -1,0 +1,756 @@
+Network: mnist-gatrain-ffnn
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Dense(ReLU), shape:[64], parameters:50240, memory:392.5 KB
+Dense(softmax), shape:[10], parameters:650, memory:5.1 KB
+
+SEED=48
+epochs: 5, validation set accuracy=0.9257
+epochs: 10, validation set accuracy=0.9471
+epochs: 15, validation set accuracy=0.9566
+epochs: 20, validation set accuracy=0.962
+epochs: 25, validation set accuracy=0.9659
+epochs: 30, validation set accuracy=0.9676
+epochs: 35, validation set accuracy=0.9694
+epochs: 40, validation set accuracy=0.9717
+epochs: 45, validation set accuracy=0.9731
+epochs: 50, validation set accuracy=0.9736
+epochs: 55, validation set accuracy=0.974
+epochs: 60, validation set accuracy=0.9739
+epochs: 65, validation set accuracy=0.974
+epochs: 70, validation set accuracy=0.9746
+epochs: 75, validation set accuracy=0.9749
+epochs: 80, validation set accuracy=0.9751
+epochs: 85, validation set accuracy=0.9747
+epochs: 90, validation set accuracy=0.975
+epochs: 95, validation set accuracy=0.975
+epochs: 100, validation set accuracy=0.9754
+epochs: 105, validation set accuracy=0.9754
+epochs: 110, validation set accuracy=0.9753
+epochs: 115, validation set accuracy=0.9752
+epochs: 120, validation set accuracy=0.9758
+epochs: 125, validation set accuracy=0.9763
+epochs: 130, validation set accuracy=0.9762
+epochs: 135, validation set accuracy=0.9761
+epochs: 140, validation set accuracy=0.9761
+epochs: 145, validation set accuracy=0.9762
+epochs: 150, validation set accuracy=0.9765
+epochs: 155, validation set accuracy=0.9763
+epochs: 160, validation set accuracy=0.9762
+epochs: 165, validation set accuracy=0.9763
+epochs: 170, validation set accuracy=0.976
+epochs: 175, validation set accuracy=0.976
+epochs: 180, validation set accuracy=0.9761
+epochs: 185, validation set accuracy=0.9761
+epochs: 190, validation set accuracy=0.9762
+epochs: 195, validation set accuracy=0.9761
+epochs: 200, validation set accuracy=0.9762
+epochs: 205, validation set accuracy=0.9763
+epochs: 210, validation set accuracy=0.9762
+epochs: 215, validation set accuracy=0.9764
+epochs: 220, validation set accuracy=0.9767
+epochs: 225, validation set accuracy=0.9767
+epochs: 230, validation set accuracy=0.9767
+epochs: 235, validation set accuracy=0.9767
+epochs: 240, validation set accuracy=0.9767
+epochs: 245, validation set accuracy=0.9767
+epochs: 250, validation set accuracy=0.9767
+epochs: 255, validation set accuracy=0.9768
+epochs: 260, validation set accuracy=0.9771
+epochs: 265, validation set accuracy=0.9769
+epochs: 270, validation set accuracy=0.9767
+epochs: 275, validation set accuracy=0.9766
+epochs: 280, validation set accuracy=0.9766
+epochs: 285, validation set accuracy=0.9764
+epochs: 290, validation set accuracy=0.9764
+epochs: 295, validation set accuracy=0.9765
+epochs: 300, validation set accuracy=0.9763
+
+SEED=49
+epochs: 5, validation set accuracy=0.9256
+epochs: 10, validation set accuracy=0.9442
+epochs: 15, validation set accuracy=0.9539
+epochs: 20, validation set accuracy=0.9589
+epochs: 25, validation set accuracy=0.9628
+epochs: 30, validation set accuracy=0.9652
+epochs: 35, validation set accuracy=0.9668
+epochs: 40, validation set accuracy=0.9689
+epochs: 45, validation set accuracy=0.9702
+epochs: 50, validation set accuracy=0.9718
+epochs: 55, validation set accuracy=0.9732
+epochs: 60, validation set accuracy=0.9743
+epochs: 65, validation set accuracy=0.9741
+epochs: 70, validation set accuracy=0.9743
+epochs: 75, validation set accuracy=0.9741
+epochs: 80, validation set accuracy=0.974
+epochs: 85, validation set accuracy=0.9743
+epochs: 90, validation set accuracy=0.9745
+epochs: 95, validation set accuracy=0.975
+epochs: 100, validation set accuracy=0.975
+epochs: 105, validation set accuracy=0.9747
+epochs: 110, validation set accuracy=0.9749
+epochs: 115, validation set accuracy=0.9752
+epochs: 120, validation set accuracy=0.9754
+epochs: 125, validation set accuracy=0.9752
+epochs: 130, validation set accuracy=0.9755
+epochs: 135, validation set accuracy=0.9757
+epochs: 140, validation set accuracy=0.9754
+epochs: 145, validation set accuracy=0.9753
+epochs: 150, validation set accuracy=0.9753
+epochs: 155, validation set accuracy=0.9755
+epochs: 160, validation set accuracy=0.9753
+epochs: 165, validation set accuracy=0.9749
+epochs: 170, validation set accuracy=0.9747
+epochs: 175, validation set accuracy=0.9746
+epochs: 180, validation set accuracy=0.9745
+epochs: 185, validation set accuracy=0.9746
+epochs: 190, validation set accuracy=0.9745
+epochs: 195, validation set accuracy=0.9744
+epochs: 200, validation set accuracy=0.9745
+epochs: 205, validation set accuracy=0.9744
+epochs: 210, validation set accuracy=0.9743
+epochs: 215, validation set accuracy=0.9745
+epochs: 220, validation set accuracy=0.9744
+epochs: 225, validation set accuracy=0.9743
+epochs: 230, validation set accuracy=0.9744
+epochs: 235, validation set accuracy=0.9744
+epochs: 240, validation set accuracy=0.9747
+epochs: 245, validation set accuracy=0.9747
+epochs: 250, validation set accuracy=0.9749
+epochs: 255, validation set accuracy=0.975
+epochs: 260, validation set accuracy=0.9751
+epochs: 265, validation set accuracy=0.9751
+epochs: 270, validation set accuracy=0.9749
+epochs: 275, validation set accuracy=0.9748
+epochs: 280, validation set accuracy=0.9747
+epochs: 285, validation set accuracy=0.9747
+epochs: 290, validation set accuracy=0.9747
+epochs: 295, validation set accuracy=0.9746
+epochs: 300, validation set accuracy=0.9747
+
+SEED=50
+epochs: 5, validation set accuracy=0.9278
+epochs: 10, validation set accuracy=0.9454
+epochs: 15, validation set accuracy=0.9566
+epochs: 20, validation set accuracy=0.9608
+epochs: 25, validation set accuracy=0.9654
+epochs: 30, validation set accuracy=0.9673
+epochs: 35, validation set accuracy=0.9677
+epochs: 40, validation set accuracy=0.9688
+epochs: 45, validation set accuracy=0.9701
+epochs: 50, validation set accuracy=0.9712
+epochs: 55, validation set accuracy=0.9712
+epochs: 60, validation set accuracy=0.9714
+epochs: 65, validation set accuracy=0.9715
+epochs: 70, validation set accuracy=0.9715
+epochs: 75, validation set accuracy=0.9721
+epochs: 80, validation set accuracy=0.9717
+epochs: 85, validation set accuracy=0.9717
+epochs: 90, validation set accuracy=0.9716
+epochs: 95, validation set accuracy=0.9721
+epochs: 100, validation set accuracy=0.9726
+epochs: 105, validation set accuracy=0.9726
+epochs: 110, validation set accuracy=0.9728
+epochs: 115, validation set accuracy=0.9728
+epochs: 120, validation set accuracy=0.9732
+epochs: 125, validation set accuracy=0.973
+epochs: 130, validation set accuracy=0.9731
+epochs: 135, validation set accuracy=0.9731
+epochs: 140, validation set accuracy=0.9732
+epochs: 145, validation set accuracy=0.9733
+epochs: 150, validation set accuracy=0.9733
+epochs: 155, validation set accuracy=0.973
+epochs: 160, validation set accuracy=0.9731
+epochs: 165, validation set accuracy=0.9733
+epochs: 170, validation set accuracy=0.9734
+epochs: 175, validation set accuracy=0.9734
+epochs: 180, validation set accuracy=0.9734
+epochs: 185, validation set accuracy=0.9732
+epochs: 190, validation set accuracy=0.9734
+epochs: 195, validation set accuracy=0.9734
+epochs: 200, validation set accuracy=0.9734
+epochs: 205, validation set accuracy=0.9735
+epochs: 210, validation set accuracy=0.9732
+epochs: 215, validation set accuracy=0.9731
+epochs: 220, validation set accuracy=0.9731
+epochs: 225, validation set accuracy=0.973
+epochs: 230, validation set accuracy=0.973
+epochs: 235, validation set accuracy=0.973
+epochs: 240, validation set accuracy=0.973
+epochs: 245, validation set accuracy=0.9731
+epochs: 250, validation set accuracy=0.9732
+epochs: 255, validation set accuracy=0.9733
+epochs: 260, validation set accuracy=0.9731
+epochs: 265, validation set accuracy=0.9732
+epochs: 270, validation set accuracy=0.9733
+epochs: 275, validation set accuracy=0.9732
+epochs: 280, validation set accuracy=0.9734
+epochs: 285, validation set accuracy=0.9734
+epochs: 290, validation set accuracy=0.9734
+epochs: 295, validation set accuracy=0.9732
+epochs: 300, validation set accuracy=0.9733
+
+SEED=51
+epochs: 5, validation set accuracy=0.9273
+epochs: 10, validation set accuracy=0.9443
+epochs: 15, validation set accuracy=0.9544
+epochs: 20, validation set accuracy=0.9583
+epochs: 25, validation set accuracy=0.9621
+epochs: 30, validation set accuracy=0.9647
+epochs: 35, validation set accuracy=0.9662
+epochs: 40, validation set accuracy=0.9688
+epochs: 45, validation set accuracy=0.9693
+epochs: 50, validation set accuracy=0.9707
+epochs: 55, validation set accuracy=0.9711
+epochs: 60, validation set accuracy=0.9717
+epochs: 65, validation set accuracy=0.9724
+epochs: 70, validation set accuracy=0.9726
+epochs: 75, validation set accuracy=0.9722
+epochs: 80, validation set accuracy=0.9731
+epochs: 85, validation set accuracy=0.9732
+epochs: 90, validation set accuracy=0.9731
+epochs: 95, validation set accuracy=0.9735
+epochs: 100, validation set accuracy=0.9733
+epochs: 105, validation set accuracy=0.9733
+epochs: 110, validation set accuracy=0.9734
+epochs: 115, validation set accuracy=0.9735
+epochs: 120, validation set accuracy=0.9732
+epochs: 125, validation set accuracy=0.9735
+epochs: 130, validation set accuracy=0.9735
+epochs: 135, validation set accuracy=0.9738
+epochs: 140, validation set accuracy=0.9737
+epochs: 145, validation set accuracy=0.9741
+epochs: 150, validation set accuracy=0.974
+epochs: 155, validation set accuracy=0.9739
+epochs: 160, validation set accuracy=0.974
+epochs: 165, validation set accuracy=0.9739
+epochs: 170, validation set accuracy=0.9737
+epochs: 175, validation set accuracy=0.9736
+epochs: 180, validation set accuracy=0.974
+epochs: 185, validation set accuracy=0.9737
+epochs: 190, validation set accuracy=0.9738
+epochs: 195, validation set accuracy=0.9739
+epochs: 200, validation set accuracy=0.9738
+epochs: 205, validation set accuracy=0.9738
+epochs: 210, validation set accuracy=0.9738
+epochs: 215, validation set accuracy=0.9736
+epochs: 220, validation set accuracy=0.9736
+epochs: 225, validation set accuracy=0.9736
+epochs: 230, validation set accuracy=0.9736
+epochs: 235, validation set accuracy=0.9737
+epochs: 240, validation set accuracy=0.9737
+epochs: 245, validation set accuracy=0.9738
+epochs: 250, validation set accuracy=0.9738
+epochs: 255, validation set accuracy=0.9737
+epochs: 260, validation set accuracy=0.9738
+epochs: 265, validation set accuracy=0.9739
+epochs: 270, validation set accuracy=0.974
+epochs: 275, validation set accuracy=0.9734
+epochs: 280, validation set accuracy=0.9736
+epochs: 285, validation set accuracy=0.9737
+epochs: 290, validation set accuracy=0.9738
+epochs: 295, validation set accuracy=0.9736
+epochs: 300, validation set accuracy=0.9737
+
+SEED=52
+epochs: 5, validation set accuracy=0.9263
+epochs: 10, validation set accuracy=0.9464
+epochs: 15, validation set accuracy=0.9538
+epochs: 20, validation set accuracy=0.9602
+epochs: 25, validation set accuracy=0.9638
+epochs: 30, validation set accuracy=0.9661
+epochs: 35, validation set accuracy=0.9674
+epochs: 40, validation set accuracy=0.9674
+epochs: 45, validation set accuracy=0.9677
+epochs: 50, validation set accuracy=0.9682
+epochs: 55, validation set accuracy=0.9695
+epochs: 60, validation set accuracy=0.97
+epochs: 65, validation set accuracy=0.9711
+epochs: 70, validation set accuracy=0.9713
+epochs: 75, validation set accuracy=0.972
+epochs: 80, validation set accuracy=0.9722
+epochs: 85, validation set accuracy=0.9727
+epochs: 90, validation set accuracy=0.9731
+epochs: 95, validation set accuracy=0.9734
+epochs: 100, validation set accuracy=0.9733
+epochs: 105, validation set accuracy=0.9733
+epochs: 110, validation set accuracy=0.9734
+epochs: 115, validation set accuracy=0.9729
+epochs: 120, validation set accuracy=0.9734
+epochs: 125, validation set accuracy=0.9733
+epochs: 130, validation set accuracy=0.9732
+epochs: 135, validation set accuracy=0.9732
+epochs: 140, validation set accuracy=0.9735
+epochs: 145, validation set accuracy=0.9734
+epochs: 150, validation set accuracy=0.9734
+epochs: 155, validation set accuracy=0.9734
+epochs: 160, validation set accuracy=0.9732
+epochs: 165, validation set accuracy=0.9734
+epochs: 170, validation set accuracy=0.9735
+epochs: 175, validation set accuracy=0.9735
+epochs: 180, validation set accuracy=0.9736
+epochs: 185, validation set accuracy=0.9734
+epochs: 190, validation set accuracy=0.9737
+epochs: 195, validation set accuracy=0.9738
+epochs: 200, validation set accuracy=0.974
+epochs: 205, validation set accuracy=0.9742
+epochs: 210, validation set accuracy=0.9741
+epochs: 215, validation set accuracy=0.9741
+epochs: 220, validation set accuracy=0.9742
+epochs: 225, validation set accuracy=0.9743
+epochs: 230, validation set accuracy=0.9744
+epochs: 235, validation set accuracy=0.9744
+epochs: 240, validation set accuracy=0.9746
+epochs: 245, validation set accuracy=0.9747
+epochs: 250, validation set accuracy=0.9748
+epochs: 255, validation set accuracy=0.9747
+epochs: 260, validation set accuracy=0.9747
+epochs: 265, validation set accuracy=0.9748
+epochs: 270, validation set accuracy=0.9747
+epochs: 275, validation set accuracy=0.9748
+epochs: 280, validation set accuracy=0.9748
+epochs: 285, validation set accuracy=0.9748
+epochs: 290, validation set accuracy=0.9746
+epochs: 295, validation set accuracy=0.9746
+epochs: 300, validation set accuracy=0.9745
+
+SEED=48
+epochs: 5, test set accuracy=0.9212
+epochs: 10, test set accuracy=0.9387
+epochs: 15, test set accuracy=0.9493
+epochs: 20, test set accuracy=0.9552
+epochs: 25, test set accuracy=0.9601
+epochs: 30, test set accuracy=0.9647
+epochs: 35, test set accuracy=0.9669
+epochs: 40, test set accuracy=0.9684
+epochs: 45, test set accuracy=0.9694
+epochs: 50, test set accuracy=0.9702
+epochs: 55, test set accuracy=0.9712
+epochs: 60, test set accuracy=0.9719
+epochs: 65, test set accuracy=0.9724
+epochs: 70, test set accuracy=0.9727
+epochs: 75, test set accuracy=0.9735
+epochs: 80, test set accuracy=0.9735
+epochs: 85, test set accuracy=0.974
+epochs: 90, test set accuracy=0.9741
+epochs: 95, test set accuracy=0.9743
+epochs: 100, test set accuracy=0.9744
+epochs: 105, test set accuracy=0.9743
+epochs: 110, test set accuracy=0.974
+epochs: 115, test set accuracy=0.9742
+epochs: 120, test set accuracy=0.9745
+epochs: 125, test set accuracy=0.9742
+epochs: 130, test set accuracy=0.9741
+epochs: 135, test set accuracy=0.9743
+epochs: 140, test set accuracy=0.974
+epochs: 145, test set accuracy=0.9741
+epochs: 150, test set accuracy=0.9741
+epochs: 155, test set accuracy=0.9741
+epochs: 160, test set accuracy=0.9741
+epochs: 165, test set accuracy=0.9739
+epochs: 170, test set accuracy=0.9739
+epochs: 175, test set accuracy=0.9739
+epochs: 180, test set accuracy=0.974
+epochs: 185, test set accuracy=0.9742
+epochs: 190, test set accuracy=0.9741
+epochs: 195, test set accuracy=0.9742
+epochs: 200, test set accuracy=0.9746
+epochs: 205, test set accuracy=0.9745
+epochs: 210, test set accuracy=0.9745
+epochs: 215, test set accuracy=0.9744
+epochs: 220, test set accuracy=0.9742
+epochs: 225, test set accuracy=0.9738
+epochs: 230, test set accuracy=0.9737
+epochs: 235, test set accuracy=0.9737
+epochs: 240, test set accuracy=0.9736
+epochs: 245, test set accuracy=0.9739
+epochs: 250, test set accuracy=0.9737
+epochs: 255, test set accuracy=0.9736
+epochs: 260, test set accuracy=0.9735
+epochs: 265, test set accuracy=0.9734
+epochs: 270, test set accuracy=0.9736
+epochs: 275, test set accuracy=0.9735
+epochs: 280, test set accuracy=0.9734
+epochs: 285, test set accuracy=0.9735
+epochs: 290, test set accuracy=0.9736
+epochs: 295, test set accuracy=0.9737
+epochs: 300, test set accuracy=0.9737
+
+SEED=49
+epochs: 5, test set accuracy=0.9221
+epochs: 10, test set accuracy=0.9401
+epochs: 15, test set accuracy=0.9505
+epochs: 20, test set accuracy=0.9567
+epochs: 25, test set accuracy=0.9616
+epochs: 30, test set accuracy=0.9634
+epochs: 35, test set accuracy=0.965
+epochs: 40, test set accuracy=0.9668
+epochs: 45, test set accuracy=0.9687
+epochs: 50, test set accuracy=0.9697
+epochs: 55, test set accuracy=0.9703
+epochs: 60, test set accuracy=0.971
+epochs: 65, test set accuracy=0.9711
+epochs: 70, test set accuracy=0.9709
+epochs: 75, test set accuracy=0.9721
+epochs: 80, test set accuracy=0.9729
+epochs: 85, test set accuracy=0.9734
+epochs: 90, test set accuracy=0.9736
+epochs: 95, test set accuracy=0.9738
+epochs: 100, test set accuracy=0.9738
+epochs: 105, test set accuracy=0.974
+epochs: 110, test set accuracy=0.974
+epochs: 115, test set accuracy=0.974
+epochs: 120, test set accuracy=0.9742
+epochs: 125, test set accuracy=0.9749
+epochs: 130, test set accuracy=0.9748
+epochs: 135, test set accuracy=0.9751
+epochs: 140, test set accuracy=0.9751
+epochs: 145, test set accuracy=0.9752
+epochs: 150, test set accuracy=0.9754
+epochs: 155, test set accuracy=0.9751
+epochs: 160, test set accuracy=0.9753
+epochs: 165, test set accuracy=0.9752
+epochs: 170, test set accuracy=0.9753
+epochs: 175, test set accuracy=0.9753
+epochs: 180, test set accuracy=0.9752
+epochs: 185, test set accuracy=0.9751
+epochs: 190, test set accuracy=0.9752
+epochs: 195, test set accuracy=0.9755
+epochs: 200, test set accuracy=0.9757
+epochs: 205, test set accuracy=0.9759
+epochs: 210, test set accuracy=0.9759
+epochs: 215, test set accuracy=0.9759
+epochs: 220, test set accuracy=0.9761
+epochs: 225, test set accuracy=0.9761
+epochs: 230, test set accuracy=0.976
+epochs: 235, test set accuracy=0.9761
+epochs: 240, test set accuracy=0.976
+epochs: 245, test set accuracy=0.976
+epochs: 250, test set accuracy=0.9762
+epochs: 255, test set accuracy=0.9761
+epochs: 260, test set accuracy=0.9761
+epochs: 265, test set accuracy=0.976
+epochs: 270, test set accuracy=0.9759
+epochs: 275, test set accuracy=0.9757
+epochs: 280, test set accuracy=0.9757
+epochs: 285, test set accuracy=0.9755
+epochs: 290, test set accuracy=0.9759
+epochs: 295, test set accuracy=0.9758
+epochs: 300, test set accuracy=0.9756
+
+SEED=50
+epochs: 5, test set accuracy=0.924
+epochs: 10, test set accuracy=0.9391
+epochs: 15, test set accuracy=0.9504
+epochs: 20, test set accuracy=0.9554
+epochs: 25, test set accuracy=0.9599
+epochs: 30, test set accuracy=0.963
+epochs: 35, test set accuracy=0.9661
+epochs: 40, test set accuracy=0.9665
+epochs: 45, test set accuracy=0.9679
+epochs: 50, test set accuracy=0.9693
+epochs: 55, test set accuracy=0.9696
+epochs: 60, test set accuracy=0.9704
+epochs: 65, test set accuracy=0.971
+epochs: 70, test set accuracy=0.9711
+epochs: 75, test set accuracy=0.9712
+epochs: 80, test set accuracy=0.9721
+epochs: 85, test set accuracy=0.9729
+epochs: 90, test set accuracy=0.9731
+epochs: 95, test set accuracy=0.9732
+epochs: 100, test set accuracy=0.9737
+epochs: 105, test set accuracy=0.974
+epochs: 110, test set accuracy=0.9742
+epochs: 115, test set accuracy=0.9739
+epochs: 120, test set accuracy=0.9743
+epochs: 125, test set accuracy=0.9746
+epochs: 130, test set accuracy=0.9749
+epochs: 135, test set accuracy=0.9748
+epochs: 140, test set accuracy=0.9747
+epochs: 145, test set accuracy=0.9744
+epochs: 150, test set accuracy=0.9745
+epochs: 155, test set accuracy=0.9746
+epochs: 160, test set accuracy=0.9745
+epochs: 165, test set accuracy=0.9745
+epochs: 170, test set accuracy=0.9745
+epochs: 175, test set accuracy=0.9747
+epochs: 180, test set accuracy=0.9749
+epochs: 185, test set accuracy=0.975
+epochs: 190, test set accuracy=0.9748
+epochs: 195, test set accuracy=0.9745
+epochs: 200, test set accuracy=0.9745
+epochs: 205, test set accuracy=0.9746
+epochs: 210, test set accuracy=0.9747
+epochs: 215, test set accuracy=0.9746
+epochs: 220, test set accuracy=0.9748
+epochs: 225, test set accuracy=0.9747
+epochs: 230, test set accuracy=0.9749
+epochs: 235, test set accuracy=0.9746
+epochs: 240, test set accuracy=0.9747
+epochs: 245, test set accuracy=0.9747
+epochs: 250, test set accuracy=0.9747
+epochs: 255, test set accuracy=0.9748
+epochs: 260, test set accuracy=0.9748
+epochs: 265, test set accuracy=0.9747
+epochs: 270, test set accuracy=0.9747
+epochs: 275, test set accuracy=0.9747
+epochs: 280, test set accuracy=0.9746
+epochs: 285, test set accuracy=0.9745
+epochs: 290, test set accuracy=0.9745
+epochs: 295, test set accuracy=0.9745
+epochs: 300, test set accuracy=0.9746
+
+SEED=51
+epochs: 5, test set accuracy=0.9237
+epochs: 10, test set accuracy=0.9394
+epochs: 15, test set accuracy=0.9489
+epochs: 20, test set accuracy=0.9553
+epochs: 25, test set accuracy=0.9587
+epochs: 30, test set accuracy=0.9626
+epochs: 35, test set accuracy=0.9646
+epochs: 40, test set accuracy=0.966
+epochs: 45, test set accuracy=0.9669
+epochs: 50, test set accuracy=0.9686
+epochs: 55, test set accuracy=0.9688
+epochs: 60, test set accuracy=0.9692
+epochs: 65, test set accuracy=0.97
+epochs: 70, test set accuracy=0.9707
+epochs: 75, test set accuracy=0.9712
+epochs: 80, test set accuracy=0.971
+epochs: 85, test set accuracy=0.9712
+epochs: 90, test set accuracy=0.9716
+epochs: 95, test set accuracy=0.9722
+epochs: 100, test set accuracy=0.972
+epochs: 105, test set accuracy=0.9719
+epochs: 110, test set accuracy=0.9721
+epochs: 115, test set accuracy=0.9723
+epochs: 120, test set accuracy=0.9725
+epochs: 125, test set accuracy=0.9728
+epochs: 130, test set accuracy=0.973
+epochs: 135, test set accuracy=0.9731
+epochs: 140, test set accuracy=0.9728
+epochs: 145, test set accuracy=0.9729
+epochs: 150, test set accuracy=0.9728
+epochs: 155, test set accuracy=0.9729
+epochs: 160, test set accuracy=0.973
+epochs: 165, test set accuracy=0.9732
+epochs: 170, test set accuracy=0.9733
+epochs: 175, test set accuracy=0.9734
+epochs: 180, test set accuracy=0.9736
+epochs: 185, test set accuracy=0.9736
+epochs: 190, test set accuracy=0.9738
+epochs: 195, test set accuracy=0.9737
+epochs: 200, test set accuracy=0.9736
+epochs: 205, test set accuracy=0.9739
+epochs: 210, test set accuracy=0.9735
+epochs: 215, test set accuracy=0.9734
+epochs: 220, test set accuracy=0.9732
+epochs: 225, test set accuracy=0.9733
+epochs: 230, test set accuracy=0.9736
+epochs: 235, test set accuracy=0.9737
+epochs: 240, test set accuracy=0.9735
+epochs: 245, test set accuracy=0.9735
+epochs: 250, test set accuracy=0.974
+epochs: 255, test set accuracy=0.9741
+epochs: 260, test set accuracy=0.9742
+epochs: 265, test set accuracy=0.9742
+epochs: 270, test set accuracy=0.974
+epochs: 275, test set accuracy=0.9743
+epochs: 280, test set accuracy=0.9742
+epochs: 285, test set accuracy=0.9743
+epochs: 290, test set accuracy=0.9743
+epochs: 295, test set accuracy=0.974
+epochs: 300, test set accuracy=0.9741
+
+SEED=52
+epochs: 5, test set accuracy=0.9236
+epochs: 10, test set accuracy=0.9422
+epochs: 15, test set accuracy=0.954
+epochs: 20, test set accuracy=0.9607
+epochs: 25, test set accuracy=0.963
+epochs: 30, test set accuracy=0.9653
+epochs: 35, test set accuracy=0.9665
+epochs: 40, test set accuracy=0.9685
+epochs: 45, test set accuracy=0.9698
+epochs: 50, test set accuracy=0.9703
+epochs: 55, test set accuracy=0.9706
+epochs: 60, test set accuracy=0.9713
+epochs: 65, test set accuracy=0.9711
+epochs: 70, test set accuracy=0.9713
+epochs: 75, test set accuracy=0.9715
+epochs: 80, test set accuracy=0.9716
+epochs: 85, test set accuracy=0.9721
+epochs: 90, test set accuracy=0.9718
+epochs: 95, test set accuracy=0.9721
+epochs: 100, test set accuracy=0.9723
+epochs: 105, test set accuracy=0.9725
+epochs: 110, test set accuracy=0.9727
+epochs: 115, test set accuracy=0.9727
+epochs: 120, test set accuracy=0.9727
+epochs: 125, test set accuracy=0.9728
+epochs: 130, test set accuracy=0.9727
+epochs: 135, test set accuracy=0.9726
+epochs: 140, test set accuracy=0.9727
+epochs: 145, test set accuracy=0.973
+epochs: 150, test set accuracy=0.973
+epochs: 155, test set accuracy=0.9733
+epochs: 160, test set accuracy=0.9733
+epochs: 165, test set accuracy=0.9733
+epochs: 170, test set accuracy=0.9734
+epochs: 175, test set accuracy=0.9733
+epochs: 180, test set accuracy=0.9732
+epochs: 185, test set accuracy=0.973
+epochs: 190, test set accuracy=0.973
+epochs: 195, test set accuracy=0.9728
+epochs: 200, test set accuracy=0.9727
+epochs: 205, test set accuracy=0.9727
+epochs: 210, test set accuracy=0.9727
+epochs: 215, test set accuracy=0.9724
+epochs: 220, test set accuracy=0.9724
+epochs: 225, test set accuracy=0.9723
+epochs: 230, test set accuracy=0.9725
+epochs: 235, test set accuracy=0.9723
+epochs: 240, test set accuracy=0.9722
+epochs: 245, test set accuracy=0.972
+epochs: 250, test set accuracy=0.9719
+epochs: 255, test set accuracy=0.9719
+epochs: 260, test set accuracy=0.9719
+epochs: 265, test set accuracy=0.9716
+epochs: 270, test set accuracy=0.9717
+epochs: 275, test set accuracy=0.9714
+epochs: 280, test set accuracy=0.9715
+epochs: 285, test set accuracy=0.9715
+epochs: 290, test set accuracy=0.9715
+epochs: 295, test set accuracy=0.9715
+epochs: 300, test set accuracy=0.9717
+
+Total values needed to encode all trainable parameters: 50890
+Evolving 20 members for 100 generations...
+Generation   1, time: 0.33s,  fitness max: 0.146200, min: 0.042700, mean: 0.092225
+Generation   2, time: 1m 22s, fitness max: 0.944300, min: 0.072000, mean: 0.272845
+Generation   3, time: 64.33s, fitness max: 0.959400, min: 0.133000, mean: 0.510740
+Generation   4, time: 42.22s, fitness max: 0.960600, min: 0.200300, mean: 0.637940
+Generation   5, time: 41.49s, fitness max: 0.961300, min: 0.259900, mean: 0.561010
+Generation   6, time: 1m 41s, fitness max: 0.965000, min: 0.292800, mean: 0.651740
+Generation   7, time: 1m 19s, fitness max: 0.965000, min: 0.238900, mean: 0.770395
+Generation   8, time: 52.82s, fitness max: 0.966300, min: 0.632500, mean: 0.803715
+Generation   9, time: 1m 42s, fitness max: 0.968300, min: 0.543200, mean: 0.833055
+Generation  10, time: 41.55s, fitness max: 0.970900, min: 0.514900, mean: 0.861330
+Generation  11, time: 1m 20s, fitness max: 0.970900, min: 0.694500, mean: 0.866715
+Generation  12, time: 40.64s, fitness max: 0.970900, min: 0.771700, mean: 0.918835
+Generation  13, time: 39.88s, fitness max: 0.970900, min: 0.638000, mean: 0.890785
+Generation  14, time: 2m 17s, fitness max: 0.971000, min: 0.499100, mean: 0.893295
+Generation  15, time: 37.76s, fitness max: 0.971000, min: 0.506300, mean: 0.884565
+Generation  16, time: 1m 17s, fitness max: 0.971000, min: 0.714400, mean: 0.881520
+Generation  17, time: 1m 40s, fitness max: 0.971700, min: 0.603300, mean: 0.857280
+Generation  18, time: 1m 20s, fitness max: 0.972200, min: 0.528100, mean: 0.872100
+Generation  19, time: 58.41s, fitness max: 0.972300, min: 0.597900, mean: 0.882460
+Generation  20, time: 2m 07s, fitness max: 0.972700, min: 0.437200, mean: 0.888765
+Generation  21, time: 59.77s, fitness max: 0.972700, min: 0.574500, mean: 0.873800
+Generation  22, time: 1m 18s, fitness max: 0.972900, min: 0.759800, mean: 0.910740
+Generation  23, time: 20.93s, fitness max: 0.972900, min: 0.694100, mean: 0.913370
+Generation  24, time: 38.12s, fitness max: 0.972900, min: 0.603600, mean: 0.896625
+Generation  25, time: 18.51s, fitness max: 0.972900, min: 0.372600, mean: 0.849875
+Generation  26, time: 1m 19s, fitness max: 0.972900, min: 0.736500, mean: 0.911935
+Generation  27, time: 60.18s, fitness max: 0.973300, min: 0.486100, mean: 0.902135
+Generation  28, time: 68.60s, fitness max: 0.973600, min: 0.679600, mean: 0.905265
+Generation  29, time: 68.20s, fitness max: 0.973600, min: 0.848300, mean: 0.932985
+Generation  30, time: 1m 12s, fitness max: 0.974000, min: 0.643500, mean: 0.923695
+Generation  31, time: 1m 26s, fitness max: 0.974100, min: 0.664100, mean: 0.899815
+Generation  32, time: 1m 42s, fitness max: 0.974100, min: 0.599300, mean: 0.897895
+Generation  33, time: 1m 24s, fitness max: 0.974100, min: 0.782500, mean: 0.941155
+Generation  34, time: 1m 38s, fitness max: 0.974500, min: 0.559500, mean: 0.909555
+Generation  35, time: 1m 40s, fitness max: 0.974900, min: 0.684300, mean: 0.932210
+Generation  36, time: 50.23s, fitness max: 0.974900, min: 0.629800, mean: 0.907495
+Generation  37, time: 54.15s, fitness max: 0.975000, min: 0.454100, mean: 0.825195
+Generation  38, time: 1m 27s, fitness max: 0.975000, min: 0.422500, mean: 0.834050
+Generation  39, time: 2m 02s, fitness max: 0.975000, min: 0.503300, mean: 0.856920
+Generation  40, time: 40.99s, fitness max: 0.975000, min: 0.545000, mean: 0.882460
+Generation  41, time: 1m 41s, fitness max: 0.975000, min: 0.736600, mean: 0.926065
+Generation  42, time: 21.08s, fitness max: 0.975000, min: 0.837100, mean: 0.931635
+Generation  43, time: 1m 42s, fitness max: 0.975000, min: 0.546500, mean: 0.903665
+Generation  44, time: 59.23s, fitness max: 0.975700, min: 0.535200, mean: 0.906375
+Generation  45, time: 1m 23s, fitness max: 0.975700, min: 0.684600, mean: 0.921700
+Generation  46, time: 1m 22s, fitness max: 0.975700, min: 0.658800, mean: 0.910125
+Generation  47, time: 40.38s, fitness max: 0.976100, min: 0.668700, mean: 0.915560
+Generation  48, time: 1m 37s, fitness max: 0.976100, min: 0.534900, mean: 0.886880
+Generation  49, time: 1m 37s, fitness max: 0.976100, min: 0.607100, mean: 0.882250
+Generation  50, time: 35.43s, fitness max: 0.976100, min: 0.553300, mean: 0.904390
+Generation  51, time: 2m 52s, fitness max: 0.976100, min: 0.676800, mean: 0.919730
+Generation  52, time: 4m 03s, fitness max: 0.976100, min: 0.697000, mean: 0.939780
+Generation  53, time: 2m 16s, fitness max: 0.976100, min: 0.647300, mean: 0.936165
+Generation  54, time: 2m 52s, fitness max: 0.976100, min: 0.687500, mean: 0.917855
+Generation  55, time: 2m 16s, fitness max: 0.976100, min: 0.532200, mean: 0.901000
+Generation  56, time: 2m 17s, fitness max: 0.976100, min: 0.452900, mean: 0.888405
+Generation  57, time: 1m 14s, fitness max: 0.976100, min: 0.714200, mean: 0.934750
+Generation  58, time: 1m 23s, fitness max: 0.976100, min: 0.938200, mean: 0.965475
+Generation  59, time: 51.96s, fitness max: 0.976100, min: 0.702600, mean: 0.929285
+Generation  60, time: 59.62s, fitness max: 0.976100, min: 0.597300, mean: 0.866545
+Generation  61, time: 2m 17s, fitness max: 0.976100, min: 0.621200, mean: 0.876735
+Generation  62, time: 2m 38s, fitness max: 0.976100, min: 0.626000, mean: 0.885445
+Generation  63, time: 1m 49s, fitness max: 0.976100, min: 0.634400, mean: 0.913645
+Generation  64, time: 1m 11s, fitness max: 0.976100, min: 0.711500, mean: 0.934415
+Generation  65, time: 1m 45s, fitness max: 0.976100, min: 0.730600, mean: 0.938835
+Generation  66, time: 2m 16s, fitness max: 0.976100, min: 0.764200, mean: 0.932505
+Generation  67, time: 1m 46s, fitness max: 0.976100, min: 0.757200, mean: 0.950005
+Generation  68, time: 2m 20s, fitness max: 0.976400, min: 0.394500, mean: 0.918785
+Generation  69, time: 2m 19s, fitness max: 0.977500, min: 0.726300, mean: 0.950400
+Generation  70, time: 64.03s, fitness max: 0.977500, min: 0.683900, mean: 0.883980
+Generation  71, time: 39.26s, fitness max: 0.977500, min: 0.708700, mean: 0.921190
+Generation  72, time: 0.40s,  fitness max: 0.977500, min: 0.508700, mean: 0.857955
+Generation  73, time: 1m 38s, fitness max: 0.977500, min: 0.518600, mean: 0.864455
+Generation  74, time: 60.19s, fitness max: 0.977500, min: 0.801900, mean: 0.903320
+Generation  75, time: 2m 30s, fitness max: 0.977500, min: 0.518300, mean: 0.906955
+Generation  76, time: 1m 53s, fitness max: 0.977500, min: 0.639900, mean: 0.920425
+Generation  77, time: 32.73s, fitness max: 0.977500, min: 0.906900, mean: 0.958065
+Generation  78, time: 66.97s, fitness max: 0.977500, min: 0.746300, mean: 0.931390
+Generation  79, time: 32.72s, fitness max: 0.977500, min: 0.626900, mean: 0.931780
+Generation  80, time: 16.40s, fitness max: 0.977500, min: 0.604500, mean: 0.864015
+Generation  81, time: 68.44s, fitness max: 0.977500, min: 0.465600, mean: 0.858590
+Generation  82, time: 16.70s, fitness max: 0.977500, min: 0.270500, mean: 0.856875
+Generation  83, time: 64.66s, fitness max: 0.977500, min: 0.513000, mean: 0.877780
+Generation  84, time: 65.04s, fitness max: 0.977500, min: 0.446000, mean: 0.851390
+Generation  85, time: 1m 53s, fitness max: 0.977500, min: 0.708600, mean: 0.913480
+Generation  86, time: 0.37s,  fitness max: 0.977500, min: 0.523400, mean: 0.887150
+Generation  87, time: 34.86s, fitness max: 0.977500, min: 0.870300, mean: 0.930125
+Generation  88, time: 1m 20s, fitness max: 0.977500, min: 0.591700, mean: 0.893235
+Generation  89, time: 64.64s, fitness max: 0.977500, min: 0.729500, mean: 0.925915
+Generation  90, time: 65.82s, fitness max: 0.977500, min: 0.526700, mean: 0.941785
+Generation  91, time: 64.68s, fitness max: 0.977500, min: 0.692300, mean: 0.934600
+Generation  92, time: 66.78s, fitness max: 0.977500, min: 0.736700, mean: 0.935755
+Generation  93, time: 1m 53s, fitness max: 0.977500, min: 0.842400, mean: 0.946140
+Generation  94, time: 2m 10s, fitness max: 0.977500, min: 0.714500, mean: 0.946180
+Generation  95, time: 1m 33s, fitness max: 0.977500, min: 0.701100, mean: 0.922940
+Generation  96, time: 1m 26s, fitness max: 0.977500, min: 0.513600, mean: 0.929690
+Generation  97, time: 2m 08s, fitness max: 0.977600, min: 0.911400, mean: 0.964630
+Generation  98, time: 32.92s, fitness max: 0.977600, min: 0.706200, mean: 0.889000
+Generation  99, time: 64.92s, fitness max: 0.977600, min: 0.707900, mean: 0.932580
+Generation 100, time: 1m 11s, fitness max: 0.977600, min: 0.742300, mean: 0.933670
+Evolution finished, top-10 members:
+member   1, fitness=0.977600
+member   2, fitness=0.976800
+member   3, fitness=0.976400
+member   4, fitness=0.976300
+member   5, fitness=0.975800
+member   6, fitness=0.972000
+member   7, fitness=0.970000
+member   8, fitness=0.969000
+member   9, fitness=0.968800
+member  10, fitness=0.964100
+member  20, fitness=0.742300
+Training set predicted with 0.9947 accuracy.
+Test set predictions:
+Accuracy  = 0.9767
+Precision = 0.976722
+Recall    = 0.976389
+F1        = 0.976556
+Confusion matrix:
+ 970    0    1    1    0    1    2    1    3    1
+   0 1127    2    1    0    1    2    0    2    0
+   3    2 1007    2    3    0    3    6    6    0
+   0    0    4  986    0    5    0    5    3    7
+   2    0    0    0  960    0    5    3    1   11
+   2    0    0   12    1  864    4    0    6    3
+   6    2    2    1    7    2  934    1    3    0
+   1    9    7    2    0    0    0 1002    2    5
+   3    1    3    8    5    2    4    7  937    4
+   2    3    0    5    8    1    1    8    1  980

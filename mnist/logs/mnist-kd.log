@@ -1,0 +1,87 @@
+CPU: [AMD Ryzen 5 1600X Six-Core Processor]
+12 threads with OpenMP
+Teacher data: X (50000,784) 149.5 MB, Y (50000,10)
+Student data: X (0,0) 0 bytes, Y (0,0)
+Validation data: X (10000,784) 29.9 MB, Y (10000,10)
+Testing data: X (10000,784) 29.9 MB, Y (10000,10)
+Network: mnist-trained-teacher(dropout)
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Conv2D(ReLU), shape:[24,24,6] (k:5,s:1,pad:no), parameters:150, memory:14.7 KB
+Maxpool2D shape:[12,12,6] (k:2,s:2), parameters:0, memory:3.4 KB
+Conv2D(ReLU), shape:[8,8,16] (k:5,s:1,pad:no), parameters:2400, memory:22.8 KB
+Maxpool2D shape:[4,4,16] (k:2,s:2), parameters:0, memory:1.0 KB
+Conv2D(ReLU), shape:[1,120] (k:4,s:1,pad:no), parameters:30720, memory:240.5 KB
+Dropout, ratio:0.25, shape:[1,120], parameters:0, memory:480 bytes
+Dense(ReLU), shape:[84], parameters:10164, memory:79.4 KB
+Dense(Linear), shape:[10], parameters:850, memory:6.6 KB
+
+Test set predicted in 0.29 secs with 0.9874 accuracy.
+selected 8632 random samples.
+Y_student: (8632,20)
+Network: mnist-student
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Dense(ReLU), shape:[40], parameters:31400, memory:245.3 KB
+Dense(Linear), shape:[10], parameters:410, memory:3.2 KB
+
+Backprop: batch_size:30 epochs:110, Adam (α:0.0001 β1:0.9 β2:0.999), KDloss (α:0.01 T:5)
+
+Training on CPU...
+epoch: 10, time: 0.22 secs (speed 30873.8), loss (KDloss): 12962.7559, validation accuracy: 0.8754
+epoch: 20, time: 0.23 secs (speed 41500.0), loss (KDloss): 12574.7734, validation accuracy: 0.8948
+epoch: 30, time: 0.23 secs (speed 30000.0), loss (KDloss): 12422.1855, validation accuracy: 0.8992
+epoch: 40, time: 0.27 secs (speed 29411.8), loss (KDloss): 12296.8916, validation accuracy: 0.9094
+epoch: 50, time: 0.24 secs (speed 18666.7), loss (KDloss): 12187.2695, validation accuracy: 0.9164
+epoch: 60, time: 0.22 secs (speed 42857.1), loss (KDloss): 12091.6133, validation accuracy: 0.9210
+epoch: 70, time: 0.22 secs (speed 39000.0), loss (KDloss): 12014.6807, validation accuracy: 0.9245
+epoch: 80, time: 0.23 secs (speed 33333.3), loss (KDloss): 11951.8887, validation accuracy: 0.9286
+epoch: 90, time: 0.23 secs (speed 41764.7), loss (KDloss): 11901.3555, validation accuracy: 0.9328
+epoch: 100, time: 0.23 secs (speed 41875.0), loss (KDloss): 11859.9609, validation accuracy: 0.9359
+epoch: 110, time: 0.22 secs (speed 43043.5), loss (KDloss): 11825.6904, validation accuracy: 0.9378
+Trained in 28.18 secs.
+Test set predicted in 0.06 secs with 0.9338 accuracy.
+Accuracy  = 0.9338
+Precision = 0.933962
+Recall    = 0.933
+F1        = 0.933481
+Confusion matrix:
+ 964    0    0    2    1    3    6    1    3    0
+   0 1119    2    3    2    1    3    0    5    0
+   9   22  928   10   14    2   10   12   25    0
+   3    1   11  944    1   18    1    6   16    9
+   2    3    2    1  934    0   13    1    5   21
+   7    2    2   28    9  802   12    3   19    8
+  10    3    1    1   12    8  919    0    4    0
+   3   21   23    3   10    1    0  950    1   16
+   7   18    5   27    9   17   10    8  864    9
+   8    9    1   16   40    4    4    8    5  914
+Network: mnist-student
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Dense(ReLU), shape:[40], parameters:31400, memory:245.3 KB
+Dense(softmax), shape:[10], parameters:410, memory:3.2 KB
+
+Backprop: batch_size:30 epochs:58, Adam (α:0.0001 β1:0.9 β2:0.999), CCE
+
+Training on CPU...
+epoch: 10, time: 0.30 secs (speed 42831.3), loss (CCE): 3160.2356, validation accuracy: 0.8932
+epoch: 20, time: 0.27 secs (speed 32168.7), loss (CCE): 2420.8079, validation accuracy: 0.9078
+epoch: 30, time: 0.23 secs (speed 41779.1), loss (CCE): 2090.0891, validation accuracy: 0.9140
+epoch: 40, time: 0.25 secs (speed 42705.9), loss (CCE): 1857.7286, validation accuracy: 0.9176
+epoch: 50, time: 0.22 secs (speed 45000.0), loss (CCE): 1659.2114, validation accuracy: 0.9215
+epoch: 58, time: 0.00 secs (speed 34605.8), loss (CCE): 1530.4421, validation accuracy: 0.9250
+Trained in 14.81 secs.
+Test set predicted in 0.02 secs with 0.9225 accuracy.
+Accuracy  = 0.9225
+Precision = 0.921891
+Recall    = 0.921527
+F1        = 0.921709
+Confusion matrix:
+ 948    0    5    2    0   12    9    2    2    0
+   0 1108    2    2    0    4    4    2   13    0
+   6    7  925   12   11    3   14   12   35    7
+   3    2   21  926    1   21    2   14   14    6
+   1    4    3    0  929    0   10    2    7   26
+   8    3    1   24    8  780   19   12   29    8
+   6    3   10    1   25   12  899    1    1    0
+   1   11   29    6    7    1    0  947    3   23
+   8   10    4   13   10   21    8    8  876   16
+   9    9    2    7   52    5    1   22   15  887

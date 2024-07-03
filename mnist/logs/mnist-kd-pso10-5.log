@@ -1,0 +1,139 @@
+CPU: [AMD Ryzen 9 5900X 12-Core Processor]
+24 threads with OpenMP
+Teacher data: X (50000,784) 149.5 MB, Y (50000,10)
+Student data: X (0,0) 0 bytes, Y (0,0)
+Validation data: X (10000,784) 29.9 MB, Y (10000,10)
+Testing data: X (10000,784) 29.9 MB, Y (10000,10)
+Network: mnist-kd-trained-teacher(dropout)
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Conv2D(ReLU), shape:[24,24,6] (k:5,s:1,pad:no), parameters:150, memory:14.7 KB
+Maxpool2D shape:[12,12,6] (k:2,s:2), parameters:0, memory:3.4 KB
+Conv2D(ReLU), shape:[8,8,16] (k:5,s:1,pad:no), parameters:2400, memory:22.8 KB
+Maxpool2D shape:[4,4,16] (k:2,s:2), parameters:0, memory:1.0 KB
+Conv2D(ReLU), shape:[1,120] (k:4,s:1,pad:no), parameters:30720, memory:240.5 KB
+Dropout, ratio:0.25, shape:[1,120], parameters:0, memory:480 bytes
+Dense(ReLU), shape:[84], parameters:10164, memory:79.4 KB
+Dense(Linear), shape:[10], parameters:850, memory:6.6 KB
+
+Test set predicted in 0.13s with 0.9913 accuracy.
+Network: mnist-kd-student
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Dense(ReLU), shape:[40], parameters:31400, memory:245.3 KB
+Dense(Linear), shape:[10], parameters:410, memory:3.2 KB
+
+X_student: (50000,784)
+Y_student: (50000,20)
+
+Train student with KD and 50000 training samples
+Network: mnist-kd-student
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Dense(ReLU), shape:[40], parameters:31400, memory:245.3 KB
+Dense(Linear), shape:[10], parameters:410, memory:3.2 KB
+
+Backprop: batch_size:30 epochs:300, Adam (α:0.0001 β1:0.9 β2:0.999), KDloss (α:0.01 T:5)
+
+Training on CPU...
+epoch:  10, time: 1.25s (speed 42810.2), loss (KDloss): 43830.1992, validation accuracy: 0.9224
+epoch:  20, time: 1.29s (speed 38591.8), loss (KDloss): 40459.5352, validation accuracy: 0.9448
+epoch:  30, time: 1.35s (speed 36419.9), loss (KDloss): 39034.9062, validation accuracy: 0.9565
+epoch:  40, time: 1.34s (speed 41741.9), loss (KDloss): 38300.2734, validation accuracy: 0.9606
+epoch:  50, time: 1.30s (speed 39554.8), loss (KDloss): 37822.3555, validation accuracy: 0.9659
+epoch:  60, time: 1.30s (speed 40553.7), loss (KDloss): 37478.3438, validation accuracy: 0.9676
+epoch:  70, time: 1.33s (speed 38760.0), loss (KDloss): 37225.3398, validation accuracy: 0.9690
+epoch:  80, time: 1.25s (speed 40421.5), loss (KDloss): 37028.9258, validation accuracy: 0.9693
+epoch:  90, time: 1.29s (speed 39833.6), loss (KDloss): 36867.8164, validation accuracy: 0.9706
+epoch: 100, time: 1.27s (speed 40264.8), loss (KDloss): 36738.3828, validation accuracy: 0.9712
+epoch: 110, time: 1.27s (speed 39791.7), loss (KDloss): 36628.3086, validation accuracy: 0.9726
+epoch: 120, time: 1.28s (speed 40918.4), loss (KDloss): 36536.9219, validation accuracy: 0.9719
+epoch: 130, time: 1.29s (speed 42545.5), loss (KDloss): 36461.8320, validation accuracy: 0.9733
+epoch: 140, time: 1.26s (speed 39113.9), loss (KDloss): 36392.3125, validation accuracy: 0.9742
+epoch: 150, time: 1.33s (speed 37419.9), loss (KDloss): 36334.3633, validation accuracy: 0.9737
+epoch: 160, time: 1.25s (speed 40222.0), loss (KDloss): 36284.5195, validation accuracy: 0.9743
+epoch: 170, time: 1.34s (speed 38645.5), loss (KDloss): 36238.8125, validation accuracy: 0.9753
+epoch: 180, time: 1.31s (speed 38320.0), loss (KDloss): 36202.5664, validation accuracy: 0.9755
+epoch: 190, time: 1.28s (speed 39457.5), loss (KDloss): 36166.3867, validation accuracy: 0.9753
+epoch: 200, time: 1.39s (speed 40076.1), loss (KDloss): 36136.7695, validation accuracy: 0.9763
+epoch: 210, time: 1.31s (speed 39240.7), loss (KDloss): 36108.9727, validation accuracy: 0.9765
+epoch: 220, time: 1.30s (speed 40562.7), loss (KDloss): 36084.1875, validation accuracy: 0.9759
+epoch: 230, time: 1.30s (speed 40793.2), loss (KDloss): 36063.7656, validation accuracy: 0.9766
+epoch: 240, time: 1.32s (speed 38424.8), loss (KDloss): 36039.3203, validation accuracy: 0.9776
+epoch: 250, time: 1.32s (speed 38151.6), loss (KDloss): 36019.3359, validation accuracy: 0.9770
+epoch: 260, time: 1.30s (speed 41550.8), loss (KDloss): 36001.5391, validation accuracy: 0.9773
+epoch: 270, time: 1.28s (speed 38810.1), loss (KDloss): 35986.3203, validation accuracy: 0.9768
+epoch: 280, time: 1.32s (speed 37021.3), loss (KDloss): 35966.2227, validation accuracy: 0.9767
+epoch: 290, time: 1.31s (speed 38753.8), loss (KDloss): 35951.9766, validation accuracy: 0.9772
+epoch: 300, time: 1.48s (speed 33910.8), loss (KDloss): 35940.1133, validation accuracy: 0.9773
+Trained in 6m 34s.
+Test set predicted in 0.01s with 0.974 accuracy.
+Accuracy  = 0.974
+Precision = 0.974033
+Recall    = 0.973835
+F1        = 0.973934
+Confusion matrix:
+ 967    0    2    0    1    2    2    1    5    0
+   0 1122    4    0    0    2    1    0    6    0
+   2    1 1014    2    2    0    1    4    6    0
+   0    2    7  976    0    8    0    4   11    2
+   1    0    6    1  957    0    2    5    1    9
+   3    0    0   10    0  866    6    1    4    2
+   4    3    0    1    3    4  937    0    6    0
+   2   11   15    3    0    0    0  991    2    4
+   5    2    6    1    3    4    2    2  947    2
+   4    4    0   11    9    4    2    5    7  963
+
+Train student without KD and 50000 training samples
+Network: mnist-kd-student
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Dense(ReLU), shape:[40], parameters:31400, memory:245.3 KB
+Dense(softmax), shape:[10], parameters:410, memory:3.2 KB
+
+Backprop: batch_size:30 epochs:300, Adam (α:0.0001 β1:0.9 β2:0.999), CCE
+
+Training on CPU...
+epoch:  10, time: 1.25s (speed 39763.0), loss (CCE): 12084.6924, validation accuracy: 0.9373
+epoch:  20, time: 1.25s (speed 40078.1), loss (CCE): 8515.7578, validation accuracy: 0.9519
+epoch:  30, time: 1.34s (speed 37662.5), loss (CCE): 6567.9448, validation accuracy: 0.9612
+epoch:  40, time: 1.23s (speed 40699.3), loss (CCE): 5380.7471, validation accuracy: 0.9648
+epoch:  50, time: 1.27s (speed 39779.2), loss (CCE): 4553.8545, validation accuracy: 0.9669
+epoch:  60, time: 1.39s (speed 40539.7), loss (CCE): 3954.1707, validation accuracy: 0.9673
+epoch:  70, time: 1.37s (speed 36511.9), loss (CCE): 3497.7866, validation accuracy: 0.9680
+epoch:  80, time: 1.22s (speed 41959.0), loss (CCE): 3101.0889, validation accuracy: 0.9678
+epoch:  90, time: 1.25s (speed 41420.2), loss (CCE): 2795.0115, validation accuracy: 0.9683
+epoch: 100, time: 1.23s (speed 43076.9), loss (CCE): 2514.0815, validation accuracy: 0.9687
+epoch: 110, time: 1.18s (speed 44875.0), loss (CCE): 2275.7061, validation accuracy: 0.9698
+epoch: 120, time: 1.22s (speed 41246.4), loss (CCE): 2050.4087, validation accuracy: 0.9694
+epoch: 130, time: 1.22s (speed 41305.7), loss (CCE): 1878.2803, validation accuracy: 0.9690
+epoch: 140, time: 1.20s (speed 43841.1), loss (CCE): 1692.0471, validation accuracy: 0.9683
+epoch: 150, time: 1.28s (speed 40453.3), loss (CCE): 1534.9070, validation accuracy: 0.9683
+epoch: 160, time: 1.20s (speed 42196.5), loss (CCE): 1395.7655, validation accuracy: 0.9679
+epoch: 170, time: 1.24s (speed 41095.5), loss (CCE): 1280.5293, validation accuracy: 0.9681
+epoch: 180, time: 1.34s (speed 36646.7), loss (CCE): 1160.2622, validation accuracy: 0.9683
+epoch: 190, time: 1.25s (speed 41469.0), loss (CCE): 1031.6263, validation accuracy: 0.9687
+epoch: 200, time: 1.28s (speed 39467.3), loss (CCE): 954.1368, validation accuracy: 0.9670
+epoch: 210, time: 1.32s (speed 39059.2), loss (CCE): 849.5820, validation accuracy: 0.9682
+epoch: 220, time: 1.23s (speed 41861.1), loss (CCE): 777.1920, validation accuracy: 0.9681
+epoch: 230, time: 1.30s (speed 37839.7), loss (CCE): 704.2735, validation accuracy: 0.9672
+epoch: 240, time: 1.27s (speed 41151.3), loss (CCE): 625.6184, validation accuracy: 0.9670
+epoch: 250, time: 1.25s (speed 40410.3), loss (CCE): 570.0991, validation accuracy: 0.9672
+epoch: 260, time: 1.27s (speed 38986.2), loss (CCE): 502.3914, validation accuracy: 0.9677
+epoch: 270, time: 1.22s (speed 40776.7), loss (CCE): 456.8238, validation accuracy: 0.9688
+epoch: 280, time: 1.24s (speed 41432.9), loss (CCE): 406.8971, validation accuracy: 0.9667
+epoch: 290, time: 1.39s (speed 40868.3), loss (CCE): 355.3990, validation accuracy: 0.9670
+epoch: 300, time: 1.23s (speed 40981.1), loss (CCE): 314.5993, validation accuracy: 0.9677
+Trained in 6m 19s.
+Test set predicted in 0.01s with 0.9687 accuracy.
+Accuracy  = 0.9687
+Precision = 0.968628
+Recall    = 0.96826
+F1        = 0.968444
+Confusion matrix:
+ 965    0    2    1    1    4    4    2    1    0
+   0 1123    2    3    0    1    2    1    3    0
+   4    3 1007    3    1    1    3    5    5    0
+   0    0    5  980    0    6    0    5    8    6
+   1    2    6    1  949    0    3    2    3   15
+   4    0    0   22    0  850    8    0    5    3
+   6    3    9    0    6    4  926    0    4    0
+   0    6   13    8    0    0    0  991    4    6
+   6    0    3    4    4    5    4    8  938    2
+   4    7    1    5   10    6    2   10    6  958

@@ -1,0 +1,31 @@
+CPU: [AMD Ryzen 5 1600X Six-Core Processor]
+12 threads with OpenMP
+Teacher data: X (50000,784) 149.5 MB, Y (50000,10)
+Student data: X (0,0) 0 bytes, Y (0,0)
+Validation data: X (10000,784) 29.9 MB, Y (10000,10)
+Testing data: X (10000,784) 29.9 MB, Y (10000,10)
+Network: mnist-kd-trained-teacher(dropout)
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Conv2D(ReLU), shape:[24,24,6] (k:5,s:1,pad:no), parameters:150, memory:14.7 KB
+Maxpool2D shape:[12,12,6] (k:2,s:2), parameters:0, memory:3.4 KB
+Conv2D(ReLU), shape:[8,8,16] (k:5,s:1,pad:no), parameters:2400, memory:22.8 KB
+Maxpool2D shape:[4,4,16] (k:2,s:2), parameters:0, memory:1.0 KB
+Conv2D(ReLU), shape:[1,120] (k:4,s:1,pad:no), parameters:30720, memory:240.5 KB
+Dropout, ratio:0.25, shape:[1,120], parameters:0, memory:480 bytes
+Dense(ReLU), shape:[84], parameters:10164, memory:79.4 KB
+Dense(Linear), shape:[10], parameters:850, memory:6.6 KB
+
+Test set predicted in 0.29 secs with 0.9874 accuracy.
+Network: mnist-kd-student
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Dense(ReLU), shape:[40], parameters:31400, memory:245.3 KB
+Dense(Linear), shape:[10], parameters:410, memory:3.2 KB
+
+X_student: (50000,784)
+Y_student: (50000,20)
+
+Number of samples in each chain: 1000
+Evolving 500 members for 50 generations...
+Generation 1, time: 21 mins and 03 secs, fitness max: 0.873400, min: 0.854700, mean: 0.863979
+Generation 2, time: 21 mins and 02 secs, fitness max: 0.873400, min: 0.845300, mean: 0.859413
+Generation 3, time: 21 mins and 22 secs, fitness max: 0.873400, min: 0.846800, mean: 0.856736

@@ -1,0 +1,418 @@
+Network: mnist-gatrain-ffnn
+Input, shape:[28,28], parameters: 0, memory:3.1 KB
+Dense(ReLU), shape:[64], parameters:50240, memory:392.5 KB
+Dense(softmax), shape:[10], parameters:650, memory:5.1 KB
+
+Mutation probability: 0.5
+
+BP only (MLP), best validation set accuracy=0.9771 (260 epochs), mean=0.9750 (5 runs)
+BP only (CNN), best validation set accuracy=0.9896  (70 epochs), mean=0.9885 (5 runs)
+
+BP only (MLP), best test set accuracy=0.9762 (250 epochs), mean=0.9747 (5 runs)
+BP only (CNN), best test set accuracy=0.9902  (75 epochs), mean=0.9890 (5 runs)
+Total values needed to encode all trainable parameters: 50890
+
+
+Seed: 48
+----------
+
+Crossover: AvgFull, learning rate: 0.3, mutation epochs: 5
+evolving 40 members for 40 generations...
+Generation   1, time:  0.64s, fitness max: 0.146200, min: 0.042700, mean: 0.095160
+Generation   2, time: 3m 05s, fitness max: 0.939300, min: 0.043500, mean: 0.574188
+Generation   3, time: 3m 05s, fitness max: 0.958600, min: 0.303200, mean: 0.845428
+Generation   4, time: 2m 13s, fitness max: 0.965500, min: 0.103300, mean: 0.731270
+Generation   5, time: 2m 06s, fitness max: 0.968100, min: 0.134700, mean: 0.730480
+Generation   6, time: 2m 49s, fitness max: 0.972800, min: 0.188500, mean: 0.850700
+Generation   7, time: 2m 10s, fitness max: 0.972800, min: 0.549900, mean: 0.904635
+Generation   8, time: 1m 30s, fitness max: 0.972800, min: 0.507200, mean: 0.916710
+Generation   9, time: 2m 26s, fitness max: 0.972800, min: 0.617500, mean: 0.933675
+Generation  10, time: 2m 07s, fitness max: 0.972800, min: 0.684400, mean: 0.947832
+Generation  11, time: 2m 47s, fitness max: 0.973800, min: 0.867700, mean: 0.960510
+Generation  12, time: 2m 03s, fitness max: 0.973800, min: 0.918200, mean: 0.962875
+Generation  13, time: 2m 20s, fitness max: 0.973800, min: 0.946000, mean: 0.968933
+Generation  14, time: 2m 36s, fitness max: 0.974700, min: 0.965400, mean: 0.971568
+Generation  15, time: 2m 12s, fitness max: 0.975400, min: 0.967200, mean: 0.972533
+Generation  16, time: 2m 38s, fitness max: 0.975800, min: 0.969200, mean: 0.972975
+Generation  17, time: 3m 01s, fitness max: 0.976100, min: 0.964500, mean: 0.973005
+Generation  18, time: 2m 29s, fitness max: 0.976500, min: 0.970000, mean: 0.973800
+Generation  19, time: 2m 36s, fitness max: 0.977100, min: 0.966900, mean: 0.973938
+Generation  20, time: 2m 57s, fitness max: 0.977100, min: 0.965200, mean: 0.974123
+Generation  21, time: 2m 20s, fitness max: 0.978100, min: 0.969000, mean: 0.974898
+Generation  22, time: 2m 38s, fitness max: 0.978100, min: 0.968700, mean: 0.975005
+Generation  23, time: 2m 56s, fitness max: 0.978400, min: 0.969500, mean: 0.975540
+Generation  24, time: 2m 29s, fitness max: 0.979300, min: 0.969300, mean: 0.976390
+Generation  25, time: 2m 31s, fitness max: 0.979300, min: 0.968600, mean: 0.977063
+Generation  26, time: 2m 53s, fitness max: 0.979800, min: 0.975400, mean: 0.978255
+Generation  27, time: 2m 37s, fitness max: 0.979800, min: 0.977600, mean: 0.978730
+Generation  28, time: 2m 59s, fitness max: 0.979800, min: 0.978100, mean: 0.978695
+Generation  29, time: 2m 29s, fitness max: 0.979800, min: 0.978200, mean: 0.978645
+Generation  30, time: 1m 57s, fitness max: 0.979800, min: 0.978300, mean: 0.978618
+Generation  31, time: 1m 40s, fitness max: 0.979800, min: 0.978300, mean: 0.978655
+Generation  32, time: 2m 45s, fitness max: 0.979800, min: 0.978200, mean: 0.978545
+Generation  33, time: 3m 01s, fitness max: 0.979800, min: 0.978300, mean: 0.978633
+Generation  34, time: 3m 05s, fitness max: 0.979800, min: 0.978400, mean: 0.978640
+Generation  35, time: 1m 56s, fitness max: 0.979800, min: 0.978400, mean: 0.978667
+Generation  36, time: 3m 02s, fitness max: 0.979800, min: 0.978500, mean: 0.978675
+Generation  37, time: 2m 23s, fitness max: 0.979800, min: 0.978400, mean: 0.978665
+Generation  38, time: 3m 24s, fitness max: 0.979800, min: 0.978400, mean: 0.978650
+Generation  39, time: 3m 01s, fitness max: 0.979800, min: 0.978400, mean: 0.978627
+Generation  40, time: 2m 26s, fitness max: 0.979800, min: 0.978400, mean: 0.978665
+evolution finished, top-5 members:
+member   1, fitness=0.979800
+member   2, fitness=0.979500
+member   3, fitness=0.979100
+member   4, fitness=0.978900
+member   5, fitness=0.978800
+member  40, fitness=0.978400
+Training set predicted with 0.99996 accuracy.
+Test set predicted with 0.9787 accuracy.
+
+Crossover: AvgSome, learning rate: 0.3, mutation epochs: 5
+evolving 40 members for 40 generations...
+Generation   1, time:  0.60s, fitness max: 0.150600, min: 0.050200, mean: 0.103165
+Generation   2, time: 2m 17s, fitness max: 0.948900, min: 0.066000, mean: 0.452430
+Generation   3, time: 2m 14s, fitness max: 0.960500, min: 0.071500, mean: 0.687165
+Generation   4, time: 2m 54s, fitness max: 0.961300, min: 0.151000, mean: 0.776955
+Generation   5, time: 2m 42s, fitness max: 0.965400, min: 0.420800, mean: 0.810172
+Generation   6, time: 2m 38s, fitness max: 0.966400, min: 0.267900, mean: 0.791268
+Generation   7, time: 2m 23s, fitness max: 0.969600, min: 0.211500, mean: 0.781235
+Generation   8, time: 2m 31s, fitness max: 0.969600, min: 0.215500, mean: 0.765822
+Generation   9, time: 2m 09s, fitness max: 0.969700, min: 0.363100, mean: 0.773322
+Generation  10, time: 2m 27s, fitness max: 0.970200, min: 0.311300, mean: 0.781002
+Generation  11, time: 2m 40s, fitness max: 0.970200, min: 0.256900, mean: 0.820852
+Generation  12, time: 2m 18s, fitness max: 0.970200, min: 0.297100, mean: 0.772740
+Generation  13, time: 2m 07s, fitness max: 0.971500, min: 0.217800, mean: 0.750297
+Generation  14, time: 1m 29s, fitness max: 0.971500, min: 0.220300, mean: 0.718275
+Generation  15, time: 2m 34s, fitness max: 0.971500, min: 0.300300, mean: 0.760382
+Generation  16, time: 2m 10s, fitness max: 0.971700, min: 0.192500, mean: 0.758527
+Generation  17, time: 1m 37s, fitness max: 0.972700, min: 0.281900, mean: 0.706480
+Generation  18, time: 2m 17s, fitness max: 0.972700, min: 0.208700, mean: 0.695198
+Generation  19, time: 3m 03s, fitness max: 0.972700, min: 0.157000, mean: 0.799772
+Generation  20, time: 2m 13s, fitness max: 0.973300, min: 0.166900, mean: 0.784042
+Generation  21, time: 3m 03s, fitness max: 0.973300, min: 0.288200, mean: 0.818077
+Generation  22, time: 2m 58s, fitness max: 0.973300, min: 0.228000, mean: 0.814945
+Generation  23, time: 2m 10s, fitness max: 0.974400, min: 0.383400, mean: 0.797143
+Generation  24, time: 2m 27s, fitness max: 0.974400, min: 0.273000, mean: 0.790733
+Generation  25, time: 3m 22s, fitness max: 0.974400, min: 0.358700, mean: 0.813655
+Generation  26, time: 2m 36s, fitness max: 0.974400, min: 0.255800, mean: 0.816507
+Generation  27, time: 3m 05s, fitness max: 0.974400, min: 0.106400, mean: 0.807175
+Generation  28, time: 2m 26s, fitness max: 0.974400, min: 0.247000, mean: 0.783438
+Generation  29, time: 2m 20s, fitness max: 0.974400, min: 0.169900, mean: 0.779683
+Generation  30, time: 2m 19s, fitness max: 0.974400, min: 0.323300, mean: 0.798187
+Generation  31, time: 2m 31s, fitness max: 0.974400, min: 0.152800, mean: 0.756608
+Generation  32, time: 2m 35s, fitness max: 0.974400, min: 0.260000, mean: 0.803558
+Generation  33, time: 2m 23s, fitness max: 0.974400, min: 0.174100, mean: 0.750870
+Generation  34, time: 2m 34s, fitness max: 0.974400, min: 0.281700, mean: 0.759815
+Generation  35, time: 2m 15s, fitness max: 0.975800, min: 0.186400, mean: 0.747863
+Generation  36, time: 3m 15s, fitness max: 0.975800, min: 0.220100, mean: 0.828073
+Generation  37, time: 2m 23s, fitness max: 0.975800, min: 0.278300, mean: 0.794338
+Generation  38, time: 2m 53s, fitness max: 0.975800, min: 0.196900, mean: 0.836638
+Generation  39, time: 2m 50s, fitness max: 0.975800, min: 0.395300, mean: 0.817565
+Generation  40, time: 2m 34s, fitness max: 0.975800, min: 0.262700, mean: 0.772605
+evolution finished, top-5 members:
+member   1, fitness=0.975800
+member   2, fitness=0.974400
+member   3, fitness=0.972300
+member   4, fitness=0.969800
+member   5, fitness=0.969500
+member  40, fitness=0.262700
+Training set predicted with 0.99778 accuracy.
+Test set predicted with 0.9738 accuracy.
+
+Crossover: Uniform, learning rate: 0.3, mutation epochs: 5
+evolving 40 members for 40 generations...
+Generation   1, time:  0.59s, fitness max: 0.146900, min: 0.058800, mean: 0.105052
+Generation   2, time: 2m 42s, fitness max: 0.943800, min: 0.070300, mean: 0.511012
+Generation   3, time: 2m 57s, fitness max: 0.950600, min: 0.332000, mean: 0.748233
+Generation   4, time: 3m 23s, fitness max: 0.965300, min: 0.247200, mean: 0.791830
+Generation   5, time: 1m 44s, fitness max: 0.965300, min: 0.173700, mean: 0.640102
+Generation   6, time: 2m 11s, fitness max: 0.965300, min: 0.283700, mean: 0.719592
+Generation   7, time: 2m 10s, fitness max: 0.965900, min: 0.264700, mean: 0.761180
+Generation   8, time: 2m 29s, fitness max: 0.968200, min: 0.329400, mean: 0.768973
+Generation   9, time: 2m 52s, fitness max: 0.969400, min: 0.462800, mean: 0.834257
+Generation  10, time: 2m 35s, fitness max: 0.969400, min: 0.433200, mean: 0.816632
+Generation  11, time: 2m 07s, fitness max: 0.969500, min: 0.523000, mean: 0.858367
+Generation  12, time: 2m 27s, fitness max: 0.970600, min: 0.595000, mean: 0.890172
+Generation  13, time: 2m 19s, fitness max: 0.970600, min: 0.706200, mean: 0.914582
+Generation  14, time: 2m 17s, fitness max: 0.970600, min: 0.756300, mean: 0.929360
+Generation  15, time: 3m 06s, fitness max: 0.972200, min: 0.847900, mean: 0.946030
+Generation  16, time: 2m 26s, fitness max: 0.972200, min: 0.903500, mean: 0.954300
+Generation  17, time: 2m 34s, fitness max: 0.972800, min: 0.913100, mean: 0.955895
+Generation  18, time: 1m 54s, fitness max: 0.973100, min: 0.889800, mean: 0.954277
+Generation  19, time: 2m 31s, fitness max: 0.973500, min: 0.908700, mean: 0.958885
+Generation  20, time: 2m 16s, fitness max: 0.974500, min: 0.928000, mean: 0.963063
+Generation  21, time: 2m 43s, fitness max: 0.974500, min: 0.928800, mean: 0.963375
+Generation  22, time: 2m 56s, fitness max: 0.975100, min: 0.946800, mean: 0.966900
+Generation  23, time: 2m 16s, fitness max: 0.975900, min: 0.948100, mean: 0.967597
+Generation  24, time: 2m 57s, fitness max: 0.975900, min: 0.937100, mean: 0.969330
+Generation  25, time: 1m 59s, fitness max: 0.975900, min: 0.955300, mean: 0.969627
+Generation  26, time: 2m 15s, fitness max: 0.976800, min: 0.959300, mean: 0.969525
+Generation  27, time: 2m 09s, fitness max: 0.976800, min: 0.956100, mean: 0.969467
+Generation  28, time: 2m 29s, fitness max: 0.976800, min: 0.960700, mean: 0.971958
+Generation  29, time: 2m 02s, fitness max: 0.977200, min: 0.966000, mean: 0.972575
+Generation  30, time: 3m 07s, fitness max: 0.978600, min: 0.964300, mean: 0.973080
+Generation  31, time: 2m 09s, fitness max: 0.978600, min: 0.965000, mean: 0.972808
+Generation  32, time: 2m 57s, fitness max: 0.978600, min: 0.970300, mean: 0.974685
+Generation  33, time: 2m 25s, fitness max: 0.978600, min: 0.967900, mean: 0.974350
+Generation  34, time: 2m 50s, fitness max: 0.979000, min: 0.970400, mean: 0.975210
+Generation  35, time: 3m 19s, fitness max: 0.979000, min: 0.968800, mean: 0.975863
+Generation  36, time: 2m 50s, fitness max: 0.979200, min: 0.965900, mean: 0.975743
+Generation  37, time: 2m 25s, fitness max: 0.979200, min: 0.971500, mean: 0.976263
+Generation  38, time: 2m 56s, fitness max: 0.979200, min: 0.972700, mean: 0.976198
+Generation  39, time: 2m 25s, fitness max: 0.980200, min: 0.973000, mean: 0.976628
+Generation  40, time: 2m 02s, fitness max: 0.980200, min: 0.972200, mean: 0.976290
+evolution finished, top-5 members:
+member   1, fitness=0.980200
+member   2, fitness=0.979400
+member   3, fitness=0.979300
+member   4, fitness=0.979100
+member   5, fitness=0.978900
+member  40, fitness=0.972200
+Training set predicted with 0.9993 accuracy.
+Test set predicted with 0.9763 accuracy.
+
+Crossover: Full+Some, learning rate: 0.3, mutation epochs: 5
+evolving 40 members for 40 generations...
+Generation   1, time:  0.61s, fitness max: 0.169700, min: 0.031900, mean: 0.095358
+Generation   2, time: 2m 12s, fitness max: 0.939100, min: 0.066200, mean: 0.432383
+Generation   3, time: 2m 35s, fitness max: 0.954700, min: 0.468500, mean: 0.812240
+Generation   4, time: 2m 15s, fitness max: 0.963300, min: 0.246000, mean: 0.756795
+Generation   5, time: 2m 59s, fitness max: 0.968400, min: 0.163100, mean: 0.793690
+Generation   6, time: 2m 32s, fitness max: 0.968400, min: 0.331400, mean: 0.807935
+Generation   7, time: 2m 25s, fitness max: 0.969900, min: 0.237300, mean: 0.803580
+Generation   8, time: 2m 26s, fitness max: 0.970100, min: 0.142200, mean: 0.746077
+Generation   9, time: 2m 33s, fitness max: 0.971500, min: 0.229700, mean: 0.801670
+Generation  10, time: 2m 59s, fitness max: 0.971500, min: 0.184900, mean: 0.805577
+Generation  11, time: 2m 42s, fitness max: 0.971600, min: 0.249700, mean: 0.855572
+Generation  12, time: 3m 04s, fitness max: 0.972900, min: 0.311500, mean: 0.832963
+Generation  13, time: 2m 41s, fitness max: 0.972900, min: 0.389400, mean: 0.841943
+Generation  14, time: 2m 08s, fitness max: 0.972900, min: 0.446600, mean: 0.803177
+Generation  15, time: 2m 33s, fitness max: 0.974100, min: 0.271600, mean: 0.860237
+Generation  16, time: 2m 32s, fitness max: 0.975000, min: 0.380600, mean: 0.865528
+Generation  17, time: 2m 01s, fitness max: 0.975000, min: 0.441800, mean: 0.880565
+Generation  18, time: 2m 49s, fitness max: 0.975000, min: 0.346300, mean: 0.874308
+Generation  19, time: 2m 17s, fitness max: 0.975000, min: 0.277300, mean: 0.831125
+Generation  20, time: 2m 51s, fitness max: 0.975000, min: 0.365000, mean: 0.901663
+Generation  21, time: 2m 34s, fitness max: 0.975300, min: 0.560500, mean: 0.907043
+Generation  22, time: 2m 42s, fitness max: 0.975300, min: 0.268900, mean: 0.872315
+Generation  23, time: 2m 16s, fitness max: 0.975300, min: 0.121500, mean: 0.881367
+Generation  24, time: 2m 35s, fitness max: 0.975300, min: 0.467500, mean: 0.899917
+Generation  25, time: 2m 58s, fitness max: 0.975700, min: 0.124000, mean: 0.895412
+Generation  26, time: 3m 03s, fitness max: 0.975700, min: 0.473200, mean: 0.902270
+Generation  27, time: 2m 00s, fitness max: 0.976500, min: 0.528400, mean: 0.875485
+Generation  28, time: 3m 09s, fitness max: 0.976500, min: 0.414800, mean: 0.890127
+Generation  29, time: 2m 32s, fitness max: 0.976500, min: 0.426800, mean: 0.901683
+Generation  30, time: 2m 44s, fitness max: 0.976500, min: 0.464300, mean: 0.889305
+Generation  31, time: 2m 50s, fitness max: 0.976500, min: 0.404600, mean: 0.904295
+Generation  32, time: 2m 24s, fitness max: 0.976500, min: 0.305200, mean: 0.902128
+Generation  33, time: 2m 40s, fitness max: 0.976500, min: 0.484100, mean: 0.874960
+Generation  34, time: 2m 40s, fitness max: 0.976500, min: 0.435500, mean: 0.907935
+Generation  35, time: 2m 17s, fitness max: 0.976500, min: 0.393100, mean: 0.882337
+Generation  36, time: 2m 08s, fitness max: 0.976500, min: 0.514100, mean: 0.859600
+Generation  37, time: 2m 47s, fitness max: 0.976500, min: 0.369400, mean: 0.904820
+Generation  38, time: 3m 06s, fitness max: 0.976500, min: 0.647900, mean: 0.935395
+Generation  39, time: 2m 29s, fitness max: 0.976500, min: 0.578000, mean: 0.899895
+Generation  40, time: 2m 51s, fitness max: 0.976500, min: 0.435800, mean: 0.888515
+evolution finished, top-5 members:
+member   1, fitness=0.976500
+member   2, fitness=0.976100
+member   3, fitness=0.973700
+member   4, fitness=0.973300
+member   5, fitness=0.973200
+member  40, fitness=0.435800
+Training set predicted with 0.9998 accuracy.
+Test set predicted with 0.9776 accuracy.
+
+Crossover: Full+Uniform, learning rate: 0.3, mutation epochs: 5
+evolving 40 members for 40 generations...
+Generation   1, time:  0.60s, fitness max: 0.149300, min: 0.028300, mean: 0.092393
+Generation   2, time: 2m 41s, fitness max: 0.940200, min: 0.070100, mean: 0.513330
+Generation   3, time: 2m 50s, fitness max: 0.953800, min: 0.285800, mean: 0.773135
+Generation   4, time: 1m 37s, fitness max: 0.964400, min: 0.220800, mean: 0.690355
+Generation   5, time: 2m 51s, fitness max: 0.966900, min: 0.109900, mean: 0.709077
+Generation   6, time: 2m 33s, fitness max: 0.971200, min: 0.177300, mean: 0.783445
+Generation   7, time: 1m 45s, fitness max: 0.971200, min: 0.313800, mean: 0.724630
+Generation   8, time: 2m 32s, fitness max: 0.971200, min: 0.420700, mean: 0.801900
+Generation   9, time: 3m 21s, fitness max: 0.972300, min: 0.545400, mean: 0.892540
+Generation  10, time: 2m 18s, fitness max: 0.972300, min: 0.585100, mean: 0.882927
+Generation  11, time: 3m 01s, fitness max: 0.972800, min: 0.651900, mean: 0.926833
+Generation  12, time: 2m 17s, fitness max: 0.972800, min: 0.645200, mean: 0.936110
+Generation  13, time: 2m 02s, fitness max: 0.973700, min: 0.782200, mean: 0.951355
+Generation  14, time: 2m 42s, fitness max: 0.974500, min: 0.919400, mean: 0.963470
+Generation  15, time: 2m 49s, fitness max: 0.975000, min: 0.947000, mean: 0.969445
+Generation  16, time: 2m 11s, fitness max: 0.975800, min: 0.953800, mean: 0.970935
+Generation  17, time: 2m 16s, fitness max: 0.975900, min: 0.964600, mean: 0.972567
+Generation  18, time: 2m 59s, fitness max: 0.976700, min: 0.966300, mean: 0.973815
+Generation  19, time: 3m 40s, fitness max: 0.977800, min: 0.970400, mean: 0.974565
+Generation  20, time: 3m 06s, fitness max: 0.978000, min: 0.969700, mean: 0.974930
+Generation  21, time: 1m 58s, fitness max: 0.978200, min: 0.973300, mean: 0.975690
+Generation  22, time: 2m 44s, fitness max: 0.978700, min: 0.971500, mean: 0.975797
+Generation  23, time: 2m 45s, fitness max: 0.978900, min: 0.967700, mean: 0.976038
+Generation  24, time: 2m 33s, fitness max: 0.978900, min: 0.972600, mean: 0.976143
+Generation  25, time: 2m 11s, fitness max: 0.979500, min: 0.973600, mean: 0.976678
+Generation  26, time: 2m 21s, fitness max: 0.979700, min: 0.973800, mean: 0.977390
+Generation  27, time: 3m 23s, fitness max: 0.979900, min: 0.973000, mean: 0.978000
+Generation  28, time: 2m 58s, fitness max: 0.980000, min: 0.977900, mean: 0.979063
+Generation  29, time: 2m 57s, fitness max: 0.980100, min: 0.978500, mean: 0.979252
+Generation  30, time: 2m 24s, fitness max: 0.980100, min: 0.978400, mean: 0.979203
+Generation  31, time: 2m 59s, fitness max: 0.980100, min: 0.978300, mean: 0.979180
+Generation  32, time: 2m 42s, fitness max: 0.980100, min: 0.978400, mean: 0.979090
+Generation  33, time: 2m 10s, fitness max: 0.980100, min: 0.978500, mean: 0.979067
+Generation  34, time: 3m 11s, fitness max: 0.980100, min: 0.978600, mean: 0.979025
+Generation  35, time: 2m 39s, fitness max: 0.980100, min: 0.978600, mean: 0.979107
+Generation  36, time: 2m 16s, fitness max: 0.980100, min: 0.978600, mean: 0.979082
+Generation  37, time: 2m 56s, fitness max: 0.980100, min: 0.978600, mean: 0.979075
+Generation  38, time: 3m 03s, fitness max: 0.980100, min: 0.978600, mean: 0.979073
+Generation  39, time: 2m 49s, fitness max: 0.980100, min: 0.978600, mean: 0.979062
+Generation  40, time: 2m 24s, fitness max: 0.980100, min: 0.978600, mean: 0.979095
+evolution finished, top-5 members:
+member   1, fitness=0.980100
+member   2, fitness=0.980100
+member   3, fitness=0.979900
+member   4, fitness=0.979500
+member   5, fitness=0.979300
+member  40, fitness=0.978600
+Training set predicted with 0.99992 accuracy.
+Test set predicted with 0.9785 accuracy.
+
+Crossover: Some+Uniform, learning rate: 0.3, mutation epochs: 5
+evolving 40 members for 40 generations...
+Generation   1, time:  0.60s, fitness max: 0.159800, min: 0.057200, mean: 0.102955
+Generation   2, time: 2m 46s, fitness max: 0.943900, min: 0.073400, mean: 0.548185
+Generation   3, time: 2m 10s, fitness max: 0.950500, min: 0.090100, mean: 0.688820
+Generation   4, time: 2m 46s, fitness max: 0.960500, min: 0.174600, mean: 0.758597
+Generation   5, time: 2m 39s, fitness max: 0.967200, min: 0.159300, mean: 0.759985
+Generation   6, time: 2m 23s, fitness max: 0.967200, min: 0.187100, mean: 0.723807
+Generation   7, time: 1m 51s, fitness max: 0.969100, min: 0.206800, mean: 0.725005
+Generation   8, time: 2m 39s, fitness max: 0.969400, min: 0.201300, mean: 0.767318
+Generation   9, time: 1m 54s, fitness max: 0.970400, min: 0.229400, mean: 0.721823
+Generation  10, time: 2m 16s, fitness max: 0.970400, min: 0.146400, mean: 0.742502
+Generation  11, time: 2m 01s, fitness max: 0.972100, min: 0.233100, mean: 0.757390
+Generation  12, time: 2m 24s, fitness max: 0.972100, min: 0.302300, mean: 0.787755
+Generation  13, time: 2m 55s, fitness max: 0.972100, min: 0.267300, mean: 0.823175
+Generation  14, time: 2m 02s, fitness max: 0.972100, min: 0.285100, mean: 0.785490
+Generation  15, time: 2m 46s, fitness max: 0.973100, min: 0.111500, mean: 0.797753
+Generation  16, time: 2m 48s, fitness max: 0.973100, min: 0.437900, mean: 0.841275
+Generation  17, time: 2m 22s, fitness max: 0.973100, min: 0.341600, mean: 0.824213
+Generation  18, time: 2m 23s, fitness max: 0.973100, min: 0.413200, mean: 0.812132
+Generation  19, time: 1m 39s, fitness max: 0.973100, min: 0.318000, mean: 0.780730
+Generation  20, time: 2m 48s, fitness max: 0.973100, min: 0.268100, mean: 0.839882
+Generation  21, time: 2m 32s, fitness max: 0.973100, min: 0.233200, mean: 0.847033
+Generation  22, time: 2m 47s, fitness max: 0.973800, min: 0.502900, mean: 0.874477
+Generation  23, time: 2m 16s, fitness max: 0.973800, min: 0.380100, mean: 0.839815
+Generation  24, time: 2m 02s, fitness max: 0.973800, min: 0.424900, mean: 0.822350
+Generation  25, time: 2m 23s, fitness max: 0.973800, min: 0.491800, mean: 0.846880
+Generation  26, time: 2m 46s, fitness max: 0.973800, min: 0.281400, mean: 0.853903
+Generation  27, time: 2m 01s, fitness max: 0.973800, min: 0.355000, mean: 0.799285
+Generation  28, time: 1m 53s, fitness max: 0.973800, min: 0.311300, mean: 0.788683
+Generation  29, time: 2m 32s, fitness max: 0.974000, min: 0.386500, mean: 0.845858
+Generation  30, time: 3m 02s, fitness max: 0.974000, min: 0.320600, mean: 0.889715
+Generation  31, time: 2m 39s, fitness max: 0.974000, min: 0.524500, mean: 0.884597
+Generation  32, time: 2m 54s, fitness max: 0.974000, min: 0.319300, mean: 0.872878
+Generation  33, time: 1m 46s, fitness max: 0.974700, min: 0.306300, mean: 0.852860
+Generation  34, time: 2m 46s, fitness max: 0.974700, min: 0.475200, mean: 0.883742
+Generation  35, time: 2m 01s, fitness max: 0.974700, min: 0.521600, mean: 0.851568
+Generation  36, time: 2m 40s, fitness max: 0.974700, min: 0.344000, mean: 0.866090
+Generation  37, time: 2m 55s, fitness max: 0.974700, min: 0.424800, mean: 0.875325
+Generation  38, time: 2m 09s, fitness max: 0.974700, min: 0.403800, mean: 0.836898
+Generation  39, time: 3m 11s, fitness max: 0.974700, min: 0.274400, mean: 0.892020
+Generation  40, time: 2m 20s, fitness max: 0.974700, min: 0.342000, mean: 0.836213
+evolution finished, top-5 members:
+member   1, fitness=0.974700
+member   2, fitness=0.974000
+member   3, fitness=0.973000
+member   4, fitness=0.972200
+member   5, fitness=0.971800
+member  40, fitness=0.342000
+Training set predicted with 0.99988 accuracy.
+Test set predicted with 0.9778 accuracy.
+
+Crossover: Full+Some+Uniform, learning rate: 0.3, mutation epochs: 5
+evolving 40 members for 40 generations...
+Generation   1, time:  0.61s, fitness max: 0.155000, min: 0.062400, mean: 0.098125
+Generation   2, time: 2m 55s, fitness max: 0.937900, min: 0.056000, mean: 0.571195
+Generation   3, time: 2m 53s, fitness max: 0.958300, min: 0.170400, mean: 0.797688
+Generation   4, time: 2m 41s, fitness max: 0.962800, min: 0.098400, mean: 0.765143
+Generation   5, time: 2m 19s, fitness max: 0.967200, min: 0.220700, mean: 0.726015
+Generation   6, time: 2m 25s, fitness max: 0.970000, min: 0.103700, mean: 0.776795
+Generation   7, time: 2m 55s, fitness max: 0.970000, min: 0.270200, mean: 0.837920
+Generation   8, time: 2m 32s, fitness max: 0.973500, min: 0.349600, mean: 0.841742
+Generation   9, time: 2m 23s, fitness max: 0.973500, min: 0.463300, mean: 0.872500
+Generation  10, time: 2m 24s, fitness max: 0.973500, min: 0.460600, mean: 0.879685
+Generation  11, time: 2m 17s, fitness max: 0.973500, min: 0.495200, mean: 0.885523
+Generation  12, time: 2m 17s, fitness max: 0.973800, min: 0.495300, mean: 0.893875
+Generation  13, time: 2m 46s, fitness max: 0.973800, min: 0.358700, mean: 0.913285
+Generation  14, time: 1m 53s, fitness max: 0.975000, min: 0.579000, mean: 0.889765
+Generation  15, time: 1m 55s, fitness max: 0.975000, min: 0.349100, mean: 0.853317
+Generation  16, time: 2m 38s, fitness max: 0.975000, min: 0.431900, mean: 0.905523
+Generation  17, time: 2m 55s, fitness max: 0.975000, min: 0.417700, mean: 0.899882
+Generation  18, time: 2m 40s, fitness max: 0.975000, min: 0.631900, mean: 0.922653
+Generation  19, time: 2m 15s, fitness max: 0.975000, min: 0.687100, mean: 0.929708
+Generation  20, time: 1m 53s, fitness max: 0.975900, min: 0.438400, mean: 0.892600
+Generation  21, time: 2m 57s, fitness max: 0.975900, min: 0.553500, mean: 0.935012
+Generation  22, time: 1m 54s, fitness max: 0.975900, min: 0.549600, mean: 0.903170
+Generation  23, time: 2m 40s, fitness max: 0.975900, min: 0.391700, mean: 0.883650
+Generation  24, time: 3m 01s, fitness max: 0.976200, min: 0.309300, mean: 0.896015
+Generation  25, time: 2m 07s, fitness max: 0.976200, min: 0.246600, mean: 0.915553
+Generation  26, time: 2m 01s, fitness max: 0.976900, min: 0.501900, mean: 0.924978
+Generation  27, time: 2m 08s, fitness max: 0.976900, min: 0.376200, mean: 0.925965
+Generation  28, time: 2m 32s, fitness max: 0.978300, min: 0.462000, mean: 0.924532
+Generation  29, time: 2m 55s, fitness max: 0.978300, min: 0.565100, mean: 0.916140
+Generation  30, time: 2m 01s, fitness max: 0.978300, min: 0.308900, mean: 0.888550
+Generation  31, time: 2m 40s, fitness max: 0.978300, min: 0.629100, mean: 0.916750
+Generation  32, time: 2m 25s, fitness max: 0.978300, min: 0.665100, mean: 0.929530
+Generation  33, time: 2m 33s, fitness max: 0.978300, min: 0.634800, mean: 0.945460
+Generation  34, time: 2m 23s, fitness max: 0.978300, min: 0.431000, mean: 0.911457
+Generation  35, time: 2m 01s, fitness max: 0.978300, min: 0.609800, mean: 0.911933
+Generation  36, time: 2m 17s, fitness max: 0.978300, min: 0.511100, mean: 0.909597
+Generation  37, time: 3m 03s, fitness max: 0.978300, min: 0.418900, mean: 0.929345
+Generation  38, time: 2m 02s, fitness max: 0.978300, min: 0.559000, mean: 0.899610
+Generation  39, time: 2m 25s, fitness max: 0.978300, min: 0.348900, mean: 0.906493
+Generation  40, time: 2m 09s, fitness max: 0.978300, min: 0.300200, mean: 0.882320
+evolution finished, top-5 members:
+member   1, fitness=0.978300
+member   2, fitness=0.978000
+member   3, fitness=0.976700
+member   4, fitness=0.976700
+member   5, fitness=0.976200
+member  40, fitness=0.300200
+Training set predicted with 0.99996 accuracy.
+Test set predicted with 0.9794 accuracy.
+sums_valid[0] = 0.9798
+sums_test[0] = 0.9787
+sums_valid[1] = 0.9758
+sums_test[1] = 0.9738
+sums_valid[2] = 0.9802
+sums_test[2] = 0.9763
+sums_valid[3] = 0.9765
+sums_test[3] = 0.9776
+sums_valid[4] = 0.9801
+sums_test[4] = 0.9785
+sums_valid[5] = 0.9747
+sums_test[5] = 0.9778
+sums_valid[6] = 0.9783
+sums_test[6] = 0.9794
+
+RESULTS:
+AvgFull:
+ mean valid accuracy: 0.9798
+ mean test accuracy:  0.9787
+AvgSome:
+ mean valid accuracy: 0.9758
+ mean test accuracy:  0.9738
+Uniform:
+ mean valid accuracy: 0.9802
+ mean test accuracy:  0.9763
+Full+Some:
+ mean valid accuracy: 0.9765
+ mean test accuracy:  0.9776
+Full+Uniform:
+ mean valid accuracy: 0.9801
+ mean test accuracy:  0.9785
+Some+Uniform:
+ mean valid accuracy: 0.9747
+ mean test accuracy:  0.9778
+Full+Some+Uniform:
+ mean valid accuracy: 0.9783
+ mean test accuracy:  0.9794

@@ -1,0 +1,44 @@
+Using CPU, 10 threads with OpenMP
+Training data: [60000,784] 179.4 MB
+Validation data: [0,0] 0 bytes
+Testing data: [10000,784] 29.9 MB
+Network: mnistffnn
+Input layer, shape:[28,28]
+Dense(Logistic) shape:[32], parameters:25120, memory:98.2 KB
+Dense(Logistic) shape:[32], parameters:1056, memory:4.2 KB
+Softmax shape:[10], parameters:330, memory:1.3 KB
+
+Training...
+epoch: 1, time: 1.2 secs (speed 48391.6), loss (SoftmaxCE): 125586.3359
+epoch: 2, time: 1.3 secs (speed 47750.0), loss (SoftmaxCE): 63962.9180
+epoch: 3, time: 1.1 secs (speed 53507.0), loss (SoftmaxCE): 38885.7656
+epoch: 4, time: 1.2 secs (speed 47249.4), loss (SoftmaxCE): 28501.3711
+epoch: 5, time: 1.3 secs (speed 47513.0), loss (SoftmaxCE): 23597.9199
+epoch: 6, time: 1.3 secs (speed 47567.3), loss (SoftmaxCE): 20893.3105
+epoch: 7, time: 1.1 secs (speed 53196.2), loss (SoftmaxCE): 19059.0859
+epoch: 8, time: 1.1 secs (speed 50434.8), loss (SoftmaxCE): 17594.2734
+epoch: 9, time: 1.1 secs (speed 55966.6), loss (SoftmaxCE): 16420.7520
+epoch: 10, time: 1.2 secs (speed 53343.2), loss (SoftmaxCE): 15379.4111
+epoch: 11, time: 1.2 secs (speed 48556.7), loss (SoftmaxCE): 14498.2568
+epoch: 12, time: 1.2 secs (speed 49838.7), loss (SoftmaxCE): 13695.0352
+epoch: 13, time: 1.2 secs (speed 48850.4), loss (SoftmaxCE): 12994.0664
+epoch: 14, time: 1.1 secs (speed 56237.4), loss (SoftmaxCE): 12399.5586
+epoch: 15, time: 1.3 secs (speed 47050.0), loss (SoftmaxCE): 11839.9717
+Trained in 17.9 secs.
+Training set predicted in 0.3 secs with 0.9461 accuracy.
+Test set predicted in 0.0 secs with 0.942 accuracy.
+Accuracy  = 0.942
+Precision = 0.941634
+Recall    = 0.941373
+F1        = 0.941503
+Confusion matrix:
+ 940    8   12    1    7   21    4    1    5   10
+   7  905    3    9    9   10   17    5    4    5
+  33    1  946    0    0    6    8   21   10    3
+   0    3    0  907   15   13    0    6    3   11
+   6   15    4    9  815    3   26    2    2   10
+  27    3    2    9    0  934    0    3    1    3
+   5   20   13    0   11    0  943   14    2    2
+   0   24    9   10    0   10    8  955    4   12
+   1   12    1    2    0    0    2    3 1114    0
+   1    3    1    3    9    0    1    1    0  961

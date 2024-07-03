@@ -1,0 +1,25 @@
+CPU: [AMD Ryzen 5 1600X Six-Core Processor]
+12 threads with OpenMP
+Train data: X (50000,784)[60000,784] 179.4 MB, y (50000)[60000]
+Validation data: X (10000,784) 29.9 MB, y (10000)
+Testing data: X (10000,784) 29.9 MB, y (10000)
+Samples per cluster: 1468 1908 1556
+
+Samples per cluster: 1516 2126 2036
+
+Samples per cluster: 1832 1246 1890
+
+Samples per cluster: 1659 1751 1691
+
+Samples per cluster: 1481 1528 1850
+
+Samples per cluster: 1705 1315 1486
+
+Samples per cluster: 1201 1950 1800
+
+Samples per cluster: 1534 1811 1830
+
+Samples per cluster: 1738 1421 1683
+
+Samples per cluster: 1786 1878 1324
+
