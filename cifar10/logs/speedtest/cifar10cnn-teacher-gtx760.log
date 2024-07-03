@@ -1,0 +1,41 @@
+CPU: [AMD Ryzen 5 1600X Six-Core Processor]
+GPU: [NVIDIA CUDA NVIDIA GeForce GTX 760, 6 CUs]
+single thread
+Training data: (40000,3072) 468.8 MB
+Validation data: (10000,3072) 117.2 MB
+Testing data: (10000,3072) 117.2 MB
+Network: cifar10cnn-teacher
+Input, shape:[32,32,3], parameters: 0, memory:12.0 KB
+Conv2D(ReLU), shape:[28,28,32] (k:5,s:1,pad:no), parameters:2400, memory:116.8 KB
+Maxpool2D shape:[14,14,32] (k:2,s:2), parameters:0, memory:24.5 KB
+Conv2D(ReLU), shape:[12,12,64] (k:3,s:1,pad:no), parameters:18432, memory:180.0 KB
+Maxpool2D shape:[6,6,64] (k:2,s:2), parameters:0, memory:9.0 KB
+Conv2D(ReLU), shape:[4,4,128] (k:3,s:1,pad:no), parameters:73728, memory:584.0 KB
+Maxpool2D shape:[2,2,128] (k:2,s:2), parameters:0, memory:2.0 KB
+Dense(ReLU), shape:[128], parameters:65664, memory:513.0 KB
+Dense(Softmax), shape:[10], parameters:1290, memory:10.1 KB
+
+Training...
+epoch: 1, time: 22.62 secs (speed 1890.5), loss (SoftmaxCE): 81832.9922, validation accuracy: 0.3533
+epoch: 2, time: 22.60 secs (speed 1892.0), loss (SoftmaxCE): 63447.8984, validation accuracy: 0.4829
+epoch: 3, time: 22.61 secs (speed 1891.1), loss (SoftmaxCE): 55700.0234, validation accuracy: 0.5187
+epoch: 4, time: 22.61 secs (speed 1891.1), loss (SoftmaxCE): 50513.1016, validation accuracy: 0.5603
+epoch: 5, time: 22.63 secs (speed 1889.7), loss (SoftmaxCE): 46221.3906, validation accuracy: 0.6017
+Trained in 1 mins and 53 secs.
+Training set predicted in 5.50 secs with 0.625525 accuracy.
+Test set predicted in 1.38 secs with 0.596 accuracy.
+Accuracy  = 0.596
+Precision = 0.598626
+Recall    = 0.596
+F1        = 0.59731
+Confusion matrix:
+ 706   38   39   19    9    2   16    9  128   34
+  55  727   15    9    9    5   16   13   50  101
+  24    5  761   28   40   45   60   23    4   10
+  15    8   20  840   11   16   39   30   15    6
+  14   14  122  108  361   28  248   81   16    8
+  14   20  166  195   24  329   69  129   16   38
+  38   20   88  210   89   40  409   72   16   18
+  22   28   68  157   35   82   80  443   22   63
+ 131   43   15   14    4    1   14    3  753   22
+  52  109   24   28    6   25   27   57   41  631

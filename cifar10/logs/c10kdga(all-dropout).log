@@ -1,0 +1,153 @@
+CPU: [AMD Ryzen 9 5900X 12-Core Processor]
+24 threads with OpenMP
+Teacher data: X (40000,3072) 468.8 MB, Y (40000,10)
+Student data: X (40000,3072) 468.8 MB, Y (40000,10)
+Validation data: X (10000,3072) 117.2 MB, Y (10000,10)
+Testing data: X (10000,3072) 117.2 MB, Y (10000,10)
+Trained teacher test set predicted in 1.05 secs with 0.7664 accuracy.
+
+w1:2400/20
+w2:18432/295
+w3:73728/1123
+
+Network: c10kdga-trained-teacher(dropout)
+Input, shape:[32,32,3], parameters: 0, memory:12.0 KB
+Conv2D(ReLU), shape:[28,28,32] (k:5,s:1,pad:no), parameters:2400, memory:116.8 KB
+Maxpool2D shape:[14,14,32] (k:2,s:2), parameters:0, memory:24.5 KB
+Dropout, ratio:0.25, shape:[14,14,32], parameters:0, memory:24.5 KB
+Conv2D(ReLU), shape:[12,12,64] (k:3,s:1,pad:no), parameters:18432, memory:180.0 KB
+Maxpool2D shape:[6,6,64] (k:2,s:2), parameters:0, memory:9.0 KB
+Dropout, ratio:0.25, shape:[6,6,64], parameters:0, memory:9.0 KB
+Conv2D(ReLU), shape:[4,4,128] (k:3,s:1,pad:no), parameters:73728, memory:584.0 KB
+Maxpool2D shape:[2,2,128] (k:2,s:2), parameters:0, memory:2.0 KB
+Dropout, ratio:0.25, shape:[2,2,128], parameters:0, memory:2.0 KB
+Dense(ReLU), shape:[128], parameters:65664, memory:513.0 KB
+Dense(Linear), shape:[10], parameters:1290, memory:10.1 KB
+
+Network: c10kdga-student
+Input, shape:[32,32,3], parameters: 0, memory:12.0 KB
+Conv2D(ReLU), shape:[28,28,8] (k:5,s:1,pad:no), parameters:600, memory:29.2 KB
+Maxpool2D shape:[14,14,8] (k:2,s:2), parameters:0, memory:6.1 KB
+Conv2D(ReLU), shape:[12,12,16] (k:3,s:1,pad:no), parameters:1152, memory:18.0 KB
+Maxpool2D shape:[6,6,16] (k:2,s:2), parameters:0, memory:2.2 KB
+Conv2D(ReLU), shape:[4,4,32] (k:3,s:1,pad:no), parameters:4608, memory:38.0 KB
+Maxpool2D shape:[2,2,32] (k:2,s:2), parameters:0, memory:512 bytes
+Dense(ReLU), shape:[64], parameters:8256, memory:64.5 KB
+Dense(Linear), shape:[10], parameters:650, memory:5.1 KB
+
+
+Number of indeces in each chain: 56
+Evolution finished, top-10 members:
+member   1, fitness=0.395200, 28 25 12 21 4 19 11 20 48 27 38 29 25 10 9 56 21 18 46 0 47 41 44 37 77 16 119 70 3 75 105 48 19 29 7 127 15 9 27 89 63 43 47 109 118 103 58 126 72 12 78 106 79 49 17 99 
+member   2, fitness=0.394200, 28 25 12 4 7 9 10 1 48 27 10 31 46 23 15 24 38 29 25 53 34 44 57 21 77 16 119 70 3 75 78 126 21 79 72 12 101 32 80 86 36 99 20 109 121 73 115 88 92 40 118 104 103 105 48 58 
+member   3, fitness=0.389600, 9 10 1 25 28 4 24 20 15 21 0 27 31 25 58 48 9 10 46 29 23 44 7 38 77 16 119 48 109 118 3 126 103 58 72 78 101 32 80 106 79 70 12 115 81 8 89 49 17 99 74 30 92 37 121 73 
+member   4, fitness=0.375900, 29 9 21 28 15 25 11 12 23 27 15 44 10 48 38 29 25 47 17 31 36 21 53 28 78 77 16 119 101 3 126 72 12 28 79 109 32 70 48 118 103 58 105 6 106 75 19 29 7 127 15 9 27 89 112 80 
+member   5, fitness=0.374900, 9 10 1 12 20 28 21 4 15 21 0 27 31 25 58 48 38 29 23 10 59 46 24 53 77 16 119 48 109 118 3 126 103 58 72 78 101 32 80 106 79 70 12 115 81 75 105 104 28 125 21 86 36 99 20 121 
+member   6, fitness=0.371000, 29 21 4 23 12 28 9 10 23 27 15 44 31 10 36 21 28 49 19 48 37 45 38 29 78 77 16 119 101 3 126 72 12 28 109 32 48 79 80 70 105 81 106 104 118 75 103 113 59 21 121 86 49 58 19 29 
+member   7, fitness=0.362300, 28 25 12 21 4 24 9 14 48 27 38 29 25 10 9 56 21 18 31 15 0 23 44 16 77 16 119 70 3 75 105 48 19 29 109 78 79 6 126 106 72 81 118 12 101 32 49 115 103 36 99 121 112 7 127 15 
+member   8, fitness=0.358300, 4 23 31 25 12 15 9 30 23 15 28 32 27 49 44 48 21 38 29 16 31 10 25 40 78 3 126 72 77 16 119 70 105 81 109 79 106 104 101 32 48 12 28 118 75 103 113 59 87 6 19 49 115 36 99 121 
+member   9, fitness=0.358100, 28 15 9 10 1 25 12 11 36 27 15 31 10 23 29 48 40 28 38 21 53 49 25 9 77 3 79 78 101 16 119 48 109 126 72 118 12 70 105 106 81 104 32 75 121 86 49 19 29 7 127 15 9 27 89 63 
+member  10, fitness=0.358100, 25 28 4 9 10 21 15 27 10 47 27 15 44 48 23 40 38 28 36 49 31 21 0 25 3 77 70 105 79 6 78 101 16 119 48 126 72 12 28 109 32 80 81 118 103 58 106 75 115 84 99 73 26 19 29 98 
+member 100, fitness=0.292000, 15 28 9 12 24 10 1 25 15 28 10 23 48 27 38 21 36 31 29 40 26 53 49 19 77 16 119 78 3 126 72 48 109 118 103 58 101 32 80 106 79 70 75 105 81 12 121 86 21 104 49 91 28 19 29 7 
+
+Train student with KD, filters choosen by the GA (train only dense layers)
+Best member: 28 25 12 21 4 19 11 20 48 27 38 29 25 10 9 56 21 18 46 0 47 41 44 37 77 16 119 70 3 75 105 48 19 29 7 127 15 9 27 89 63 43 47 109 118 103 58 126 72 12 78 106 79 49 17 99 
+Backprop: batch_size:20 epochs:45, Adam (α:0.0001 β1:0.9 β2:0.999), KDloss (α:0.2 T:5)
+Training on CPU...
+epoch: 10, time: 23.97 secs (speed 1321.5), loss (KDloss): 84006.9219, validation accuracy: 0.4056
+epoch: 20, time: 23.39 secs (speed 1353.2), loss (KDloss): 83036.0078, validation accuracy: 0.4242
+epoch: 30, time: 23.51 secs (speed 1491.3), loss (KDloss): 82656.7266, validation accuracy: 0.4348
+epoch: 40, time: 24.09 secs (speed 1593.2), loss (KDloss): 82429.4453, validation accuracy: 0.4410
+epoch: 45, time: 11.61 secs (speed 2352.7), loss (KDloss): 82344.8906, validation accuracy: 0.4422
+Trained in 1 mins and 46 secs.
+Student with KD (GA optimized): Test set predicted in 0.27 secs with 0.4421 accuracy.
+
+
+Train student with KD, filters choosen by the GA (full training)
+Best member: 28 25 12 21 4 19 11 20 48 27 38 29 25 10 9 56 21 18 46 0 47 41 44 37 77 16 119 70 3 75 105 48 19 29 7 127 15 9 27 89 63 43 47 109 118 103 58 126 72 12 78 106 79 49 17 99 
+Backprop: batch_size:20 epochs:45, Adam (α:0.0001 β1:0.9 β2:0.999), KDloss (α:0.2 T:5)
+Training on CPU...
+epoch: 10, time: 54.87 secs (speed 603.6), loss (KDloss): 78549.3281, validation accuracy: 0.5414
+epoch: 20, time: 56.23 secs (speed 659.2), loss (KDloss): 76788.9844, validation accuracy: 0.6014
+epoch: 30, time: 54.43 secs (speed 698.5), loss (KDloss): 75795.9922, validation accuracy: 0.6259
+epoch: 40, time: 53.20 secs (speed 631.3), loss (KDloss): 75168.4297, validation accuracy: 0.6408
+epoch: 45, time: 26.50 secs (speed 1479.6), loss (KDloss): 74931.3750, validation accuracy: 0.6463
+Trained in 4 mins and 05 secs.
+Student with KD (GA optimized): Test set predicted in 0.26 secs with 0.6436 accuracy.
+
+
+Train student with KD, filters choosen by the GA (full training)
+Worst member: 15 28 9 12 24 10 1 25 15 28 10 23 48 27 38 21 36 31 29 40 26 53 49 19 77 16 119 78 3 126 72 48 109 118 103 58 101 32 80 106 79 70 75 105 81 12 121 86 21 104 49 91 28 19 29 7 
+Backprop: batch_size:20 epochs:45, Adam (α:0.0001 β1:0.9 β2:0.999), KDloss (α:0.2 T:5)
+Training on CPU...
+epoch: 10, time: 54.85 secs (speed 712.3), loss (KDloss): 79669.2969, validation accuracy: 0.5038
+epoch: 20, time: 53.85 secs (speed 641.1), loss (KDloss): 77729.4531, validation accuracy: 0.5663
+epoch: 30, time: 54.16 secs (speed 646.2), loss (KDloss): 76673.7109, validation accuracy: 0.5944
+epoch: 40, time: 58.37 secs (speed 648.1), loss (KDloss): 75989.3828, validation accuracy: 0.6152
+epoch: 45, time: 28.46 secs (speed 1247.2), loss (KDloss): 75700.1406, validation accuracy: 0.6213
+Trained in 4 mins and 09 secs.
+Student with KD (GA optimized): Test set predicted in 0.25 secs with 0.6151 accuracy.
+
+
+Train student with KD, filters choosen randomly (full training)
+Random: 25 13 30 26 14 3 19 20 32 14 57 37 36 43 33 11 16 58 21 50 44 20 62 55 67 21 23 68 62 77 48 99 51 82 16 40 107 13 71 111 42 27 34 87 59 31 28 76 47 101 4 19 45 95 119 88 
+Backprop: batch_size:20 epochs:45, Adam (α:0.0001 β1:0.9 β2:0.999), KDloss (α:0.2 T:5)
+Training on CPU...
+epoch: 10, time: 57.54 secs (speed 642.7), loss (KDloss): 78292.0156, validation accuracy: 0.5560
+epoch: 20, time: 57.84 secs (speed 605.1), loss (KDloss): 76503.4141, validation accuracy: 0.6135
+epoch: 30, time: 55.27 secs (speed 703.7), loss (KDloss): 75626.5078, validation accuracy: 0.6277
+epoch: 40, time: 56.94 secs (speed 666.8), loss (KDloss): 75075.1719, validation accuracy: 0.6390
+epoch: 45, time: 29.01 secs (speed 1383.4), loss (KDloss): 74861.7266, validation accuracy: 0.6486
+Trained in 4 mins and 16 secs.
+Student with KD (random filters): Test set predicted in 0.29 secs with 0.6456 accuracy.
+
+
+Train student with KD, filters choosen randomly (full training)
+Random: 23 7 3 12 2 30 6 4 50 38 6 55 4 27 52 7 24 54 26 57 30 23 36 17 3 83 108 56 101 95 55 4 96 102 45 127 7 72 106 70 93 1 26 109 66 8 117 124 22 113 76 87 64 11 16 123 
+Backprop: batch_size:20 epochs:45, Adam (α:0.0001 β1:0.9 β2:0.999), KDloss (α:0.2 T:5)
+Training on CPU...
+epoch: 10, time: 57.07 secs (speed 620.6), loss (KDloss): 78930.8203, validation accuracy: 0.5302
+epoch: 20, time: 56.90 secs (speed 698.0), loss (KDloss): 77015.7188, validation accuracy: 0.5839
+epoch: 30, time: 54.33 secs (speed 612.3), loss (KDloss): 75908.3750, validation accuracy: 0.6168
+epoch: 40, time: 57.19 secs (speed 625.1), loss (KDloss): 75202.2891, validation accuracy: 0.6357
+epoch: 45, time: 28.02 secs (speed 1430.4), loss (KDloss): 74931.7656, validation accuracy: 0.6402
+Trained in 4 mins and 13 secs.
+Student with KD (random filters): Test set predicted in 0.46 secs with 0.6445 accuracy.
+
+
+Train student with KD, filters choosen randomly (full training)
+Random: 10 8 0 22 3 4 31 13 57 3 45 14 26 47 42 16 50 60 20 4 25 11 17 13 7 55 123 126 114 115 67 63 87 5 53 50 4 110 28 122 23 71 2 49 107 76 72 11 46 109 106 3 111 101 25 95 
+Backprop: batch_size:20 epochs:45, Adam (α:0.0001 β1:0.9 β2:0.999), KDloss (α:0.2 T:5)
+Training on CPU...
+epoch: 10, time: 58.06 secs (speed 673.3), loss (KDloss): 79147.7734, validation accuracy: 0.5283
+epoch: 20, time: 52.90 secs (speed 657.7), loss (KDloss): 77252.0703, validation accuracy: 0.5817
+epoch: 30, time: 54.93 secs (speed 611.4), loss (KDloss): 76217.7344, validation accuracy: 0.6084
+epoch: 40, time: 56.00 secs (speed 681.4), loss (KDloss): 75620.9609, validation accuracy: 0.6228
+epoch: 45, time: 32.10 secs (speed 1186.5), loss (KDloss): 75390.5469, validation accuracy: 0.6335
+Trained in 4 mins and 13 secs.
+Student with KD (random filters): Test set predicted in 0.25 secs with 0.6252 accuracy.
+
+
+Train student without KD
+Backprop: batch_size:20 epochs:45, Adam (α:0.0001 β1:0.9 β2:0.999), CCE
+Training on CPU...
+epoch: 10, time: 53.83 secs (speed 623.2), loss (CCE): 58152.9414, validation accuracy: 0.4719
+epoch: 20, time: 54.85 secs (speed 729.4), loss (CCE): 51614.9141, validation accuracy: 0.5279
+epoch: 30, time: 61.30 secs (speed 596.6), loss (CCE): 47111.0586, validation accuracy: 0.5658
+epoch: 40, time: 63.68 secs (speed 574.7), loss (CCE): 44071.6484, validation accuracy: 0.5842
+epoch: 45, time: 27.65 secs (speed 1224.5), loss (CCE): 42823.3984, validation accuracy: 0.5932
+Trained in 4 mins and 21 secs.
+Student without KD: Test set predicted in 0.25 secs with 0.5899 accuracy.
+
+
+Train student with normal KD
+Backprop: batch_size:20 epochs:45, Adam (α:0.0001 β1:0.9 β2:0.999), KDloss (α:0.2 T:5)
+Training on CPU...
+epoch: 10, time: 53.95 secs (speed 728.8), loss (KDloss): 80761.2188, validation accuracy: 0.4736
+epoch: 20, time: 53.41 secs (speed 748.9), loss (KDloss): 78738.6172, validation accuracy: 0.5324
+epoch: 30, time: 56.64 secs (speed 708.7), loss (KDloss): 77505.8516, validation accuracy: 0.5640
+epoch: 40, time: 63.20 secs (speed 528.4), loss (KDloss): 76655.0859, validation accuracy: 0.5830
+epoch: 45, time: 33.73 secs (speed 1029.7), loss (KDloss): 76309.3125, validation accuracy: 0.5995
+Trained in 4 mins and 20 secs.
+Student with KD: Test set predicted in 0.27 secs with 0.5949 accuracy.
+

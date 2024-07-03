@@ -1,0 +1,41 @@
+CPU: [AMD Ryzen 5 1600X Six-Core Processor]
+12 threads with OpenMP
+Training data: (40000,3072) 468.8 MB
+Validation data: (10000,3072) 117.2 MB
+Testing data: (10000,3072) 117.2 MB
+
+Network: cifar10cnn-teacher
+Input, shape:[32,32,3], parameters: 0, memory:12.0 KB
+Conv2D(ReLU), shape:[28,28,32] (k:5,s:1,pad:no), parameters:2400, memory:116.8 KB
+Maxpool2D shape:[14,14,32] (k:2,s:2), parameters:0, memory:24.5 KB
+Conv2D(ReLU), shape:[12,12,64] (k:3,s:1,pad:no), parameters:18432, memory:180.0 KB
+Maxpool2D shape:[6,6,64] (k:2,s:2), parameters:0, memory:9.0 KB
+Conv2D(ReLU), shape:[4,4,128] (k:3,s:1,pad:no), parameters:73728, memory:584.0 KB
+Maxpool2D shape:[2,2,128] (k:2,s:2), parameters:0, memory:2.0 KB
+Dense(ReLU), shape:[128], parameters:65664, memory:513.0 KB
+Dense(Softmax), shape:[10], parameters:1290, memory:10.1 KB
+
+Training...
+epoch: 1, time: 49.39 secs (speed 852.5), loss (CCE): 76988.3438, validation accuracy: 0.4002
+epoch: 2, time: 49.27 secs (speed 855.4), loss (CCE): 59211.2891, validation accuracy: 0.5157
+epoch: 3, time: 49.59 secs (speed 850.0), loss (CCE): 52083.3203, validation accuracy: 0.5554
+epoch: 4, time: 49.19 secs (speed 856.8), loss (CCE): 47155.3867, validation accuracy: 0.5766
+epoch: 5, time: 49.29 secs (speed 854.8), loss (CCE): 43156.5938, validation accuracy: 0.6168
+Trained in 4 mins and 06 secs.
+Training set predicted in 9.97 secs with 0.646025 accuracy.
+Test set predicted in 2.47 secs with 0.6129 accuracy.
+Accuracy  = 0.6129
+Precision = 0.622969
+Recall    = 0.6129
+F1        = 0.617894
+Confusion matrix:
+ 762   20   38   17    7    4   19    7   95   31
+  63  702   16   10    6    5   29    7   62  100
+  25    2  791   23   38   45   48   17    2    9
+  21    4   22  840   12   19   45   24   10    3
+  17    6  150  102  360   28  265   53   10    9
+  11   13  180  173   26  397   73   81   18   28
+  43   11   93  188   82   37  464   50   13   19
+  25   19   87  150   36   84  100  430   17   52
+ 145   31   21   16    6    2   10    4  744   21
+  51   96   34   31    4   16   39   56   34  639

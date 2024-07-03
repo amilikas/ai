@@ -1,0 +1,41 @@
+CPU: [AMD Ryzen 5 1600X Six-Core Processor]
+12 threads with OpenMP
+Training data: (40000,3072) 468.8 MB
+Validation data: (10000,3072) 117.2 MB
+Testing data: (10000,3072) 117.2 MB
+
+Network: cifar10cnn-student
+Input, shape:[32,32,3], parameters: 0, memory:12.0 KB
+Conv2D(ReLU), shape:[28,28,8] (k:5,s:1,pad:no), parameters:600, memory:29.2 KB
+Maxpool2D shape:[14,14,8] (k:2,s:2), parameters:0, memory:6.1 KB
+Conv2D(ReLU), shape:[12,12,16] (k:3,s:1,pad:no), parameters:1152, memory:18.0 KB
+Maxpool2D shape:[6,6,16] (k:2,s:2), parameters:0, memory:2.2 KB
+Conv2D(ReLU), shape:[4,4,32] (k:3,s:1,pad:no), parameters:4608, memory:38.0 KB
+Maxpool2D shape:[2,2,32] (k:2,s:2), parameters:0, memory:512 bytes
+Dense(ReLU), shape:[64], parameters:8256, memory:64.5 KB
+Dense(Softmax), shape:[10], parameters:650, memory:5.1 KB
+
+Training...
+epoch: 1, time: 8.75 secs (speed 4873.6), loss (CCE): 84844.8281, validation accuracy: 0.3069
+epoch: 2, time: 8.66 secs (speed 4871.1), loss (CCE): 68184.1875, validation accuracy: 0.4235
+epoch: 3, time: 8.82 secs (speed 4805.4), loss (CCE): 61305.5859, validation accuracy: 0.4650
+epoch: 4, time: 8.47 secs (speed 5003.3), loss (CCE): 56724.9844, validation accuracy: 0.4735
+epoch: 5, time: 8.45 secs (speed 5076.0), loss (CCE): 53525.8477, validation accuracy: 0.5166
+Trained in 43.16 secs.
+Training set predicted in 2.15 secs with 0.52725 accuracy.
+Test set predicted in 0.54 secs with 0.5135 accuracy.
+Accuracy  = 0.5135
+Precision = 0.528706
+Recall    = 0.5135
+F1        = 0.520992
+Confusion matrix:
+ 621   40   15   52    7    1   18   12  170   64
+  75  514   12   16    8    3   16   16  101  239
+  54    4  597   79   52   51   72   50    9   32
+  21    6   11  831    9   17   36   44   15   10
+  21   11   77  169  295   30  268  103    8   18
+  15    6   81  349   30  227   62  154   17   59
+  50   17   50  283   84   38  335   91   19   33
+  21   21   43  224   40   69   84  363   29  106
+ 158   38    5   25    3    3    7    5  705   51
+  62   97   10   52    5    7   19   50   51  647

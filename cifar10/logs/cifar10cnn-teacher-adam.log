@@ -1,0 +1,140 @@
+CPU: [AMD Ryzen 5 1600X Six-Core Processor]
+GPU: [NVIDIA CUDA NVIDIA GeForce GTX 1060 3GB, 9 CUs]
+single thread
+Training data: (40000,3072) 468.8 MB
+Validation data: (10000,3072) 117.2 MB
+Testing data: (10000,3072) 117.2 MB
+
+Network: cifar10cnn-teacher
+Input, shape:[32,32,3], parameters: 0, memory:12.0 KB
+Conv2D(ReLU), shape:[28,28,32] (k:5,s:1,pad:no), parameters:2400, memory:116.8 KB
+Maxpool2D shape:[14,14,32] (k:2,s:2), parameters:0, memory:24.5 KB
+Conv2D(ReLU), shape:[12,12,64] (k:3,s:1,pad:no), parameters:18432, memory:180.0 KB
+Maxpool2D shape:[6,6,64] (k:2,s:2), parameters:0, memory:9.0 KB
+Conv2D(ReLU), shape:[4,4,128] (k:3,s:1,pad:no), parameters:73728, memory:584.0 KB
+Maxpool2D shape:[2,2,128] (k:2,s:2), parameters:0, memory:2.0 KB
+Dense(ReLU), shape:[128], parameters:65664, memory:513.0 KB
+Dense(Softmax), shape:[10], parameters:1290, memory:10.1 KB
+
+Training...
+Backprop: batch_size:16 epochs:100, Adam (α:0.0005 β1:0.9 β2:0.999), CCE
+
+Training on GPU...
+epoch: 1, time: 12.75 secs (speed 3325.8), loss (CCE): 60699.0156, validation accuracy: 0.5128
+epoch: 2, time: 12.69 secs (speed 3338.4), loss (CCE): 46784.6055, validation accuracy: 0.6183
+epoch: 3, time: 12.69 secs (speed 3336.7), loss (CCE): 40008.5547, validation accuracy: 0.6577
+epoch: 4, time: 12.68 secs (speed 3342.8), loss (CCE): 35129.2812, validation accuracy: 0.6855
+epoch: 5, time: 12.68 secs (speed 3340.5), loss (CCE): 31236.4258, validation accuracy: 0.6766
+epoch: 6, time: 12.74 secs (speed 3323.4), loss (CCE): 27893.9609, validation accuracy: 0.6868
+epoch: 7, time: 12.68 secs (speed 3339.9), loss (CCE): 25086.0410, validation accuracy: 0.7034
+epoch: 8, time: 12.70 secs (speed 3336.7), loss (CCE): 22272.8672, validation accuracy: 0.7106
+epoch: 9, time: 12.72 secs (speed 3330.4), loss (CCE): 19932.2500, validation accuracy: 0.7123
+epoch: 10, time: 12.77 secs (speed 3318.5), loss (CCE): 17711.5195, validation accuracy: 0.7102
+epoch: 11, time: 12.74 secs (speed 3324.6), loss (CCE): 15718.9746, validation accuracy: 0.7017
+epoch: 12, time: 12.76 secs (speed 3320.6), loss (CCE): 13660.3447, validation accuracy: 0.7078
+epoch: 13, time: 12.73 secs (speed 3328.0), loss (CCE): 12288.5762, validation accuracy: 0.7057
+epoch: 14, time: 12.72 secs (speed 3332.1), loss (CCE): 10710.9121, validation accuracy: 0.7052
+epoch: 15, time: 12.69 secs (speed 3339.1), loss (CCE): 9567.2617, validation accuracy: 0.7085
+epoch: 16, time: 12.74 secs (speed 3323.7), loss (CCE): 8453.0537, validation accuracy: 0.7069
+epoch: 17, time: 12.75 secs (speed 3322.4), loss (CCE): 7425.2124, validation accuracy: 0.7057
+epoch: 18, time: 12.76 secs (speed 3320.1), loss (CCE): 7036.0864, validation accuracy: 0.6854
+epoch: 19, time: 12.77 secs (speed 3315.7), loss (CCE): 6444.1948, validation accuracy: 0.6981
+epoch: 20, time: 12.75 secs (speed 3322.2), loss (CCE): 5857.2217, validation accuracy: 0.7001
+epoch: 21, time: 12.91 secs (speed 3292.1), loss (CCE): 5432.8657, validation accuracy: 0.7012
+epoch: 22, time: 13.75 secs (speed 3085.3), loss (CCE): 5063.4448, validation accuracy: 0.6899
+epoch: 23, time: 13.36 secs (speed 3186.5), loss (CCE): 5007.7871, validation accuracy: 0.7005
+epoch: 24, time: 13.44 secs (speed 3145.6), loss (CCE): 4613.9204, validation accuracy: 0.6956
+epoch: 25, time: 13.52 secs (speed 3138.4), loss (CCE): 4565.1436, validation accuracy: 0.6997
+epoch: 26, time: 13.47 secs (speed 3142.9), loss (CCE): 4297.3267, validation accuracy: 0.7021
+epoch: 27, time: 13.42 secs (speed 3161.5), loss (CCE): 4406.2017, validation accuracy: 0.6990
+epoch: 28, time: 13.44 secs (speed 3150.6), loss (CCE): 3903.3206, validation accuracy: 0.6945
+epoch: 29, time: 13.44 secs (speed 3148.2), loss (CCE): 4079.3218, validation accuracy: 0.6911
+epoch: 30, time: 13.49 secs (speed 3137.0), loss (CCE): 4077.0330, validation accuracy: 0.6988
+epoch: 31, time: 13.38 secs (speed 3170.5), loss (CCE): 3920.4897, validation accuracy: 0.6922
+epoch: 32, time: 13.42 secs (speed 3156.7), loss (CCE): 3510.3809, validation accuracy: 0.6938
+epoch: 33, time: 13.39 secs (speed 3160.7), loss (CCE): 4071.7312, validation accuracy: 0.6957
+epoch: 34, time: 13.40 secs (speed 3160.4), loss (CCE): 3342.0947, validation accuracy: 0.7017
+epoch: 35, time: 13.32 secs (speed 3182.7), loss (CCE): 3623.6665, validation accuracy: 0.6962
+epoch: 36, time: 13.47 secs (speed 3148.5), loss (CCE): 3402.2830, validation accuracy: 0.6959
+epoch: 37, time: 13.46 secs (speed 3142.6), loss (CCE): 3270.3633, validation accuracy: 0.6909
+epoch: 38, time: 13.39 secs (speed 3165.7), loss (CCE): 3575.0994, validation accuracy: 0.6976
+epoch: 39, time: 13.44 secs (speed 3152.4), loss (CCE): 3222.5435, validation accuracy: 0.6894
+epoch: 40, time: 13.32 secs (speed 3179.3), loss (CCE): 3144.1128, validation accuracy: 0.6949
+epoch: 41, time: 13.35 secs (speed 3185.7), loss (CCE): 3403.9658, validation accuracy: 0.6933
+epoch: 42, time: 13.86 secs (speed 3048.4), loss (CCE): 3201.7307, validation accuracy: 0.6908
+epoch: 43, time: 13.62 secs (speed 3115.0), loss (CCE): 3465.8323, validation accuracy: 0.7006
+epoch: 44, time: 13.64 secs (speed 3094.0), loss (CCE): 2954.2300, validation accuracy: 0.6969
+epoch: 45, time: 13.20 secs (speed 3199.2), loss (CCE): 3021.5154, validation accuracy: 0.6943
+epoch: 46, time: 12.82 secs (speed 3303.5), loss (CCE): 3158.0413, validation accuracy: 0.6834
+epoch: 47, time: 13.45 secs (speed 3149.2), loss (CCE): 3197.6565, validation accuracy: 0.6895
+epoch: 48, time: 13.77 secs (speed 3068.2), loss (CCE): 3095.2419, validation accuracy: 0.6989
+epoch: 49, time: 13.95 secs (speed 3036.3), loss (CCE): 3028.8218, validation accuracy: 0.6955
+epoch: 50, time: 13.83 secs (speed 3067.6), loss (CCE): 3075.4175, validation accuracy: 0.6941
+epoch: 51, time: 13.71 secs (speed 3084.1), loss (CCE): 2932.0144, validation accuracy: 0.6979
+epoch: 52, time: 13.48 secs (speed 3157.5), loss (CCE): 2884.6182, validation accuracy: 0.6901
+epoch: 53, time: 13.83 secs (speed 3051.7), loss (CCE): 2971.7478, validation accuracy: 0.7005
+epoch: 54, time: 13.34 secs (speed 3164.8), loss (CCE): 2689.3879, validation accuracy: 0.6949
+epoch: 55, time: 13.06 secs (speed 3242.5), loss (CCE): 2801.5186, validation accuracy: 0.6896
+epoch: 56, time: 13.40 secs (speed 3146.1), loss (CCE): 2867.5127, validation accuracy: 0.6985
+epoch: 57, time: 13.21 secs (speed 3207.2), loss (CCE): 2672.6643, validation accuracy: 0.6884
+epoch: 58, time: 13.22 secs (speed 3212.8), loss (CCE): 2941.3357, validation accuracy: 0.6951
+epoch: 59, time: 13.11 secs (speed 3226.0), loss (CCE): 2774.5234, validation accuracy: 0.6927
+epoch: 60, time: 13.96 secs (speed 3027.1), loss (CCE): 2634.7141, validation accuracy: 0.6899
+epoch: 61, time: 13.57 secs (speed 3113.2), loss (CCE): 2889.4883, validation accuracy: 0.6890
+epoch: 62, time: 13.38 secs (speed 3164.4), loss (CCE): 2856.0442, validation accuracy: 0.6949
+epoch: 63, time: 13.41 secs (speed 3156.2), loss (CCE): 2512.0837, validation accuracy: 0.6879
+epoch: 64, time: 13.39 secs (speed 3169.2), loss (CCE): 2739.3062, validation accuracy: 0.6908
+epoch: 65, time: 13.32 secs (speed 3179.0), loss (CCE): 2610.0864, validation accuracy: 0.6939
+epoch: 66, time: 13.36 secs (speed 3168.2), loss (CCE): 2613.3362, validation accuracy: 0.6941
+epoch: 67, time: 13.38 secs (speed 3164.1), loss (CCE): 2725.6897, validation accuracy: 0.6875
+epoch: 68, time: 13.38 secs (speed 3168.9), loss (CCE): 2470.5068, validation accuracy: 0.6944
+epoch: 69, time: 13.35 secs (speed 3175.6), loss (CCE): 2668.3379, validation accuracy: 0.6919
+epoch: 70, time: 13.33 secs (speed 3178.5), loss (CCE): 2629.2263, validation accuracy: 0.6975
+epoch: 71, time: 13.35 secs (speed 3171.6), loss (CCE): 2549.3767, validation accuracy: 0.6942
+epoch: 72, time: 13.38 secs (speed 3165.0), loss (CCE): 2558.3743, validation accuracy: 0.6957
+epoch: 73, time: 13.27 secs (speed 3192.6), loss (CCE): 2637.3772, validation accuracy: 0.6931
+epoch: 74, time: 13.34 secs (speed 3174.2), loss (CCE): 2627.0830, validation accuracy: 0.6926
+epoch: 75, time: 13.32 secs (speed 3178.5), loss (CCE): 2706.9673, validation accuracy: 0.6949
+epoch: 76, time: 13.35 secs (speed 3172.1), loss (CCE): 2494.2031, validation accuracy: 0.6990
+epoch: 77, time: 13.34 secs (speed 3175.0), loss (CCE): 2309.1697, validation accuracy: 0.6901
+epoch: 78, time: 13.34 secs (speed 3178.2), loss (CCE): 2484.3228, validation accuracy: 0.6979
+epoch: 79, time: 13.37 secs (speed 3165.4), loss (CCE): 2490.0203, validation accuracy: 0.6976
+epoch: 80, time: 13.32 secs (speed 3179.3), loss (CCE): 2458.3071, validation accuracy: 0.6955
+epoch: 81, time: 13.34 secs (speed 3175.6), loss (CCE): 2389.5972, validation accuracy: 0.6890
+epoch: 82, time: 13.29 secs (speed 3187.5), loss (CCE): 2518.8816, validation accuracy: 0.6921
+epoch: 83, time: 13.36 secs (speed 3169.7), loss (CCE): 2654.7595, validation accuracy: 0.6942
+epoch: 84, time: 13.42 secs (speed 3156.4), loss (CCE): 2416.0718, validation accuracy: 0.6938
+epoch: 85, time: 13.40 secs (speed 3159.6), loss (CCE): 2375.3740, validation accuracy: 0.6916
+epoch: 86, time: 13.40 secs (speed 3158.3), loss (CCE): 2582.0581, validation accuracy: 0.6962
+epoch: 87, time: 13.29 secs (speed 3188.6), loss (CCE): 2458.2500, validation accuracy: 0.6929
+epoch: 88, time: 13.34 secs (speed 3174.2), loss (CCE): 2534.2488, validation accuracy: 0.6940
+epoch: 89, time: 13.36 secs (speed 3170.0), loss (CCE): 2322.7651, validation accuracy: 0.6944
+epoch: 90, time: 13.30 secs (speed 3184.1), loss (CCE): 2564.4304, validation accuracy: 0.6848
+epoch: 91, time: 13.38 secs (speed 3165.5), loss (CCE): 2329.1584, validation accuracy: 0.6879
+epoch: 92, time: 13.34 secs (speed 3176.9), loss (CCE): 2317.7170, validation accuracy: 0.6896
+epoch: 93, time: 13.35 secs (speed 3172.7), loss (CCE): 2542.5002, validation accuracy: 0.6940
+epoch: 94, time: 13.34 secs (speed 3175.0), loss (CCE): 2304.5911, validation accuracy: 0.6889
+epoch: 95, time: 13.47 secs (speed 3143.4), loss (CCE): 2611.9229, validation accuracy: 0.6960
+epoch: 96, time: 13.40 secs (speed 3157.3), loss (CCE): 2176.3416, validation accuracy: 0.6948
+epoch: 97, time: 13.34 secs (speed 3172.4), loss (CCE): 2348.2827, validation accuracy: 0.6930
+epoch: 98, time: 13.36 secs (speed 3172.4), loss (CCE): 2431.1550, validation accuracy: 0.6883
+epoch: 99, time: 13.36 secs (speed 3168.9), loss (CCE): 2499.1528, validation accuracy: 0.6886
+epoch: 100, time: 13.93 secs (speed 3042.8), loss (CCE): 2219.9712, validation accuracy: 0.6860
+Trained in 22 mins and 07 secs.
+Training set predicted in 2.88 secs with 0.98575 accuracy.
+Test set predicted in 0.70 secs with 0.6919 accuracy.
+Accuracy  = 0.6919
+Precision = 0.693672
+Recall    = 0.6919
+F1        = 0.692785
+Confusion matrix:
+ 773   20   14   15   19    5   17   10   93   34
+  50  765    5    6    8   18   12   14   41   81
+  13    3  729   11   92   63   48   25    4   12
+   8    2   10  787   38   41   68   40    3    3
+   5   12   45   41  656   41  138   45    6   11
+   2    8   74   66   79  635   57   51    4   24
+  23   14   41   75  204   77  482   57   11   16
+  12   17   39   84   96   86   72  523   11   60
+  68   30    9    9    6    8    8   12  827   23
+  36   44   20   16   18   27   13   73   11  742

@@ -1,0 +1,68 @@
+Network: c10-bpga-cnn
+Input, shape:[32,32,3], parameters: 0, memory:12.0 KB
+Conv2D(ReLU), shape:[28,28,32] (k:5,s:1,pad:no), parameters:2400, memory:116.8 KB
+Maxpool2D shape:[14,14,32] (k:2,s:2), parameters:0, memory:24.5 KB
+Dropout, ratio:0.25, shape:[14,14,32], parameters:0, memory:24.5 KB
+Conv2D(ReLU), shape:[12,12,64] (k:3,s:1,pad:no), parameters:18432, memory:180.0 KB
+Maxpool2D shape:[6,6,64] (k:2,s:2), parameters:0, memory:9.0 KB
+Dropout, ratio:0.25, shape:[6,6,64], parameters:0, memory:9.0 KB
+Conv2D(ReLU), shape:[4,4,128] (k:3,s:1,pad:no), parameters:73728, memory:584.0 KB
+Maxpool2D shape:[2,2,128] (k:2,s:2), parameters:0, memory:2.0 KB
+Dense(ReLU), shape:[128], parameters:65664, memory:513.0 KB
+Dense(softmax), shape:[10], parameters:1290, memory:10.1 KB
+
+Mutation probability: 0.2
+Learning rate: 0.0005
+
+SEED=48
+epochs: 5, accuracy (validation - test): 0.6605 , 0.6624
+epochs: 10, accuracy (validation - test): 0.7126 , 0.7108
+epochs: 15, accuracy (validation - test): 0.7361 , 0.7332
+epochs: 20, accuracy (validation - test): 0.7446 , 0.7389
+epochs: 25, accuracy (validation - test): 0.7497 , 0.743
+epochs: 30, accuracy (validation - test): 0.7561 , 0.7465
+epochs: 35, accuracy (validation - test): 0.7568 , 0.7482
+epochs: 40, accuracy (validation - test): 0.7429 , 0.7375
+epochs: 45, accuracy (validation - test): 0.7478 , 0.7458
+epochs: 50, accuracy (validation - test): 0.7529 , 0.7492
+epochs: 55, accuracy (validation - test): 0.7562 , 0.7531
+epochs: 60, accuracy (validation - test): 0.7534 , 0.7458
+epochs: 65, accuracy (validation - test): 0.7551 , 0.7503
+epochs: 70, accuracy (validation - test): 0.7595 , 0.7518
+epochs: 75, accuracy (validation - test): 0.7564 , 0.7501
+epochs: 80, accuracy (validation - test): 0.7572 , 0.7526
+epochs: 85, accuracy (validation - test): 0.7623 , 0.7546
+epochs: 90, accuracy (validation - test): 0.7596 , 0.7556
+epochs: 95, accuracy (validation - test): 0.76 , 0.7553
+epochs: 100, accuracy (validation - test): 0.7579 , 0.75
+epochs: 105, accuracy (validation - test): 0.7631 , 0.7545
+epochs: 110, accuracy (validation - test): 0.7578 , 0.7474
+epochs: 115, accuracy (validation - test): 0.7601 , 0.7514
+epochs: 120, accuracy (validation - test): 0.7494 , 0.7456
+epochs: 125, accuracy (validation - test): 0.7581 , 0.7566
+epochs: 130, accuracy (validation - test): 0.7565 , 0.7529
+epochs: 135, accuracy (validation - test): 0.7553 , 0.7529
+epochs: 140, accuracy (validation - test): 0.7519 , 0.7512
+epochs: 145, accuracy (validation - test): 0.7528 , 0.746
+epochs: 150, accuracy (validation - test): 0.7531 , 0.75
+epochs: 155, accuracy (validation - test): 0.7538 , 0.7542
+epochs: 160, accuracy (validation - test): 0.7565 , 0.7535
+epochs: 165, accuracy (validation - test): 0.754 , 0.7521
+epochs: 170, accuracy (validation - test): 0.7558 , 0.7547
+epochs: 175, accuracy (validation - test): 0.7539 , 0.7475
+epochs: 180, accuracy (validation - test): 0.7592 , 0.7534
+epochs: 185, accuracy (validation - test): 0.7535 , 0.7496
+epochs: 190, accuracy (validation - test): 0.7521 , 0.7516
+epochs: 195, accuracy (validation - test): 0.7543 , 0.7558
+epochs: 200, accuracy (validation - test): 0.7588 , 0.7522
+epochs: 205, accuracy (validation - test): 0.7632 , 0.7563
+epochs: 210, accuracy (validation - test): 0.7554 , 0.7553
+epochs: 215, accuracy (validation - test): 0.756 , 0.7498
+epochs: 220, accuracy (validation - test): 0.7531 , 0.7524
+epochs: 225, accuracy (validation - test): 0.762 , 0.7572
+epochs: 230, accuracy (validation - test): 0.7483 , 0.7505
+epochs: 235, accuracy (validation - test): 0.7512 , 0.7508
+epochs: 240, accuracy (validation - test): 0.755 , 0.7487
+epochs: 245, accuracy (validation - test): 0.7501 , 0.7513
+epochs: 250, accuracy (validation - test): 0.7501 , 0.7505
+Total values needed to encode all trainable parameters: 161514

@@ -1,0 +1,91 @@
+CPU: [Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz]
+4 threads with OpenMP
+Training data: (40000,3072) 468.8 MB
+Validation data: (10000,3072) 117.2 MB
+Testing data: (10000,3072) 117.2 MB
+
+Network: cifar10cnn-teacher
+Input, shape:[32,32,3], parameters: 0, memory:12.0 KB
+Conv2D(ReLU), shape:[28,28,32] (k:5,s:1,pad:no), parameters:2400, memory:116.8 KB
+Maxpool2D shape:[14,14,32] (k:2,s:2), parameters:0, memory:24.5 KB
+Dropout, ratio:0.25, shape:[14,14,32], parameters:0, memory:24.5 KB
+Conv2D(ReLU), shape:[12,12,64] (k:3,s:1,pad:no), parameters:18432, memory:180.0 KB
+Maxpool2D shape:[6,6,64] (k:2,s:2), parameters:0, memory:9.0 KB
+Dropout, ratio:0.25, shape:[6,6,64], parameters:0, memory:9.0 KB
+Conv2D(ReLU), shape:[4,4,128] (k:3,s:1,pad:no), parameters:73728, memory:584.0 KB
+Maxpool2D shape:[2,2,128] (k:2,s:2), parameters:0, memory:2.0 KB
+Dense(ReLU), shape:[128], parameters:65664, memory:513.0 KB
+Dense(softmax), shape:[10], parameters:1290, memory:10.1 KB
+
+Training...
+Backprop: batch_size:16 epochs:50, Adam (α:0.0005 β1:0.9 β2:0.999), CCE
+
+Training on CPU...
+epoch:   1, time: 2m 40s (speed 269.8), loss (CCE): 63433.6680, validation accuracy: 0.5102
+epoch:   2, time: 2m 49s (speed 253.7), loss (CCE): 50554.3516, validation accuracy: 0.5991
+epoch:   3, time: 2m 59s (speed 238.4), loss (CCE): 44590.0195, validation accuracy: 0.6367
+epoch:   4, time: 3m 00s (speed 236.8), loss (CCE): 40576.2227, validation accuracy: 0.6650
+epoch:   5, time: 2m 59s (speed 238.5), loss (CCE): 37589.1719, validation accuracy: 0.6840
+epoch:   6, time: 3m 07s (speed 228.6), loss (CCE): 35104.7930, validation accuracy: 0.6918
+epoch:   7, time: 3m 22s (speed 213.0), loss (CCE): 33224.2305, validation accuracy: 0.6989
+epoch:   8, time: 3m 13s (speed 223.4), loss (CCE): 31833.9980, validation accuracy: 0.7068
+epoch:   9, time: 4m 02s (speed 174.1), loss (CCE): 30360.1934, validation accuracy: 0.7184
+epoch:  10, time: 4m 05s (speed 173.4), loss (CCE): 29198.7988, validation accuracy: 0.7180
+epoch:  11, time: 3m 45s (speed 187.7), loss (CCE): 28201.3887, validation accuracy: 0.7353
+epoch:  12, time: 3m 11s (speed 225.1), loss (CCE): 27403.5996, validation accuracy: 0.7195
+epoch:  13, time: 3m 11s (speed 222.5), loss (CCE): 26438.1914, validation accuracy: 0.7270
+epoch:  14, time: 3m 02s (speed 234.7), loss (CCE): 25466.8457, validation accuracy: 0.7093
+epoch:  15, time: 3m 04s (speed 231.8), loss (CCE): 24799.9395, validation accuracy: 0.7335
+epoch:  16, time: 3m 03s (speed 232.8), loss (CCE): 24122.1602, validation accuracy: 0.7300
+epoch:  17, time: 3m 01s (speed 236.1), loss (CCE): 23518.8867, validation accuracy: 0.7361
+epoch:  18, time: 3m 04s (speed 231.2), loss (CCE): 22845.1660, validation accuracy: 0.7352
+epoch:  19, time: 3m 00s (speed 237.0), loss (CCE): 22312.3555, validation accuracy: 0.7261
+epoch:  20, time: 3m 04s (speed 231.9), loss (CCE): 21750.4531, validation accuracy: 0.7343
+epoch:  21, time: 3m 03s (speed 232.7), loss (CCE): 21630.6250, validation accuracy: 0.7435
+epoch:  22, time: 3m 01s (speed 236.2), loss (CCE): 21108.0879, validation accuracy: 0.7434
+epoch:  23, time: 3m 03s (speed 233.6), loss (CCE): 20490.2324, validation accuracy: 0.7396
+epoch:  24, time: 3m 02s (speed 234.4), loss (CCE): 20373.1621, validation accuracy: 0.7448
+epoch:  25, time: 3m 05s (speed 230.8), loss (CCE): 19954.3242, validation accuracy: 0.7524
+epoch:  26, time: 3m 03s (speed 232.8), loss (CCE): 19273.9414, validation accuracy: 0.7457
+epoch:  27, time: 3m 07s (speed 228.3), loss (CCE): 19172.2891, validation accuracy: 0.7452
+epoch:  28, time: 3m 05s (speed 230.6), loss (CCE): 19043.7109, validation accuracy: 0.7446
+epoch:  29, time: 3m 03s (speed 233.1), loss (CCE): 18701.6211, validation accuracy: 0.7509
+epoch:  30, time: 3m 03s (speed 233.8), loss (CCE): 18343.6719, validation accuracy: 0.7423
+epoch:  31, time: 3m 06s (speed 228.9), loss (CCE): 18123.8730, validation accuracy: 0.7435
+epoch:  32, time: 3m 04s (speed 232.2), loss (CCE): 17878.1406, validation accuracy: 0.7360
+epoch:  33, time: 3m 05s (speed 230.2), loss (CCE): 17165.3750, validation accuracy: 0.7478
+epoch:  34, time: 3m 08s (speed 226.3), loss (CCE): 17294.4023, validation accuracy: 0.7398
+epoch:  35, time: 3m 04s (speed 232.4), loss (CCE): 17015.0488, validation accuracy: 0.7510
+epoch:  36, time: 3m 09s (speed 225.1), loss (CCE): 16618.8340, validation accuracy: 0.7510
+epoch:  37, time: 3m 07s (speed 231.5), loss (CCE): 16639.3555, validation accuracy: 0.7499
+epoch:  38, time: 3m 02s (speed 233.9), loss (CCE): 16529.5938, validation accuracy: 0.7397
+epoch:  39, time: 3m 27s (speed 204.2), loss (CCE): 16284.9648, validation accuracy: 0.7438
+epoch:  40, time: 3m 09s (speed 225.6), loss (CCE): 16271.6279, validation accuracy: 0.7464
+epoch:  41, time: 3m 14s (speed 218.9), loss (CCE): 16118.5439, validation accuracy: 0.7391
+epoch:  42, time: 3m 13s (speed 219.7), loss (CCE): 15547.3193, validation accuracy: 0.7468
+epoch:  43, time: 3m 00s (speed 236.6), loss (CCE): 15584.4033, validation accuracy: 0.7410
+epoch:  44, time: 3m 06s (speed 229.7), loss (CCE): 15565.8896, validation accuracy: 0.7496
+epoch:  45, time: 3m 06s (speed 229.1), loss (CCE): 15220.6533, validation accuracy: 0.7475
+epoch:  46, time: 3m 03s (speed 232.3), loss (CCE): 15105.6416, validation accuracy: 0.7408
+epoch:  47, time: 3m 06s (speed 229.6), loss (CCE): 14968.2754, validation accuracy: 0.7402
+epoch:  48, time: 3m 11s (speed 222.3), loss (CCE): 14887.8789, validation accuracy: 0.7466
+epoch:  49, time: 3m 04s (speed 231.5), loss (CCE): 14614.3428, validation accuracy: 0.7357
+epoch:  50, time: 3m 05s (speed 229.7), loss (CCE): 14705.7764, validation accuracy: 0.7435
+Trained in 2.6 hours.
+Training set predicted in 47.20s with 0.94975 accuracy.
+Test set predicted in 11.83s with 0.7319 accuracy.
+Accuracy  = 0.7319
+Precision = 0.739846
+Recall    = 0.7319
+F1        = 0.735851
+Confusion matrix:
+ 725   23   73   33   38    7   10    8   59   24
+  12  891    6    8    7    3    5    6   18   44
+  49    3  607   86  105   41   65   27   14    3
+  17    9   70  599   96   99   44   43   10   13
+  11    2   58   45  805   17   25   31    5    1
+   6    4   61  248   78  530   23   42    4    4
+   2    7   44   59   44   11  815   11    5    2
+  15    2   23   49   95   40    9  753    4   10
+  45   27   18   20   16    6    4    4  843   17
+  24  116   15   20   13    2   12   12   35  751

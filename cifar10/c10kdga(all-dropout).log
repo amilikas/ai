@@ -1,0 +1,385 @@
+CPU: [AMD Ryzen 9 5900X 12-Core Processor]
+24 threads with OpenMP
+Teacher data: X (40000,3072) 468.8 MB, Y (40000,10)
+Student data: X (40000,3072) 468.8 MB, Y (40000,10)
+Validation data: X (10000,3072) 117.2 MB, Y (10000,10)
+Testing data: X (10000,3072) 117.2 MB, Y (10000,10)
+Trained teacher test set predicted in  1.21s with 0.7365 accuracy.
+
+Network: c10kdga-trained-teacher(dropout)
+Input, shape:[32,32,3], parameters: 0, memory:12.0 KB
+Conv2D(ReLU), shape:[30,30,32] (k:3,s:1,pad:no), parameters:864, memory:119.2 KB
+Maxpool2D shape:[15,15,32] (k:2,s:2), parameters:0, memory:28.1 KB
+Dropout, ratio:0.25, shape:[15,15,32], parameters:0, memory:28.1 KB
+Conv2D(ReLU), shape:[13,13,64] (k:3,s:1,pad:no), parameters:18432, memory:186.2 KB
+Maxpool2D shape:[6,6,64] (k:2,s:2), parameters:0, memory:9.0 KB
+Dropout, ratio:0.25, shape:[6,6,64], parameters:0, memory:9.0 KB
+Conv2D(ReLU), shape:[4,4,128] (k:3,s:1,pad:no), parameters:73728, memory:584.0 KB
+Maxpool2D shape:[2,2,128] (k:2,s:2), parameters:0, memory:2.0 KB
+Dropout, ratio:0.25, shape:[2,2,128], parameters:0, memory:2.0 KB
+Dense(ReLU), shape:[128], parameters:65664, memory:513.0 KB
+Dense(Linear), shape:[10], parameters:1290, memory:10.1 KB
+
+Stats for c10kdga-trained-teacher(dropout)
+Layer 1 Conv2D
+variance: 0.00804128
+Scale: 0..150
+ 1 (-0.214,-0.172): ██████
+ 2 (-0.172,-0.129): ████████████████████████████
+ 3 (-0.129,-0.086): ████████████████████████████████████████████████████
+ 4 (-0.086,-0.043): ███████████████████████████████████████████████████████████████████████
+ 5 (-0.043,-0.001): ████████████████████████████████████████████████████████████████████████████████
+ 6 (-0.001, 0.042): ███████████████████████████████████████████████████████████████████
+ 7 ( 0.042, 0.085): ████████████████████████████████████████████████████████████████████
+ 8 ( 0.085, 0.128): ███████████████████████████████████████████████
+ 9 ( 0.128, 0.170): ██████████████████████████████
+10 ( 0.170, 0.213): ███████████
+Layer 4 Conv2D
+variance: 0.00561014
+Scale: 0..9225
+ 1 (-0.573,-0.480): 
+ 2 (-0.480,-0.386): 
+ 3 (-0.386,-0.292): █
+ 4 (-0.292,-0.199): ███
+ 5 (-0.199,-0.105): ██████████
+ 6 (-0.105,-0.012): ██████████████████████████████████████████████████████
+ 7 (-0.012, 0.082): ████████████████████████████████████████████████████████████████████████████████
+ 8 ( 0.082, 0.176): ███████████
+ 9 ( 0.176, 0.269): █
+10 ( 0.269, 0.363): 
+Layer 7 Conv2D
+variance: 0.00264033
+Scale: 0..32670
+ 1 (-0.349,-0.294): 
+ 2 (-0.294,-0.240): 
+ 3 (-0.240,-0.185): █
+ 4 (-0.185,-0.131): ███
+ 5 (-0.131,-0.076): █████████████
+ 6 (-0.076,-0.022): ████████████████████████████████████████████████
+ 7 (-0.022, 0.033): ████████████████████████████████████████████████████████████████████████████████
+ 8 ( 0.033, 0.088): █████████████████████████████████
+ 9 ( 0.088, 0.142): ████
+10 ( 0.142, 0.197): 
+Layer 10 Dense
+variance: 0.0195917
+Scale: 0..15323
+ 1 (-0.521,-0.423): 
+ 2 (-0.423,-0.325): ██
+ 3 (-0.325,-0.227): █████████████
+ 4 (-0.227,-0.129): █████████████████████████████████████████████████
+ 5 (-0.129,-0.031): ████████████████████████████████████████████████████████████████████████████
+ 6 (-0.031, 0.067): ████████████████████████████████████████████████████████████████████████████████
+ 7 ( 0.067, 0.165): █████████████████████████████████████████████████████████████████████████
+ 8 ( 0.165, 0.263): ██████████████████████████████████████████
+ 9 ( 0.263, 0.361): ████████
+10 ( 0.361, 0.459): 
+Layer 11 Dense
+variance: 0.0365235
+Scale: 0..208
+ 1 (-0.485,-0.386): █████
+ 2 (-0.386,-0.287): █████████████████████████████████
+ 3 (-0.287,-0.188): ████████████████████████████████████████████████████████████████████████████████
+ 4 (-0.188,-0.089): █████████████████████████████████████████████████████████████████████████████
+ 5 (-0.089, 0.010): █████████████████████████████████████████████████████████████████████████
+ 6 ( 0.010, 0.109): ████████████████████████████████████████████████████████████████████████
+ 7 ( 0.109, 0.209): ████████████████████████████████████████████████████████████████████████████████
+ 8 ( 0.209, 0.308): ████████████████████████████████████████████████████████████
+ 9 ( 0.308, 0.407): ██████████
+10 ( 0.407, 0.506): ██
+
+Network: c10kdga-student
+Input, shape:[32,32,3], parameters: 0, memory:12.0 KB
+Conv2D(ReLU), shape:[30,30,8] (k:3,s:1,pad:no), parameters:216, memory:29.8 KB
+Maxpool2D shape:[15,15,8] (k:2,s:2), parameters:0, memory:7.0 KB
+Conv2D(ReLU), shape:[13,13,16] (k:3,s:1,pad:no), parameters:1152, memory:19.6 KB
+Maxpool2D shape:[6,6,16] (k:2,s:2), parameters:0, memory:2.2 KB
+Conv2D(ReLU), shape:[4,4,32] (k:3,s:1,pad:no), parameters:4608, memory:38.0 KB
+Dense(ReLU), shape:[64], parameters:32832, memory:256.5 KB
+Dense(Linear), shape:[10], parameters:650, memory:5.1 KB
+
+
+Stats for c10kdga-student
+Layer 1 Conv2D
+variance: 0.000348763
+Scale: 0..30
+ 1 (-0.031,-0.025): ████████████████████████████████████████████████████████
+ 2 (-0.025,-0.019): ████████████████████████████████████████████████████████████████████████████████
+ 3 (-0.019,-0.012): █████████████████████████████████████████████████████████████
+ 4 (-0.012,-0.006): ███████████████████████████████████████████████████
+ 5 (-0.006, 0.000): ████████████████████████████████████████████████
+ 6 ( 0.000, 0.006): ████████████████████████████████████████████████████████
+ 7 ( 0.006, 0.013): █████████████████████████████████████████████████████████████
+ 8 ( 0.013, 0.019): ████████████████████████████████████████████████
+ 9 ( 0.019, 0.025): ███████████████████████████████████████████
+10 ( 0.025, 0.031): ████████████████████████████████████████████████████████████████████████
+Layer 3 Conv2D
+variance: 0.000554329
+Scale: 0..130
+ 1 (-0.041,-0.033): ███████████████████████████████████████████████████████████████████████
+ 2 (-0.033,-0.024): ██████████████████████████████████████████████████████████████████████████
+ 3 (-0.024,-0.016): ██████████████████████████████████████████████████████████████████████████
+ 4 (-0.016,-0.008): ██████████████████████████████████████████████████████████████████████████
+ 5 (-0.008,-0.000): ████████████████████████████████████████████████████████████████████████████████
+ 6 (-0.000, 0.008): ████████████████████████████████████████████████████████████████
+ 7 ( 0.008, 0.016): ███████████████████████████████████████████████████████████████████████
+ 8 ( 0.016, 0.024): ███████████████████████████████████████████████████████
+ 9 ( 0.024, 0.033): █████████████████████████████████████████████████████████████████████████
+10 ( 0.033, 0.041): ███████████████████████████████████████████████████████████████████████
+Layer 5 Conv2D
+variance: 0.00171469
+Scale: 0..475
+ 1 (-0.072,-0.058): ████████████████████████████████████████████████████████████████████████
+ 2 (-0.058,-0.043): ████████████████████████████████████████████████████████████████████████████████
+ 3 (-0.043,-0.029): ███████████████████████████████████████████████████████████████████████████████
+ 4 (-0.029,-0.014): ██████████████████████████████████████████████████████████████████████████████
+ 5 (-0.014, 0.000): ███████████████████████████████████████████████████████████████████████████
+ 6 ( 0.000, 0.014): ████████████████████████████████████████████████████████████████████████████████
+ 7 ( 0.014, 0.029): █████████████████████████████████████████████████████████████████████████████
+ 8 ( 0.029, 0.043): ████████████████████████████████████████████████████████████████████████████████
+ 9 ( 0.043, 0.058): ████████████████████████████████████████████████████████████████████████████████
+10 ( 0.058, 0.072): ████████████████████████████████████████████████████████████████████████████
+Layer 6 Dense
+variance: 0.0248981
+Scale: 0..3381
+ 1 (-0.274,-0.219): ██████████████████████████████████████████████████████████████████████████████
+ 2 (-0.219,-0.164): ███████████████████████████████████████████████████████████████████████████████
+ 3 (-0.164,-0.110): ██████████████████████████████████████████████████████████████████████████████
+ 4 (-0.110,-0.055): ██████████████████████████████████████████████████████████████████████████████
+ 5 (-0.055, 0.000): █████████████████████████████████████████████████████████████████████████████
+ 6 ( 0.000, 0.055): ███████████████████████████████████████████████████████████████████████████████
+ 7 ( 0.055, 0.110): ████████████████████████████████████████████████████████████████████████████
+ 8 ( 0.110, 0.164): ████████████████████████████████████████████████████████████████████████████████
+ 9 ( 0.164, 0.219): █████████████████████████████████████████████████████████████████████████████
+10 ( 0.219, 0.274): ████████████████████████████████████████████████████████████████████████████
+Layer 7 Dense
+variance: 0.0274658
+Scale: 0..80
+ 1 (-0.284,-0.228): ████████████████████████████████████████████████████████████
+ 2 (-0.228,-0.171): █████████████████████████████████████████████████████████████████
+ 3 (-0.171,-0.114): █████████████████████████████████████████████████████████████
+ 4 (-0.114,-0.057): ████████████████████████████████████████████████████████
+ 5 (-0.057, 0.000): ████████████████████████████████████████████████████████████████
+ 6 ( 0.000, 0.057): ███████████████████████████████████████████████████████████████
+ 7 ( 0.057, 0.114): █████████████████████████████████████████████████████████████
+ 8 ( 0.114, 0.171): ████████████████████████████████████████████████████████████████████████████████
+ 9 ( 0.171, 0.228): █████████████████████████████████████████████████████████████
+10 ( 0.228, 0.285): █████████████████████████████████████████████████████████████████████
+
+Number of indeces in each chain: 56
+Evolving 10 members for 100 generations...
+Generation   1, time: 1m 12s, fitness max: 0.366800, min: 0.286000, mean: 0.329150
+Generation   2, time: 62.58s, fitness max: 0.366800, min: 0.301600, mean: 0.323170
+Generation   3, time: 66.70s, fitness max: 0.366800, min: 0.274100, mean: 0.317520
+Generation   4, time: 67.51s, fitness max: 0.368700, min: 0.291900, mean: 0.335540
+Generation   5, time: 64.19s, fitness max: 0.370100, min: 0.307100, mean: 0.341160
+Generation   6, time: 40.18s, fitness max: 0.370100, min: 0.307500, mean: 0.347060
+Generation   7, time: 41.49s, fitness max: 0.370100, min: 0.313400, mean: 0.348630
+Generation   8, time: 19.61s, fitness max: 0.370400, min: 0.313400, mean: 0.350970
+Generation   9, time: 26.30s, fitness max: 0.370400, min: 0.313400, mean: 0.354540
+Generation  10, time: 29.00s, fitness max: 0.376200, min: 0.310200, mean: 0.348930
+Generation  11, time: 14.36s, fitness max: 0.376200, min: 0.313400, mean: 0.352640
+Generation  12, time: 33.21s, fitness max: 0.376200, min: 0.342800, mean: 0.361400
+Generation  13, time: 27.79s, fitness max: 0.376200, min: 0.342800, mean: 0.360220
+Generation  14, time: 42.33s, fitness max: 0.376200, min: 0.348000, mean: 0.362470
+Generation  15, time: 26.86s, fitness max: 0.376200, min: 0.350900, mean: 0.366500
+Generation  16, time:  6.96s, fitness max: 0.376200, min: 0.350900, mean: 0.366620
+Generation  17, time:  0.00s, fitness max: 0.376200, min: 0.350900, mean: 0.368490
+Generation  18, time: 28.00s, fitness max: 0.376200, min: 0.354200, mean: 0.368900
+Generation  19, time:  7.23s, fitness max: 0.376200, min: 0.335900, mean: 0.366740
+Generation  20, time: 35.37s, fitness max: 0.376200, min: 0.337500, mean: 0.364010
+Generation  21, time:  0.00s, fitness max: 0.376200, min: 0.371100, mean: 0.372860
+Generation  22, time:  7.22s, fitness max: 0.376200, min: 0.359300, mean: 0.371450
+Generation  23, time: 19.86s, fitness max: 0.376200, min: 0.358800, mean: 0.370290
+Generation  24, time: 42.51s, fitness max: 0.384400, min: 0.356500, mean: 0.372360
+Generation  25, time: 20.88s, fitness max: 0.384400, min: 0.354900, mean: 0.372850
+Generation  26, time: 39.84s, fitness max: 0.384400, min: 0.356600, mean: 0.372340
+Generation  27, time:  0.00s, fitness max: 0.384400, min: 0.360200, mean: 0.380320
+Generation  28, time: 20.48s, fitness max: 0.384400, min: 0.348600, mean: 0.376580
+Generation  29, time: 35.43s, fitness max: 0.385200, min: 0.356100, mean: 0.377120
+Generation  30, time:  0.00s, fitness max: 0.385200, min: 0.357200, mean: 0.381090
+Generation  31, time: 20.94s, fitness max: 0.385200, min: 0.342500, mean: 0.375910
+Generation  32, time: 33.46s, fitness max: 0.385200, min: 0.350100, mean: 0.376280
+Generation  33, time: 34.26s, fitness max: 0.385200, min: 0.358100, mean: 0.377210
+Generation  34, time: 33.47s, fitness max: 0.385200, min: 0.333000, mean: 0.370730
+Generation  35, time: 21.07s, fitness max: 0.385200, min: 0.358200, mean: 0.372050
+Generation  36, time:  0.00s, fitness max: 0.385200, min: 0.370600, mean: 0.377990
+Generation  37, time: 21.55s, fitness max: 0.385200, min: 0.341100, mean: 0.371720
+Generation  38, time: 20.70s, fitness max: 0.385200, min: 0.355000, mean: 0.373660
+Generation  39, time: 29.76s, fitness max: 0.385200, min: 0.344300, mean: 0.371870
+Generation  40, time: 22.44s, fitness max: 0.385200, min: 0.347600, mean: 0.366070
+Generation  41, time: 31.50s, fitness max: 0.385200, min: 0.351100, mean: 0.370850
+Generation  42, time: 14.78s, fitness max: 0.385200, min: 0.370600, mean: 0.377980
+Generation  43, time: 12.97s, fitness max: 0.385200, min: 0.374300, mean: 0.380700
+Generation  44, time: 28.91s, fitness max: 0.385200, min: 0.366500, mean: 0.378430
+Generation  45, time: 20.18s, fitness max: 0.385200, min: 0.353500, mean: 0.377960
+Generation  46, time: 20.83s, fitness max: 0.388400, min: 0.377500, mean: 0.384130
+Generation  47, time: 41.39s, fitness max: 0.388400, min: 0.362600, mean: 0.378870
+Generation  48, time: 34.41s, fitness max: 0.388400, min: 0.369200, mean: 0.379130
+Generation  49, time: 13.92s, fitness max: 0.388400, min: 0.367600, mean: 0.378580
+Generation  50, time: 20.59s, fitness max: 0.388400, min: 0.365900, mean: 0.382090
+Generation  51, time: 34.15s, fitness max: 0.388400, min: 0.323600, mean: 0.379030
+Generation  52, time: 20.99s, fitness max: 0.388400, min: 0.360800, mean: 0.381770
+Generation  53, time: 14.36s, fitness max: 0.389200, min: 0.368400, mean: 0.382180
+Generation  54, time: 35.42s, fitness max: 0.389200, min: 0.360800, mean: 0.378980
+Generation  55, time: 15.83s, fitness max: 0.389200, min: 0.362300, mean: 0.376020
+Generation  56, time:  8.15s, fitness max: 0.389200, min: 0.362300, mean: 0.381450
+Generation  57, time: 22.89s, fitness max: 0.389200, min: 0.327800, mean: 0.376310
+Generation  58, time: 22.04s, fitness max: 0.389200, min: 0.344900, mean: 0.378560
+Generation  59, time:  9.28s, fitness max: 0.394200, min: 0.379700, mean: 0.383050
+Generation  60, time:  7.97s, fitness max: 0.394200, min: 0.377400, mean: 0.382820
+Generation  61, time:  8.11s, fitness max: 0.394200, min: 0.360400, mean: 0.381120
+Generation  62, time:  8.06s, fitness max: 0.394200, min: 0.355400, mean: 0.380620
+Generation  63, time: 29.84s, fitness max: 0.394200, min: 0.365100, mean: 0.379290
+Generation  64, time: 28.95s, fitness max: 0.394200, min: 0.379700, mean: 0.384080
+Generation  65, time: 21.49s, fitness max: 0.394200, min: 0.344200, mean: 0.374840
+Generation  66, time: 22.57s, fitness max: 0.394200, min: 0.354400, mean: 0.377040
+Generation  67, time: 13.95s, fitness max: 0.394200, min: 0.365500, mean: 0.380460
+Generation  68, time: 22.54s, fitness max: 0.394200, min: 0.332300, mean: 0.371990
+Generation  69, time: 36.72s, fitness max: 0.394200, min: 0.352500, mean: 0.378480
+Generation  70, time: 29.25s, fitness max: 0.394200, min: 0.354500, mean: 0.376800
+Generation  71, time: 20.52s, fitness max: 0.394200, min: 0.350200, mean: 0.375990
+Generation  72, time: 14.18s, fitness max: 0.395400, min: 0.350200, mean: 0.380110
+Generation  73, time:  6.75s, fitness max: 0.395400, min: 0.350200, mean: 0.378420
+Generation  74, time: 31.77s, fitness max: 0.395400, min: 0.333500, mean: 0.378900
+Generation  75, time: 14.59s, fitness max: 0.395400, min: 0.323400, mean: 0.374330
+Generation  76, time: 14.73s, fitness max: 0.395400, min: 0.332000, mean: 0.373330
+Generation  77, time: 22.22s, fitness max: 0.395400, min: 0.336600, mean: 0.374030
+Generation  78, time: 13.33s, fitness max: 0.395400, min: 0.340100, mean: 0.373820
+Generation  79, time: 14.67s, fitness max: 0.395400, min: 0.351000, mean: 0.374020
+Generation  80, time: 27.05s, fitness max: 0.395400, min: 0.354500, mean: 0.373760
+Generation  81, time: 20.38s, fitness max: 0.395400, min: 0.368500, mean: 0.379620
+Generation  82, time: 16.73s, fitness max: 0.395400, min: 0.360700, mean: 0.376440
+Generation  83, time: 28.76s, fitness max: 0.395400, min: 0.342100, mean: 0.374200
+Generation  84, time: 35.25s, fitness max: 0.395400, min: 0.342100, mean: 0.371320
+Generation  85, time: 13.98s, fitness max: 0.395400, min: 0.360300, mean: 0.373450
+Generation  86, time: 34.86s, fitness max: 0.395400, min: 0.345300, mean: 0.369840
+Generation  87, time: 13.92s, fitness max: 0.395400, min: 0.347200, mean: 0.372750
+Generation  88, time: 22.10s, fitness max: 0.395400, min: 0.347200, mean: 0.370580
+Generation  89, time: 21.55s, fitness max: 0.395400, min: 0.343400, mean: 0.375170
+Generation  90, time: 14.38s, fitness max: 0.395400, min: 0.342000, mean: 0.374690
+Generation  91, time: 13.33s, fitness max: 0.395400, min: 0.361600, mean: 0.377850
+Generation  92, time: 14.08s, fitness max: 0.395400, min: 0.361600, mean: 0.375880
+Generation  93, time: 29.89s, fitness max: 0.395400, min: 0.373900, mean: 0.378490
+Generation  94, time: 22.29s, fitness max: 0.395400, min: 0.350000, mean: 0.376550
+Generation  95, time: 13.69s, fitness max: 0.395400, min: 0.357400, mean: 0.376840
+Generation  96, time: 16.24s, fitness max: 0.395400, min: 0.360200, mean: 0.378020
+Generation  97, time:  7.42s, fitness max: 0.395400, min: 0.373900, mean: 0.382140
+Generation  98, time: 21.82s, fitness max: 0.395400, min: 0.354600, mean: 0.376220
+Generation  99, time: 37.09s, fitness max: 0.395400, min: 0.352400, mean: 0.373110
+Generation 100, time: 14.43s, fitness max: 0.395400, min: 0.344300, mean: 0.372820
+Evolution finished, top-10 members:
+member   1, fitness=0.395400, 0 1 2 3 4 5 6 9 0 1 2 3 4 5 6 7 8 9 10 13 14 16 19 33 1 3 4 7 8 9 10 11 12 13 14 15 16 17 18 19 21 22 23 24 28 31 32 33 34 35 38 39 41 43 45 98 
+member   2, fitness=0.379700, 0 1 2 3 4 5 6 9 0 1 2 3 4 5 6 7 8 9 10 13 14 16 19 33 1 2 3 4 7 8 9 10 11 12 13 14 15 16 17 18 19 21 22 23 24 28 31 32 33 34 35 38 39 41 43 45 
+member   3, fitness=0.379700, 0 1 2 3 4 5 6 9 0 1 2 3 4 5 6 7 8 9 10 13 14 16 19 33 1 2 3 4 7 8 9 10 11 12 13 14 15 16 17 18 19 21 22 23 24 28 31 32 33 34 35 38 39 41 43 45 
+member   4, fitness=0.379700, 0 1 2 3 4 5 6 9 0 1 2 3 4 5 6 7 8 9 10 13 14 16 19 33 1 2 3 4 7 8 9 10 11 12 13 14 15 16 17 18 19 21 22 23 24 28 31 32 33 34 35 38 39 41 43 45 
+member   5, fitness=0.377500, 0 1 2 3 4 5 6 9 0 1 2 3 4 5 6 7 8 9 10 13 16 19 27 33 1 2 3 4 7 8 9 10 11 12 13 14 15 16 17 18 19 21 22 23 24 28 31 32 33 34 35 38 39 41 43 45 
+member   6, fitness=0.377200, 0 1 2 3 4 5 6 9 0 1 2 3 4 5 6 7 8 9 10 13 14 16 19 27 1 2 3 4 7 8 9 10 11 12 13 14 15 16 17 18 19 21 22 23 24 28 30 31 32 33 34 35 38 39 41 43 
+member   7, fitness=0.373900, 0 1 2 3 4 5 6 9 0 1 2 3 4 5 6 7 8 9 10 13 14 16 19 33 1 2 3 4 7 8 9 10 11 12 13 14 15 16 17 18 19 21 22 23 24 28 30 31 32 33 34 35 38 39 41 43 
+member   8, fitness=0.368400, 0 1 2 3 4 5 6 9 0 1 2 3 4 5 7 8 9 10 13 14 16 19 33 39 1 2 3 4 7 8 9 10 11 12 13 14 15 16 17 18 19 21 22 23 24 28 30 31 32 33 34 35 38 39 41 43 
+member   9, fitness=0.352400, 0 1 2 4 5 6 9 11 0 1 2 3 4 6 7 8 9 10 13 14 16 19 27 43 1 2 3 4 7 8 9 10 11 12 13 14 15 16 17 18 19 21 22 23 24 28 30 31 32 33 34 35 38 39 41 43 
+member  10, fitness=0.344300, 0 1 2 3 4 5 6 25 0 1 2 3 4 5 6 7 8 9 10 13 14 16 19 33 1 2 3 4 7 8 9 10 11 12 13 14 15 16 17 18 19 21 22 23 24 28 31 32 33 34 35 38 39 41 43 45 
+
+Train student without KD but with GA initialized filters
+Best member: 0 1 2 3 4 5 6 9 0 1 2 3 4 5 6 7 8 9 10 13 14 16 19 33 1 3 4 7 8 9 10 11 12 13 14 15 16 17 18 19 21 22 23 24 28 31 32 33 34 35 38 39 41 43 45 98 
+Backprop: batch_size:20 epochs:15, Adam (α:0.0001 β1:0.9 β2:0.999), CCE
+Training on CPU...
+epoch:  10, time:  5.80s (speed 7365.9), loss (CCE): 48144.0625, validation accuracy: 0.5678
+epoch:  15, time:  0.00s (speed 7191.3), loss (CCE): 44589.5391, validation accuracy: 0.6010
+Trained in 1m 30s.
+Student without KD (but GA initialization): Test set predicted in  0.25s with 0.5989 accuracy.
+
+
+Train student with KD, filters initialized by the GA (best member)
+Best member: 0 1 2 3 4 5 6 9 0 1 2 3 4 5 6 7 8 9 10 13 14 16 19 33 1 3 4 7 8 9 10 11 12 13 14 15 16 17 18 19 21 22 23 24 28 31 32 33 34 35 38 39 41 43 45 98 
+Backprop: batch_size:20 epochs:15, Adam (α:0.0001 β1:0.9 β2:0.999), KDloss (α:0.2 T:5)
+Training on CPU...
+epoch:  10, time:  5.49s (speed 7635.4), loss (KDloss): 78407.6953, validation accuracy: 0.5705
+epoch:  15, time:  0.00s (speed 7966.2), loss (KDloss): 77471.6719, validation accuracy: 0.6039
+Trained in 1m 27s.
+Student with KD (GA optimized): Test set predicted in  0.24s with 0.6021 accuracy.
+
+
+Train student with KD, filters choosen by the GA (worst member)
+Worst member: 0 1 2 3 4 5 6 25 0 1 2 3 4 5 6 7 8 9 10 13 14 16 19 33 1 2 3 4 7 8 9 10 11 12 13 14 15 16 17 18 19 21 22 23 24 28 31 32 33 34 35 38 39 41 43 45 
+Backprop: batch_size:20 epochs:15, Adam (α:0.0001 β1:0.9 β2:0.999), KDloss (α:0.2 T:5)
+Training on CPU...
+epoch:  10, time:  5.97s (speed 7185.1), loss (KDloss): 78585.0547, validation accuracy: 0.5675
+epoch:  15, time:  0.00s (speed 7226.0), loss (KDloss): 77701.3125, validation accuracy: 0.5937
+Trained in 1m 30s.
+Student with KD (GA optimized): Test set predicted in  0.31s with 0.5879 accuracy.
+
+
+Train student with KD, filters choosen randomly (full training)
+Random1: 2 4 7 11 12 24 30 31 0 7 8 9 14 15 17 24 31 35 36 39 43 49 51 59 5 8 9 16 19 38 39 40 42 47 50 54 56 61 67 68 70 74 84 87 91 93 94 95 100 102 104 109 115 124 126 127 
+Backprop: batch_size:20 epochs:15, Adam (α:0.0001 β1:0.9 β2:0.999), KDloss (α:0.2 T:5)
+Training on CPU...
+epoch:  10, time:  6.05s (speed 6989.9), loss (KDloss): 78792.8984, validation accuracy: 0.5492
+epoch:  15, time:  0.00s (speed 7587.7), loss (KDloss): 77818.5000, validation accuracy: 0.5811
+Trained in 1m 27s.
+Student with KD (Random): Test set predicted in  0.23s with 0.5783 accuracy.
+
+
+Train student with KD, filters choosen randomly (full training)
+Random2: 2 7 9 17 18 21 22 23 2 5 13 17 19 21 24 31 35 37 38 40 44 46 59 60 0 3 4 7 8 9 11 32 38 40 41 46 50 51 52 58 60 72 75 84 86 88 91 97 98 99 108 109 111 112 117 122 
+Backprop: batch_size:20 epochs:15, Adam (α:0.0001 β1:0.9 β2:0.999), KDloss (α:0.2 T:5)
+Training on CPU...
+epoch:  10, time:  6.03s (speed 7026.8), loss (KDloss): 78491.6328, validation accuracy: 0.5586
+epoch:  15, time:  0.00s (speed 7157.3), loss (KDloss): 77613.6953, validation accuracy: 0.5901
+Trained in 1m 31s.
+Student with KD (Random): Test set predicted in  0.24s with 0.5912 accuracy.
+
+
+Train student with KD, filters choosen randomly (full training)
+Random3: 1 6 12 14 15 20 29 31 9 11 13 16 26 29 35 36 38 41 47 54 56 57 59 62 4 6 8 9 10 11 17 18 21 22 24 26 27 30 31 34 43 45 64 71 78 84 100 101 102 106 115 118 120 121 123 124 
+Backprop: batch_size:20 epochs:15, Adam (α:0.0001 β1:0.9 β2:0.999), KDloss (α:0.2 T:5)
+Training on CPU...
+epoch:  10, time:  5.86s (speed 7104.4), loss (KDloss): 79524.7656, validation accuracy: 0.5214
+epoch:  15, time:  0.00s (speed 7283.8), loss (KDloss): 78563.8203, validation accuracy: 0.5566
+Trained in 1m 25s.
+Student with KD (Random): Test set predicted in  0.24s with 0.5604 accuracy.
+
+
+Train student with KD, filters choosen randomly (full training)
+Random4: 1 2 3 4 12 17 19 31 3 9 11 17 18 19 21 27 31 40 43 47 49 57 59 62 6 13 15 16 21 27 29 31 35 36 41 46 52 60 61 65 69 71 72 76 81 86 89 90 95 100 101 106 108 113 119 124 
+Backprop: batch_size:20 epochs:15, Adam (α:0.0001 β1:0.9 β2:0.999), KDloss (α:0.2 T:5)
+Training on CPU...
+epoch:  10, time:  6.09s (speed 6810.2), loss (KDloss): 79160.4453, validation accuracy: 0.5413
+epoch:  15, time:  0.00s (speed 6862.0), loss (KDloss): 78298.0469, validation accuracy: 0.5736
+Trained in 1m 29s.
+Student with KD (Random): Test set predicted in  0.25s with 0.5735 accuracy.
+
+
+Train student with KD, filters choosen randomly (full training)
+Random5: 2 3 5 6 11 14 15 25 10 13 27 29 33 35 40 44 50 51 52 54 56 57 60 63 7 12 13 18 23 26 28 29 31 33 34 38 42 47 55 56 59 62 65 70 71 75 81 82 90 103 108 112 117 119 120 125 
+Backprop: batch_size:20 epochs:15, Adam (α:0.0001 β1:0.9 β2:0.999), KDloss (α:0.2 T:5)
+Training on CPU...
+epoch:  10, time:  5.81s (speed 7178.3), loss (KDloss): 79319.7422, validation accuracy: 0.5360
+epoch:  15, time:  0.00s (speed 6969.4), loss (KDloss): 78285.0938, validation accuracy: 0.5708
+Trained in 1m 32s.
+Student with KD (Random): Test set predicted in  0.37s with 0.5708 accuracy.
+
+
+Train student without KD
+Backprop: batch_size:20 epochs:15, Adam (α:0.0001 β1:0.9 β2:0.999), CCE
+Training on CPU...
+epoch:  10, time:  5.69s (speed 7390.1), loss (CCE): 57515.9258, validation accuracy: 0.4741
+epoch:  15, time:  0.00s (speed 7355.4), loss (CCE): 52910.6367, validation accuracy: 0.5193
+Trained in 1m 26s.
+Student without KD: Test set predicted in  0.25s with 0.5201 accuracy.
+
+
+Train student with normal KD
+Backprop: batch_size:20 epochs:15, Adam (α:0.0001 β1:0.9 β2:0.999), KDloss (α:0.2 T:5)
+Training on CPU...
+epoch:  10, time:  5.91s (speed 6941.6), loss (KDloss): 81009.5469, validation accuracy: 0.4811
+epoch:  15, time:  0.00s (speed 6905.9), loss (KDloss): 79571.1953, validation accuracy: 0.5293
+Trained in 1m 29s.
+Student with KD: Test set predicted in  0.25s with 0.5281 accuracy.
+
+RESULTS:
+0.598900 Student without KD (but GA initialization)
+0.602100 Student with KD (best)
+0.587900 Student with KD (worst)
+0.574840 Student with KD (Random, Average)
+0.520100 Student without KD (normal initialization)
+0.528100 Student with KD (normal initialization)

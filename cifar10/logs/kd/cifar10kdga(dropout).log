@@ -1,0 +1,199 @@
+CPU: [11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz]
+12 threads with OpenMP
+Teacher data: X (40000,3072) 468.8 MB, Y (40000,10)
+Student data: X (40000,3072) 468.8 MB, Y (40000,10)
+Validation data: X (10000,3072) 117.2 MB, Y (10000,10)
+Testing data: X (10000,3072) 117.2 MB, Y (10000,10)
+
+Trained teacher test set predicted in 2.99 secs with 0.7664 accuracy.
+
+w1:2400/20
+w2:18432/295
+w3:73728/1123
+
+Network: c10kdga-trained-teacher(dropout)
+Input, shape:[32,32,3], parameters: 0, memory:12.0 KB
+Conv2D(ReLU), shape:[28,28,32] (k:5,s:1,pad:no), parameters:2400, memory:116.8 KB
+Maxpool2D shape:[14,14,32] (k:2,s:2), parameters:0, memory:24.5 KB
+Dropout, ratio:0.25, shape:[14,14,32], parameters:0, memory:24.5 KB
+Conv2D(ReLU), shape:[12,12,64] (k:3,s:1,pad:no), parameters:18432, memory:180.0 KB
+Maxpool2D shape:[6,6,64] (k:2,s:2), parameters:0, memory:9.0 KB
+Dropout, ratio:0.25, shape:[6,6,64], parameters:0, memory:9.0 KB
+Conv2D(ReLU), shape:[4,4,128] (k:3,s:1,pad:no), parameters:73728, memory:584.0 KB
+Maxpool2D shape:[2,2,128] (k:2,s:2), parameters:0, memory:2.0 KB
+Dropout, ratio:0.25, shape:[2,2,128], parameters:0, memory:2.0 KB
+Dense(ReLU), shape:[128], parameters:65664, memory:513.0 KB
+Dense(Linear), shape:[10], parameters:1290, memory:10.1 KB
+
+Network: c10kdga-student
+Input, shape:[32,32,3], parameters: 0, memory:12.0 KB
+Conv2D(ReLU), shape:[28,28,8] (k:5,s:1,pad:no), parameters:600, memory:29.2 KB
+Maxpool2D shape:[14,14,8] (k:2,s:2), parameters:0, memory:6.1 KB
+Conv2D(ReLU), shape:[12,12,16] (k:3,s:1,pad:no), parameters:1152, memory:18.0 KB
+Maxpool2D shape:[6,6,16] (k:2,s:2), parameters:0, memory:2.2 KB
+Conv2D(ReLU), shape:[4,4,32] (k:3,s:1,pad:no), parameters:4608, memory:38.0 KB
+Maxpool2D shape:[2,2,32] (k:2,s:2), parameters:0, memory:512 bytes
+Dense(ReLU), shape:[64], parameters:8256, memory:64.5 KB
+Dense(Linear), shape:[10], parameters:650, memory:5.1 KB
+
+
+Number of indeces in each chain: 56
+Evolving 100 members for 50 generations...
+Generation 1, time: 2 mins and 11 secs, fitness max: 0.221000, min: 0.122700, mean: 0.174731
+Generation 2, time: 2 mins and 11 secs, fitness max: 0.221000, min: 0.124200, mean: 0.174685
+Generation 3, time: 2 mins and 11 secs, fitness max: 0.221800, min: 0.120000, mean: 0.177866
+Generation 4, time: 2 mins and 11 secs, fitness max: 0.221800, min: 0.139700, mean: 0.182112
+Generation 5, time: 2 mins and 11 secs, fitness max: 0.222700, min: 0.137700, mean: 0.175613
+Generation 6, time: 2 mins and 11 secs, fitness max: 0.225000, min: 0.130900, mean: 0.180418
+Generation 7, time: 2 mins and 11 secs, fitness max: 0.225000, min: 0.135700, mean: 0.178550
+Generation 8, time: 2 mins and 11 secs, fitness max: 0.225000, min: 0.139600, mean: 0.181550
+Generation 9, time: 2 mins and 12 secs, fitness max: 0.231800, min: 0.134300, mean: 0.179762
+Generation 10, time: 2 mins and 11 secs, fitness max: 0.234900, min: 0.122000, mean: 0.181356
+Generation 11, time: 2 mins and 11 secs, fitness max: 0.235400, min: 0.130800, mean: 0.183405
+Generation 12, time: 2 mins and 11 secs, fitness max: 0.235400, min: 0.137000, mean: 0.181493
+Generation 13, time: 2 mins and 11 secs, fitness max: 0.235400, min: 0.135600, mean: 0.180942
+Generation 14, time: 2 mins and 11 secs, fitness max: 0.235400, min: 0.122500, mean: 0.184086
+Generation 15, time: 2 mins and 11 secs, fitness max: 0.235400, min: 0.112400, mean: 0.182675
+Generation 16, time: 2 mins and 11 secs, fitness max: 0.235400, min: 0.124000, mean: 0.180495
+Generation 17, time: 2 mins and 10 secs, fitness max: 0.245900, min: 0.121000, mean: 0.178863
+Generation 18, time: 2 mins and 11 secs, fitness max: 0.245900, min: 0.132200, mean: 0.180136
+Generation 19, time: 2 mins and 11 secs, fitness max: 0.245900, min: 0.133100, mean: 0.180764
+Generation 20, time: 2 mins and 11 secs, fitness max: 0.245900, min: 0.112700, mean: 0.178915
+Generation 21, time: 2 mins and 11 secs, fitness max: 0.245900, min: 0.127400, mean: 0.181440
+Generation 22, time: 2 mins and 11 secs, fitness max: 0.245900, min: 0.125600, mean: 0.182519
+Generation 23, time: 2 mins and 12 secs, fitness max: 0.245900, min: 0.133400, mean: 0.182621
+Generation 24, time: 2 mins and 11 secs, fitness max: 0.245900, min: 0.131500, mean: 0.181797
+Generation 25, time: 2 mins and 11 secs, fitness max: 0.245900, min: 0.137200, mean: 0.181681
+Generation 26, time: 2 mins and 11 secs, fitness max: 0.245900, min: 0.125000, mean: 0.181640
+Generation 27, time: 2 mins and 11 secs, fitness max: 0.245900, min: 0.141300, mean: 0.183047
+Generation 28, time: 2 mins and 11 secs, fitness max: 0.245900, min: 0.116300, mean: 0.179740
+Generation 29, time: 2 mins and 12 secs, fitness max: 0.253000, min: 0.140400, mean: 0.186217
+Generation 30, time: 2 mins and 10 secs, fitness max: 0.253000, min: 0.134400, mean: 0.180661
+Generation 31, time: 2 mins and 12 secs, fitness max: 0.253000, min: 0.135600, mean: 0.182788
+Generation 32, time: 2 mins and 12 secs, fitness max: 0.253000, min: 0.131600, mean: 0.182472
+Generation 33, time: 2 mins and 11 secs, fitness max: 0.253000, min: 0.129900, mean: 0.179877
+Generation 34, time: 2 mins and 11 secs, fitness max: 0.266800, min: 0.122100, mean: 0.179956
+Generation 35, time: 2 mins and 11 secs, fitness max: 0.266800, min: 0.121700, mean: 0.183074
+Generation 36, time: 2 mins and 11 secs, fitness max: 0.266800, min: 0.128900, mean: 0.183263
+Generation 37, time: 2 mins and 11 secs, fitness max: 0.266800, min: 0.118200, mean: 0.183297
+Generation 38, time: 2 mins and 10 secs, fitness max: 0.266800, min: 0.135900, mean: 0.185316
+Generation 39, time: 2 mins and 11 secs, fitness max: 0.266800, min: 0.139500, mean: 0.183132
+Generation 40, time: 2 mins and 11 secs, fitness max: 0.266800, min: 0.142900, mean: 0.181347
+Generation 41, time: 2 mins and 12 secs, fitness max: 0.266800, min: 0.140400, mean: 0.183958
+Generation 42, time: 2 mins and 11 secs, fitness max: 0.266800, min: 0.142600, mean: 0.189027
+Generation 43, time: 2 mins and 11 secs, fitness max: 0.266800, min: 0.135500, mean: 0.184910
+Generation 44, time: 2 mins and 11 secs, fitness max: 0.266800, min: 0.135800, mean: 0.185414
+Generation 45, time: 2 mins and 11 secs, fitness max: 0.266800, min: 0.144000, mean: 0.187008
+Generation 46, time: 2 mins and 11 secs, fitness max: 0.266800, min: 0.128000, mean: 0.186930
+Generation 47, time: 2 mins and 11 secs, fitness max: 0.266800, min: 0.132100, mean: 0.184831
+Generation 48, time: 2 mins and 11 secs, fitness max: 0.266800, min: 0.142800, mean: 0.182668
+Generation 49, time: 2 mins and 11 secs, fitness max: 0.266800, min: 0.128100, mean: 0.182463
+Generation 50, time: 2 mins and 11 secs, fitness max: 0.266800, min: 0.132500, mean: 0.179685
+Evolution finished, top-10 members:
+member   1, fitness=0.266800, 19 10 12 2 28 8 23 11 11 33 59 56 16 50 55 5 61 35 1 42 41 46 51 53 83 36 112 64 3 123 104 75 118 77 15 102 91 79 38 21 14 85 25 6 68 30 87 31 12 55 10 121 52 27 2 99 
+member   2, fitness=0.253000, 19 10 12 2 28 8 23 11 11 33 59 56 16 50 55 5 61 35 1 42 46 51 53 0 83 36 3 123 64 104 75 118 77 15 102 91 21 10 121 52 55 27 2 99 25 107 16 12 13 93 119 8 112 79 38 48 
+member   3, fitness=0.253000, 19 10 12 2 28 8 23 11 11 33 59 56 16 50 55 5 61 35 1 42 46 51 53 0 83 36 3 123 64 104 75 118 77 15 102 91 21 10 121 52 55 27 2 99 25 107 16 12 13 93 119 8 112 79 38 48 
+member   4, fitness=0.231000, 5 19 20 22 10 12 15 25 41 27 4 52 33 59 56 11 49 35 51 39 16 0 50 55 60 83 36 14 70 25 3 75 118 68 64 8 112 123 104 77 49 85 87 46 34 15 102 91 73 97 4 71 79 21 10 121 
+member   5, fitness=0.222100, 5 13 10 12 2 15 19 20 41 11 56 51 33 59 16 27 50 55 5 61 35 1 4 12 60 83 36 3 14 70 25 75 118 68 64 8 123 104 50 77 112 15 102 91 79 21 10 121 52 55 27 2 99 73 97 34 
+member   6, fitness=0.221200, 5 19 10 20 22 12 2 28 41 11 33 59 27 16 52 4 56 51 35 12 50 55 5 58 60 70 73 64 3 75 118 83 36 112 123 104 4 77 15 14 68 87 102 25 34 32 85 97 86 19 91 99 119 90 79 21 
+member   7, fitness=0.218600, 19 10 12 2 28 8 23 11 11 33 59 56 4 51 35 52 41 39 48 16 50 55 5 61 83 36 3 123 64 104 112 4 75 118 71 79 38 14 49 68 25 70 87 46 34 77 15 102 91 60 73 97 21 10 121 52 
+member   8, fitness=0.212400, 19 10 12 2 20 15 22 23 11 33 51 59 4 35 56 16 50 41 55 5 27 61 49 29 83 36 3 123 64 104 75 118 77 15 102 112 34 32 85 87 60 49 14 68 25 28 4 71 79 70 73 119 80 38 91 99 
+member   9, fitness=0.210700, 5 19 10 20 15 12 4 28 41 11 33 59 27 16 56 4 52 51 35 12 5 19 1 36 60 83 36 14 68 70 25 112 87 3 75 118 64 8 123 4 104 77 15 73 34 85 91 31 12 71 79 38 48 119 90 102 
+member  10, fitness=0.209900, 19 10 21 12 22 20 15 5 0 33 59 56 16 50 4 11 54 27 13 1 49 35 51 39 83 36 14 68 60 112 34 3 118 32 85 70 64 75 123 104 77 15 102 91 79 38 21 25 6 119 87 73 28 80 97 69 
+
+Train student with the GA
+Best member: 19 10 12 2 28 8 23 11 11 33 59 56 16 50 55 5 61 35 1 42 41 46 51 53 83 36 112 64 3 123 104 75 118 77 15 102 91 79 38 21 14 85 25 6 68 30 87 31 12 55 10 121 52 27 2 99 
+Backprop: batch_size:20 epochs:25, Adam (α:0.0001 β1:0.9 β2:0.999), KDloss (α:0.2 T:5)
+Training on CPU...
+epoch: 1, time: 3.50 secs (speed 13389.9), loss (KDloss): 91237.4141, validation accuracy: 0.2843
+epoch: 2, time: 3.51 secs (speed 13373.3), loss (KDloss): 88725.1406, validation accuracy: 0.3090
+epoch: 3, time: 3.51 secs (speed 13346.6), loss (KDloss): 86883.9688, validation accuracy: 0.3431
+epoch: 4, time: 3.51 secs (speed 13383.2), loss (KDloss): 85907.4844, validation accuracy: 0.3510
+epoch: 5, time: 3.52 secs (speed 13276.8), loss (KDloss): 85319.0938, validation accuracy: 0.3563
+epoch: 6, time: 3.59 secs (speed 12978.7), loss (KDloss): 84919.8281, validation accuracy: 0.3594
+epoch: 7, time: 3.53 secs (speed 13182.0), loss (KDloss): 84618.7734, validation accuracy: 0.3628
+epoch: 8, time: 3.51 secs (speed 13320.0), loss (KDloss): 84378.9453, validation accuracy: 0.3703
+epoch: 9, time: 3.53 secs (speed 13275.7), loss (KDloss): 84180.8125, validation accuracy: 0.3741
+epoch: 10, time: 3.52 secs (speed 13274.3), loss (KDloss): 84014.3438, validation accuracy: 0.3793
+epoch: 11, time: 3.54 secs (speed 13224.7), loss (KDloss): 83868.6719, validation accuracy: 0.3799
+epoch: 12, time: 3.52 secs (speed 13287.5), loss (KDloss): 83740.6875, validation accuracy: 0.3839
+epoch: 13, time: 3.52 secs (speed 13293.5), loss (KDloss): 83627.5391, validation accuracy: 0.3824
+epoch: 14, time: 3.50 secs (speed 13369.9), loss (KDloss): 83526.7734, validation accuracy: 0.3887
+epoch: 15, time: 3.54 secs (speed 13295.6), loss (KDloss): 83435.3594, validation accuracy: 0.3913
+epoch: 16, time: 3.54 secs (speed 13257.9), loss (KDloss): 83353.3516, validation accuracy: 0.3927
+epoch: 17, time: 3.53 secs (speed 13242.4), loss (KDloss): 83277.6250, validation accuracy: 0.3970
+epoch: 18, time: 3.52 secs (speed 13279.5), loss (KDloss): 83209.1016, validation accuracy: 0.3973
+epoch: 19, time: 3.51 secs (speed 13296.8), loss (KDloss): 83144.7266, validation accuracy: 0.3998
+epoch: 20, time: 3.51 secs (speed 13386.5), loss (KDloss): 83087.1641, validation accuracy: 0.4041
+epoch: 21, time: 3.53 secs (speed 13260.2), loss (KDloss): 83032.2734, validation accuracy: 0.4071
+epoch: 22, time: 3.52 secs (speed 13239.4), loss (KDloss): 82982.8750, validation accuracy: 0.4073
+epoch: 23, time: 3.51 secs (speed 13320.0), loss (KDloss): 82934.9609, validation accuracy: 0.4071
+epoch: 24, time: 3.51 secs (speed 13376.6), loss (KDloss): 82892.9219, validation accuracy: 0.4110
+epoch: 25, time: 3.50 secs (speed 13313.5), loss (KDloss): 82851.9062, validation accuracy: 0.4100
+Trained in 1 mins and 28 secs.
+Student with KD (GA optimized): Test set predicted in 0.52 secs with 0.417200 accuracy.
+
+
+Train student without KD
+Backprop: batch_size:20 epochs:25, Adam (α:0.0001 β1:0.9 β2:0.999), CCE
+Training on CPU...
+epoch: 1, time: 8.85 secs (speed 4801.3), loss (CCE): 81640.9375, validation accuracy: 0.3187
+epoch: 2, time: 8.91 secs (speed 4760.0), loss (CCE): 71760.1641, validation accuracy: 0.3656
+epoch: 3, time: 8.85 secs (speed 4795.2), loss (CCE): 67887.5156, validation accuracy: 0.3922
+epoch: 4, time: 8.89 secs (speed 4768.5), loss (CCE): 65443.8281, validation accuracy: 0.4106
+epoch: 5, time: 8.92 secs (speed 4764.5), loss (CCE): 63647.3750, validation accuracy: 0.4247
+epoch: 6, time: 8.97 secs (speed 4737.1), loss (CCE): 62245.3594, validation accuracy: 0.4353
+epoch: 7, time: 8.88 secs (speed 4779.3), loss (CCE): 61008.3125, validation accuracy: 0.4428
+epoch: 8, time: 8.95 secs (speed 4740.4), loss (CCE): 59934.0469, validation accuracy: 0.4530
+epoch: 9, time: 8.94 secs (speed 4748.7), loss (CCE): 58991.3242, validation accuracy: 0.4599
+epoch: 10, time: 8.96 secs (speed 4732.1), loss (CCE): 58152.9414, validation accuracy: 0.4719
+epoch: 11, time: 8.92 secs (speed 4756.4), loss (CCE): 57370.7148, validation accuracy: 0.4802
+epoch: 12, time: 8.93 secs (speed 4748.3), loss (CCE): 56642.2070, validation accuracy: 0.4838
+epoch: 13, time: 8.86 secs (speed 4796.7), loss (CCE): 55873.6836, validation accuracy: 0.4950
+epoch: 14, time: 8.91 secs (speed 4758.4), loss (CCE): 55205.1094, validation accuracy: 0.5006
+epoch: 15, time: 8.86 secs (speed 4802.5), loss (CCE): 54571.8125, validation accuracy: 0.5004
+epoch: 16, time: 8.96 secs (speed 4742.1), loss (CCE): 53905.2070, validation accuracy: 0.5066
+epoch: 17, time: 8.84 secs (speed 4804.9), loss (CCE): 53312.6758, validation accuracy: 0.5141
+epoch: 18, time: 8.87 secs (speed 4785.8), loss (CCE): 52731.4180, validation accuracy: 0.5197
+epoch: 19, time: 8.85 secs (speed 4800.8), loss (CCE): 52110.2070, validation accuracy: 0.5209
+epoch: 20, time: 8.86 secs (speed 4798.7), loss (CCE): 51614.9141, validation accuracy: 0.5279
+epoch: 21, time: 8.82 secs (speed 4813.8), loss (CCE): 51027.7188, validation accuracy: 0.5304
+epoch: 22, time: 8.93 secs (speed 4749.9), loss (CCE): 50555.6523, validation accuracy: 0.5303
+epoch: 23, time: 8.85 secs (speed 4803.2), loss (CCE): 50035.8164, validation accuracy: 0.5406
+epoch: 24, time: 8.88 secs (speed 4788.3), loss (CCE): 49530.6758, validation accuracy: 0.5394
+epoch: 25, time: 8.81 secs (speed 4820.8), loss (CCE): 49096.8359, validation accuracy: 0.5447
+Trained in 3 mins and 42 secs.
+Student without KD: Test set predicted in 0.53 secs with 0.546200 accuracy.
+
+
+Train student with normal KD
+Backprop: batch_size:20 epochs:25, Adam (α:0.0001 β1:0.9 β2:0.999), KDloss (α:0.2 T:5)
+Training on CPU...
+epoch: 1, time: 8.91 secs (speed 4754.4), loss (KDloss): 88395.6328, validation accuracy: 0.3301
+epoch: 2, time: 9.02 secs (speed 4695.9), loss (KDloss): 85148.2188, validation accuracy: 0.3651
+epoch: 3, time: 8.98 secs (speed 4712.8), loss (KDloss): 83952.1719, validation accuracy: 0.3937
+epoch: 4, time: 9.03 secs (speed 4692.6), loss (KDloss): 83186.5312, validation accuracy: 0.4122
+epoch: 5, time: 9.00 secs (speed 4705.9), loss (KDloss): 82596.2344, validation accuracy: 0.4266
+epoch: 6, time: 8.99 secs (speed 4718.4), loss (KDloss): 82125.0703, validation accuracy: 0.4402
+epoch: 7, time: 9.02 secs (speed 4695.9), loss (KDloss): 81718.7578, validation accuracy: 0.4469
+epoch: 8, time: 8.99 secs (speed 4719.8), loss (KDloss): 81365.1406, validation accuracy: 0.4602
+epoch: 9, time: 9.00 secs (speed 4708.4), loss (KDloss): 81052.3906, validation accuracy: 0.4633
+epoch: 10, time: 9.02 secs (speed 4705.7), loss (KDloss): 80761.2188, validation accuracy: 0.4736
+epoch: 11, time: 9.02 secs (speed 4700.5), loss (KDloss): 80499.0703, validation accuracy: 0.4799
+epoch: 12, time: 9.02 secs (speed 4699.7), loss (KDloss): 80254.6641, validation accuracy: 0.4881
+epoch: 13, time: 8.97 secs (speed 4722.5), loss (KDloss): 80013.4219, validation accuracy: 0.4987
+epoch: 14, time: 8.99 secs (speed 4714.0), loss (KDloss): 79802.2422, validation accuracy: 0.5020
+epoch: 15, time: 8.96 secs (speed 4734.0), loss (KDloss): 79611.0781, validation accuracy: 0.5072
+epoch: 16, time: 8.96 secs (speed 4731.4), loss (KDloss): 79415.2969, validation accuracy: 0.5090
+epoch: 17, time: 8.97 secs (speed 4740.4), loss (KDloss): 79235.7422, validation accuracy: 0.5222
+epoch: 18, time: 8.94 secs (speed 4740.9), loss (KDloss): 79059.5469, validation accuracy: 0.5263
+epoch: 19, time: 8.96 secs (speed 4737.4), loss (KDloss): 78883.8906, validation accuracy: 0.5286
+epoch: 20, time: 8.94 secs (speed 4736.6), loss (KDloss): 78738.6172, validation accuracy: 0.5324
+epoch: 21, time: 8.99 secs (speed 4724.3), loss (KDloss): 78580.6562, validation accuracy: 0.5345
+epoch: 22, time: 8.93 secs (speed 4751.7), loss (KDloss): 78452.5391, validation accuracy: 0.5310
+epoch: 23, time: 8.92 secs (speed 4756.0), loss (KDloss): 78302.8594, validation accuracy: 0.5437
+epoch: 24, time: 8.94 secs (speed 4740.3), loss (KDloss): 78163.7656, validation accuracy: 0.5473
+epoch: 25, time: 8.93 secs (speed 4755.8), loss (KDloss): 78043.3672, validation accuracy: 0.5462
+Trained in 3 mins and 44 secs.
+Student with KD: Test set predicted in 0.52 secs with 0.545000 accuracy.
+
