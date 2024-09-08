@@ -23,7 +23,7 @@ typedef float dtype;
 constexpr int SEED = 48;
 
 // Number of clusters for KMeans
-constexpr int NClusters = 50;
+constexpr int NClusters = 10;
 
 
 // -------------- Main -------------------
