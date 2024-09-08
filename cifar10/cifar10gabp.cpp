@@ -60,7 +60,7 @@ struct Genome {
 
 
 #define LOG_NAME      "c10-bpga-adam-convdo.log"
-#define SAVES_FOLDER  "../../saves/cifar10/"
+#define SAVES_FOLDER  "../saves/"
 #define GASAVE_NAME   "c10-bpga-adam-do.ga"
 
 // Seed for local RNG
@@ -558,7 +558,7 @@ int main()
 	umml_seed_rng(SEED);
 
 	// load cifar10
-	string path = "../../../auth/data/CIFAR10/";
+	string path = "../data/CIFAR10/";
 	string train_file = path + "data_batch_";
 	string test_file  = path + "test_batch.bin";
 	CIFARloader cifar10;

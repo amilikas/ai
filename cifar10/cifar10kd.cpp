@@ -20,7 +20,7 @@ using namespace umml;
 // Datatype for data and neural network
 typedef float dtype;
 
-#define SAVES_FOLDER         "../../saves/cifar10/"
+#define SAVES_FOLDER         "../saves/"
 
 // Activation functions
 //int fconv = fLinear;
@@ -106,13 +106,13 @@ int main()
 	umml_set_openmp_threads();
 
 	// load cifar10
-	string path = "../../../auth/data/";
-	string train_file  = path + "CIFAR10/data_batch_";
-	string test_file   = path + "CIFAR10/test_batch.bin";
-	string logits_file = path + "logits/cifar10-teacher-logits.bin";
+	string path = "../data/CIFAR10/";
+	string train_file  = path + "data_batch_";
+	string test_file   = path + "test_batch.bin";
+	string logits_file = path + "cifar10-teacher-logits.bin";
 
 
-	CIFAR10loader cifar10;
+	CIFARloader cifar10;
 	dataframe df;
 	for (int i=1; i<=5; ++i) {
 		umat<dtype> X_temp;
@@ -241,7 +241,7 @@ int main()
 		log << "Training on " << device_name(X_train.dev()) << "...\n";
 
 		t1 = chrono::steady_clock::now();
-		if (load_validation) bp.train(net, loss, st, X_train, Y_train, X_valid, Y_valid_1hot);
+		if (load_validation) bp.train(net, loss, st, sh, X_train, Y_train, X_valid, Y_valid_1hot);
 		else bp.train(net, loss, st, sh, X_train, Y_train);
 		t2 = chrono::steady_clock::now();
 		log << "Trained in " << format_duration(t1, t2) << ".\n";

@@ -15,7 +15,7 @@ using namespace umml;
 #define END_TEST   }
 
 // folder to save weights
-#define SAVES_FOLDER         "../../saves/cifar10/"
+#define SAVES_FOLDER         "../saves/"
 
 // Datatype for data and neural network
 typedef float dtype;
@@ -79,7 +79,7 @@ int main()
 	umml_set_openmp_threads();
 
 	// load cifar10
-	string path = "../../../auth/data/CIFAR10/";
+	string path = "../data/CIFAR10/";
 	string train_file = path + "data_batch_";
 	string test_file  = path + "test_batch.bin";
 	CIFARloader cifar10;
@@ -143,7 +143,7 @@ int main()
 	bool use_gpu = true;
 	if (use_gpu) { 
 		X_train.to_gpu(); X_valid.to_gpu(); X_test.to_gpu(); 
-		Y_valid_1hot.to_gpu(); Y_train_1hot.to_gpu(); 
+		Y_valid.to_gpu(); Y_train.to_gpu(); 
 	}
 
 	log << umml_compute_info(use_gpu) << "\n";
@@ -153,12 +153,12 @@ int main()
 	log << net.info() << "\n";
 
 	string answer="n";
-	if (0) if (check_file_exists(SAVES+net.get_name()+".sav")) {
+	if (0) if (check_file_exists(SAVES_FOLDER+net.get_name()+".sav")) {
 		cout << "Trainined network found in " << net.get_name() << ".sav. Do you want to load it? (y/n) ";
 		cin >> answer;
 		if (answer[0]=='y' || answer[0]=='Y') {
 			answer = "y";
-			if (net.load(net.get_name()+".sav")) {
+			if (net.load(SAVES_FOLDER+net.get_name()+".sav")) {
 				cout << "Trainined parameters loaded ok.\n";
 			} else {
 				cout << "Error loading parameters: " << net.error_description() << "\n";
@@ -199,7 +199,7 @@ int main()
 		log << "Trained in " << format_duration(t1, t2) << ".\n";
 		//net.save(net.get_name()+".sav");
 	}
-	Y_train_1hot.to_cpu();
+	Y_train.to_cpu();
 
 	// test
 	double acc;

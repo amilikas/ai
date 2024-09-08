@@ -43,7 +43,7 @@ using namespace umml;
  #endif
 #endif
 
-#define SAVES_FOLDER         "../../saves/cifar10/"
+#define SAVES_FOLDER         "../saves/"
 #define STUDENT_NAME         "c10kdga-student"
 #define LOG_NAME             "c10kdga" DESCR_STR ".log"
 #define GASAVE_NAME          "c10kdga" DESCR_STR
@@ -384,7 +384,7 @@ int main()
 	umml_seed_rng(SEED);
 
 	// load cifar10
-	string path = "../../../auth/data/CIFAR10/";
+	string path = "../data/CIFAR10/";
 	string train_file = path + "data_batch_";
 	string test_file  = path + "test_batch.bin";
 	CIFARloader cifar10;
