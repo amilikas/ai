@@ -18,4 +18,4 @@ mnist:<br />
 
 To enable OpenMP multithreading support you can use:
 
-   make <target> openmp
+   make target openmp
