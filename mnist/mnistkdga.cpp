@@ -38,7 +38,7 @@ using namespace umml;
  #endif
 #endif
 
-#define SAVES_FOLDER         "../../saves/mnist/"
+#define SAVES_FOLDER         "../saves/"
 #define STUDENT_NAME         "mnistkdga-student"
 #define LOG_NAME             "mnistkdga" DESCR_STR ".log"
 #define GASAVE_NAME          "mnistkdga" DESCR_STR 

@@ -22,7 +22,7 @@ using namespace umml;
 #define TEACHER_DESCR "(nodropout)"
 #endif
 
-#define SAVES_FOLDER         "../../saves/mnist/"
+#define SAVES_FOLDER         "../saves/"
 #define TRAINED_TEACHER_NAME "mnist-trained-teacher" TEACHER_DESCR
 #define STUDENT_NAME         "mnist-student"
 #define LOG_NAME             "mnist-kd.log"
@@ -145,7 +145,7 @@ int main()
 	umml_set_openmp_threads();
 
 	// load mnist
-	string path = "../../../auth/data/MNIST/";
+	string path = "../data/MNIST/";
 	string train_images = path + "train-images-idx3-ubyte";
 	string train_labels = path + "train-labels-idx1-ubyte";
 	string test_images  = path + "t10k-images-idx3-ubyte";

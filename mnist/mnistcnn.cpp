@@ -13,7 +13,7 @@ using namespace umml;
 #define DO_TEST(x) if(x){
 #define END_TEST   }
 
-#define SAVES_FOLDER         "../../saves/mnist/"
+#define SAVES_FOLDER         "../saves/"
 
 // Datatype for data and neural network
 typedef float dtype;
@@ -69,7 +69,7 @@ int main()
 
 	// load mnist
 	bool load_validation = true;
-	string path = "../../../auth/data/MNIST/";
+	string path = "../data/MNIST/";
 	string original = "train";
 	string modified = "modified/ng2k";
 	string unmodified = "modified/ng2k-unmod";
@@ -159,7 +159,7 @@ int main()
 		cin >> answer;
 		if (answer[0]=='y' || answer[0]=='Y') {
 			answer = "y";
-			if (net.load(net.get_name()+".sav")) {
+			if (net.load(string(SAVES_FOLDER)+net.get_name()+".sav")) {
 				cout << "Trainined parameters loaded ok.\n";
 			} else {
 				cout << "Error loading parameters: " << net.error_description() << "\n";
@@ -176,7 +176,6 @@ int main()
 		opt.batch_size = 30;
 		opt.max_iters = 5;  // 5
 		opt.info_iters = 1;
-		opt.stochastic = false;
 		opt.verbose = true;
 		opt.autosave = 5;
 		opt.multisave = true;

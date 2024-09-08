@@ -25,7 +25,7 @@ typedef float dtype;
 
 #define   LOG_FILENAME "mnistpso-1to10-1k-explore.log"
 #define   NET_NAME     "mnistpso"
-#define   SAVES_FOLDER "../../saves/mnist/"
+#define   SAVES_FOLDER "../saves/"
 
 
 constexpr int     OMP_THREADS  = 12;
@@ -196,7 +196,7 @@ int main()
 
 	// load mnist
 	bool load_validation = true;
-	string path = "../../../auth/data/MNIST/";
+	string path = "../data/MNIST/";
 	string original = "train";
 	string modified = "modified/ng2k";
 	string unmodified = "modified/ng2k-unmod";

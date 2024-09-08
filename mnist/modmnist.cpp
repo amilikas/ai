@@ -50,7 +50,7 @@ int main()
 	validation += std::to_string(valid_size/1000);
 
 	// load mnist
-	string path = "../../../auth/data/MNIST/";
+	string path = "../data/MNIST/";
 	string train_images = path + "train-images-idx3-ubyte";
 	string train_labels = path + "train-labels-idx1-ubyte";
 	MNISTloader mnist;

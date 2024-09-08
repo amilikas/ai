@@ -60,7 +60,7 @@ struct Genome {
 
 
 #define LOG_NAME      "mnist-bpga-mlp-weights-0.5.log"
-#define SAVES_FOLDER  "../../saves/mnist/"
+#define SAVES_FOLDER  "../saves/"
 #define GASAVE_NAME   "mnist-bpga.ga"
 
 // Seed for local RNG
@@ -570,7 +570,7 @@ int main()
 	umml_seed_rng(SEED);
 
 	// load mnist
-	string path = "../../../auth/data/MNIST/";
+	string path = "../data/MNIST/";
 	string train_images = path + "train-images-idx3-ubyte";
 	string train_labels = path + "train-labels-idx1-ubyte";
 	string test_images  = path + "t10k-images-idx3-ubyte";

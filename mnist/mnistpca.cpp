@@ -43,7 +43,7 @@ int main()
 	umml_seed_rng(SEED);
 
 	// load mnist
-	string path = "../../../auth/data/MNIST/";
+	string path = "../data/MNIST/";
 	string train_images = path + "train-images-idx3-ubyte";
 	string train_labels = path + "train-labels-idx1-ubyte";
 	string test_images  = path + "t10k-images-idx3-ubyte";

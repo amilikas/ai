@@ -24,7 +24,7 @@ using namespace umml;
 typedef float dtype;
 
 #define   CNN_NET_NAME "mnistga-cnn"
-#define   SAVES_FOLDER "../../saves/mnist/"
+#define   SAVES_FOLDER "../saves/"
 
 
 constexpr int     OMP_THREADS = 12;
@@ -185,7 +185,7 @@ int main()
 
 	// load mnist
 	bool load_validation = true;
-	string path = "../../../auth/data/MNIST/";
+	string path = "../data/MNIST/";
 	string original = "train";
 	string modified = "modified/g2k";
 	string unmodified = "modified/g2k-unmod";
