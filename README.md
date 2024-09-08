@@ -15,3 +15,7 @@ mnist:<br />
    make mnistpso    : MNIST (digits), outlier detection with PSO.<br />
    make mnistbpga   : MNIST (digits), BP+GA hybrid training.<br />
    make mnistkdga   : MNIST (digits), pruning with a GA and knowledge distillation.<br />
+
+To enable OpenMP multithreading support you can use:
+
+   make <target> openmp
